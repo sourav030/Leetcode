@@ -1,0 +1,11 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab">Merge two sorted linked lists</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given two sorted linked lists consisting of nodes respectively. The task is to merge both lists and return the head of the merged list.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>LinkedList1: 5-&gt;10-&gt;15-&gt;40, ListedList2: 2-&gt;3-&gt;20
+<strong>Output: </strong>2-&gt;3-&gt;5-&gt;10-&gt;15-&gt;20-&gt;40<strong>
+Explanation:<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700176/Web/Other/blobid1_1722768650.png" width="395" height="158"></strong></span>
+</pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>LinkedList1: 1-&gt;1, LinkedList2: 2-&gt;4
+<strong>Output: </strong>1-&gt;1-&gt;2-&gt;4<strong>
+Explanation:<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700176/Web/Other/blobid3_1722768742.png" width="393" height="157"></strong></span></pre>
+<p><span style="font-size: 18px;"><strong>Expected Time Complexity</strong>: O(n+m)<br><strong>Expected Auxilliary Space</strong>: O(1)</span></p>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 &lt;= no. of nodes&lt;= 10<sup>5</sup><br>0 &lt;= node-&gt;data &lt;= 10<sup>5</sup></span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Zoho</code>&nbsp;<code>Flipkart</code>&nbsp;<code>Accolite</code>&nbsp;<code>Amazon</code>&nbsp;<code>Microsoft</code>&nbsp;<code>Samsung</code>&nbsp;<code>FactSet</code>&nbsp;<code>MakeMyTrip</code>&nbsp;<code>Oracle</code>&nbsp;<code>Brocade</code>&nbsp;<code>Synopsys</code>&nbsp;<code>OATS Systems</code>&nbsp;<code>Belzabar</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Linked List</code>&nbsp;<code>Data Structures</code>&nbsp;
