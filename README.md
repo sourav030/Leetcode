@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/sourav030/Leetcode/tree/master/0002-add-two-numbers) |
+| [0171-excel-sheet-column-number](https://github.com/sourav030/Leetcode/tree/master/0171-excel-sheet-column-number) |
 | [0371-sum-of-two-integers](https://github.com/sourav030/Leetcode/tree/master/0371-sum-of-two-integers) |
 ## Bit Manipulation
 |  |
@@ -40,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/sourav030/Leetcode/tree/master/0022-generate-parentheses) |
+| [0171-excel-sheet-column-number](https://github.com/sourav030/Leetcode/tree/master/0171-excel-sheet-column-number) |
 ## Dynamic Programming
 |  |
 | ------- |
