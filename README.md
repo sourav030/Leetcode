@@ -68,8 +68,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0078-subsets](https://github.com/sourav030/Leetcode/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/sourav030/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
+| [2195-time-needed-to-buy-tickets](https://github.com/sourav030/Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
 ## Monotonic Stack
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/sourav030/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
+## Queue
+|  |
+| ------- |
+| [2195-time-needed-to-buy-tickets](https://github.com/sourav030/Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
+## Simulation
+|  |
+| ------- |
+| [2195-time-needed-to-buy-tickets](https://github.com/sourav030/Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
 <!---LeetCode Topics End-->
