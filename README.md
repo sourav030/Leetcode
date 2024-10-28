@@ -120,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/sourav030/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0322-coin-change](https://github.com/sourav030/Leetcode/tree/master/0322-coin-change) |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 ## Sorting
 |  |
 | ------- |
@@ -128,12 +129,19 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/sourav030/Leetcode/tree/master/0199-binary-tree-right-side-view) |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/sourav030/Leetcode/tree/master/0199-binary-tree-right-side-view) |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 ## Binary Tree
 |  |
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/sourav030/Leetcode/tree/master/0199-binary-tree-right-side-view) |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 <!---LeetCode Topics End-->
