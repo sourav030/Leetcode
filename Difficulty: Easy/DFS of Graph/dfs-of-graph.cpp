@@ -2,35 +2,33 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 // } Driver Code Ends
 class Solution {
-   void dfs (int Node , vector<int> adj[] , vector<int>&ans, vector<bool> &visited)
-   {
-       visited[Node]= 1;
-       
-       ans.push_back(Node);
-       
-       for (int j= 0; j < adj[Node].size() ; j++)
-       {
-           if(!visited[adj[Node][j]])
-           {
-               dfs( adj[Node][j], adj, ans, visited);
-           }
-       }
-   }
   public:
+  void dfs(vector<int> &ans, int Node,vector<bool> &visited, vector<vector<int>>& adj){
+      visited[Node]=1;
+      ans.push_back(Node);
+      
+      for(int i=0; i<adj[Node].size(); i++){
+          if(!visited[adj[Node][i]]){
+              dfs(ans,adj[Node][i],visited, adj);
+          }
+      }
+  }
     // Function to return a list containing the DFS traversal of the graph.
-    vector<int> dfsOfGraph(int V, vector<int> adj[]) {
+    vector<int> dfsOfGraph(vector<vector<int>>& adj) {
         // Code here
+        int v=adj.size();
+        vector<bool>visited(v,0);
         vector<int>ans;
-        vector<bool>visited(V,0);
-        int Node=0;
-        dfs(Node,adj,ans,visited);
+        dfs(ans,0,visited, adj);
         return ans;
     }
 };
 
 //{ Driver Code Starts.
+
 int main() {
     int tc;
     cin >> tc;
@@ -38,7 +36,8 @@ int main() {
         int V, E;
         cin >> V >> E;
 
-        vector<int> adj[V];
+        vector<vector<int>> adj(
+            V); // Use vector of vectors instead of array of vectors.
 
         for (int i = 0; i < E; i++) {
             int u, v;
@@ -46,15 +45,16 @@ int main() {
             adj[u].push_back(v);
             adj[v].push_back(u);
         }
-        // string s1;
-        // cin>>s1;
+
         Solution obj;
-        vector<int> ans = obj.dfsOfGraph(V, adj);
+        vector<int> ans = obj.dfsOfGraph(adj);
         for (int i = 0; i < ans.size(); i++) {
             cout << ans[i] << " ";
         }
         cout << endl;
+        cout << "~" << endl;
     }
     return 0;
 }
+
 // } Driver Code Ends
