@@ -10,24 +10,23 @@ class Solution {
   public:
     void nextPermutation(vector<int>& nums) {
         // code here
-         int n = nums.size(), i, j;
-    
-    // Step 1: Find the first decreasing element
-    for (i = n - 2; i >= 0; i--) {
-        if (nums[i] < nums[i + 1]) break;
-    }
-
-    if (i >= 0) { // If a decreasing element exists
-        // Step 2: Find the element just larger than nums[i]
-        for (j = n - 1; j > i; j--) {
-            if (nums[j] > nums[i]) break;
+        int n=nums.size(), i,j;
+        for( i=n-2; i>=0; i--){
+            if(nums[i]<nums[i+1]){
+                break;
+            }
         }
-        // Step 3: Swap nums[i] and nums[j]
-        swap(nums[i], nums[j]);
-    }
-
-    // Step 4: Reverse the elements from i+1 to end
-    reverse(nums.begin() + i + 1, nums.end());
+        
+        if(i>=0){
+            for(j=n-1; j>=i; j--){
+                if(nums[j] > nums[i]){
+                    break;
+                }
+            }
+            swap(nums[i],nums[j]);
+        }
+        
+        reverse(nums.begin()+1+i, nums.end());
     }
 };
 
