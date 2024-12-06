@@ -78,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/sourav030/Leetcode/tree/master/0001-two-sum) |
 | [0018-4sum](https://github.com/sourav030/Leetcode/tree/master/0018-4sum) |
 | [0078-subsets](https://github.com/sourav030/Leetcode/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/sourav030/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
@@ -185,4 +186,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/sourav030/Leetcode/tree/master/0207-course-schedule) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/sourav030/Leetcode/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
