@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0018-4sum](https://github.com/sourav030/Leetcode/tree/master/0018-4sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/sourav030/Leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0031-next-permutation](https://github.com/sourav030/Leetcode/tree/master/0031-next-permutation) |
 | [0061-rotate-list](https://github.com/sourav030/Leetcode/tree/master/0061-rotate-list) |
 | [0234-palindrome-linked-list](https://github.com/sourav030/Leetcode/tree/master/0234-palindrome-linked-list) |
 | [0344-reverse-string](https://github.com/sourav030/Leetcode/tree/master/0344-reverse-string) |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/sourav030/Leetcode/tree/master/0001-two-sum) |
 | [0018-4sum](https://github.com/sourav030/Leetcode/tree/master/0018-4sum) |
+| [0031-next-permutation](https://github.com/sourav030/Leetcode/tree/master/0031-next-permutation) |
 | [0078-subsets](https://github.com/sourav030/Leetcode/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/sourav030/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0198-house-robber](https://github.com/sourav030/Leetcode/tree/master/0198-house-robber) |
