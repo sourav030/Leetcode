@@ -6,77 +6,77 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    // Function to return max value that can be put in knapsack of capacity W.
-int fun(vector<int> &val, vector<int> &wt, int w, int n, vector<vector<int>> &dp) {
-    if (n == 0 || w == 0) {
-        return 0; // Base case: no items or weight capacity
+    // Function to return max value that can be put in knapsack of capacity.
+    int solve(int capacity, vector<int> &val, vector<int> &wt,int n,  vector<vector<int>> &dp){
+        // harmara sabse chota input hai n=0 and capacity=0;
+        // our uska valid output hai 0
+        if(n==0 || capacity==0){
+            return 0;
+        }
+        // abb hum item ko bag main tab dalenge jab uska weight capacity se kam ya equal hog
+        
+        if(dp[n][capacity]!=-1){
+            return dp[n][capacity];
+        }
+        
+        if(wt[n-1]<=capacity){
+            // yaha pr do choice hai item ko le ya na le
+            return dp[n][capacity]= max(val[n-1]+solve(capacity-wt[n-1],val,wt,n-1,dp),solve(capacity,val,wt,n-1,dp));
+        }
+        else {
+            return dp[n][capacity]= solve(capacity,val,wt,n-1,dp);
+        }
     }
-    
-    int itemWt = wt[n - 1];
-    int itemVal = val[n - 1];
-
-    if (dp[n][w] != -1) {
-        return dp[n][w]; // Return memoized result if available
-    }
-
-    if (itemWt <= w) {
-        int ans1 = fun(val, wt, w - itemWt, n - 1, dp) + itemVal; // Include the item
-        int ans2 = fun(val, wt, w, n - 1, dp); // Exclude the item
-        dp[n][w] = max(ans1, ans2); // Store the maximum of including or excluding
-    } else {
-        dp[n][w] = fun(val, wt, w, n - 1, dp); // Cannot include item
-    }
-
-    return dp[n][w]; // Return the computed value
-}
-    int knapSack(int W, vector<int>& wt, vector<int>& val) {
-        // Your code here
-        int n=wt.size();
-        vector<vector<int>>dp(n+1, vector<int>(W+1,-1));
-        return fun(val,wt,W,n,dp);
+    int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
+        // code here
+        int n=val.size();
+        vector<vector<int>>dp(n+1,vector<int>(capacity+1,-1));
+        int x= solve(capacity,val,wt,n,dp);
+        return x;
     }
 };
 
 //{ Driver Code Starts.
 
 int main() {
-    // taking total testcases
-    int t;
-    cin >> t;
+    // Taking total test cases
+    int testCases;
+    cin >> testCases;
     cin.ignore();
-    while (t--) {
-        // reading number of elements and weight
-        int n, w;
-        vector<int> arr, val, wt, drr;
-        string ip;
+    while (testCases--) {
+        // Reading number of items and capacity
+        int numberOfItems, capacity;
+        vector<int> weights, values;
+        string input;
         int number;
-        getline(cin, ip);
-        stringstream ss(ip);
 
-        while (ss >> number) {
-            arr.push_back(number);
-        }
+        // Read capacity and number of items
+        getline(cin, input);
+        stringstream ss(input);
+        ss >> capacity;      // The first number is the capacity
+        ss >> numberOfItems; // The second number is the number of items
 
-        getline(cin, ip);
+        // Read values
+        getline(cin, input);
         ss.clear();
-        ss.str(ip);
-
+        ss.str(input);
         while (ss >> number) {
-            val.push_back(number);
+            values.push_back(number);
         }
 
-        w = arr[0];
-        n = val.size();
-        getline(cin, ip);
+        // Read weights
+        getline(cin, input);
         ss.clear();
-        ss.str(ip);
-
+        ss.str(input);
         while (ss >> number) {
-            wt.push_back(number);
+            weights.push_back(number);
         }
-        Solution ob;
-        cout << ob.knapSack(w, wt, val) << endl;
+
+        Solution solution;
+        cout << solution.knapSack(capacity, values, weights) << endl;
+        cout << "~" << endl;
     }
     return 0;
 }
+
 // } Driver Code Ends
