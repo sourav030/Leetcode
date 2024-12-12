@@ -1,26 +1,22 @@
 class Solution {
-     int find(int index,int amount,vector<int>& coins,vector<vector<int>> &dp){
+public:
+    int solve(int amount, vector<int>& coins,int n, vector<vector<int>> &dp){
         if(amount==0){
             return 1;
         }
-        if(index<0){
+        if(n==0 or amount <0){
             return 0;
         }
-
-        if(dp[index][amount]!=-1){
-            return dp[index][amount];
+        if(dp[n][amount]!=-1){
+            return dp[n][amount];
         }
-        if(coins[index]>amount){
-            return dp[index][amount]=find(index-1,amount,coins,dp);
-        }
-        // ab hum first coin ko use krenege
-        // phir first ko use nhi krenge
-        return dp[index][amount]=find(index,amount-coins[index],coins,dp)+find(index-1,amount,coins,dp);
+        int include=solve(amount-coins[n-1],coins,n,dp);
+        int exclude=solve(amount,coins,n-1,dp);
+        return dp[n][amount]= include+exclude;
     }
-public:
     int change(int amount, vector<int>& coins) {
-        int n=coins.size()-1;
+        int n=coins.size();
         vector<vector<int>>dp(n+1,vector<int>(amount+1,-1));
-        return find(n,amount,coins,dp);
+        return solve(amount,coins,n,dp);
     }
 };
