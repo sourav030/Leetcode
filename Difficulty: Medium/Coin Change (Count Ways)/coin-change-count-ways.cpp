@@ -2,46 +2,38 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 // } Driver Code Ends
 class Solution {
   public:
-  long long int find(int n ,int sum,int coin[],vector<vector<long long int>> &dp){
-      // agar sum zero hai to woh ban gya hai
-      // to return kr denge 1
+  int solve(vector<int>& coins, int sum,int n,vector<vector<int>>dp){
       if(sum==0){
           return 1;
       }
-      if(n<=0 ){
-          return 0;// iska matlab ab hamre pass coin nhi hai
+      if(n==0 ){
+          return 0;
       }
-      
       if(dp[n][sum]!=-1){
           return dp[n][sum];
       }
-      // hum coin ko tab lenge jab woh sum se chota ho nhi to skip kr denge
-      if(coin[n-1]>sum){
-          return dp[n][sum]=find(n-1,sum,coin,dp);
+      if(coins[n-1] > sum){
+          return dp[n][sum]= solve(coins,sum,n-1,dp);
       }
       else{
-          return dp[n][sum]= find(n,sum-coin[n-1],coin,dp) + find(n-1,sum,coin,dp);
+          dp[n][sum]= solve(coins,sum-coins[n-1],n,dp)+solve(coins,sum, n-1,dp);
       }
+       return dp[n][sum];
   }
-    long long int count(int coins[], int N, int sum) {
-
+    int count(vector<int>& coins, int sum) {
         // code here.
-        // for top down approch
-        // vector<vector<long long int>>dp(N+1,vector<long long int>(sum+1,-1));
-        // return find(N,sum,coins,dp);
-        
-        // for bottom up
-        vector<vector<long long int>>dp(N+1,vector<long long int>(sum+1,-0));
-        // fill the value 1 where coloum=0
-        for(int i=0; i< N+1; i++){
+    
+        int n=coins.size();
+        vector<vector<int>>dp(n+1,vector<int>(sum+1,-0));
+        for(int i=0; i<=n; i++){
             dp[i][0]=1;
         }
-        
-        for(int i=1; i<N+1; i++){
-            for(int j=1; j<sum+1; j++){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=sum; j++){
                 if(coins[i-1]>j){
                     dp[i][j]=dp[i-1][j];
                 }
@@ -50,26 +42,36 @@ class Solution {
                 }
             }
         }
-        
-        return dp[N][sum];
+        return dp[n][sum];
+        return solve(coins,sum,n,dp);
     }
 };
 
 //{ Driver Code Starts.
+
 int main() {
+
     int t;
     cin >> t;
+    cin.ignore();
     while (t--) {
-        int sum, N;
-        cin >> sum >> N;
-        int coins[N];
-        for (int i = 0; i < N; i++) cin >> coins[i];
+        vector<int> arr;
+        string input;
+        getline(cin, input);
+        stringstream ss(input);
+        int number;
+        while (ss >> number) {
+            arr.push_back(number);
+        }
+        int sum;
+        cin >> sum;
+        cin.ignore();
         Solution ob;
-        cout << ob.count(coins, N, sum) << endl;
+        cout << ob.count(arr, sum) << endl;
+        cout << "~" << endl;
     }
 
     return 0;
 }
-
 
 // } Driver Code Ends
