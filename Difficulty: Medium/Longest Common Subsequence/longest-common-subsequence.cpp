@@ -1,6 +1,5 @@
 //{ Driver Code Starts
 #include <bits/stdc++.h>
-const int mod = 1e9 + 7;
 using namespace std;
 
 
@@ -8,40 +7,44 @@ using namespace std;
 // function to find longest common subsequence
 
 class Solution {
-  public:
-    // Function to find the length of longest common subsequence in two strings.
-    int find(int n,int m,string &str1, string &str2,vector<vector<int>> &dp){
-        if(n==0 or m==0){
+    int solve(string& s1, string& s2,int n,int m,vector<vector<int>> &dp){
+        if(n<=0 or m<=0){
             return 0;
         }
         if(dp[n][m]!=-1){
             return dp[n][m];
         }
-        if(str1[n-1]==str2[m-1]){
-            return dp[n][m]= 1+find(n-1,m-1, str1,str2,dp);
+        
+        if(s1[n-1]==s2[m-1]){
+            return  1+solve(s1,s2,n-1,m-1,dp);
         }
         else{
-            return dp[n][m]=max(find(n-1,m,str1,str2,dp),find(n,m-1,str1,str2,dp));
+            return dp[n][m]= max(solve(s1,s2,n,m-1,dp),solve(s1,s2,n-1,m,dp));
         }
     }
-    int lcs(int n, int m, string str1, string str2) {
+  public:
+    // Function to find the length of the longest common subsequence in two strings.
+    int getLCSLength(string& s1, string& s2) {
         // your code here
-        vector<vector<int>> dp(n+1,vector<int>(m+1,-1));
-        return find(n,m ,str1,str2,dp);
+        
+        int n=s1.size();
+        int m=s2.size();
+        vector<vector<int>>dp(n+1,vector<int>(m+1,-1));
+        return solve(s1,s2,n,m,dp);
     }
 };
 
 
 //{ Driver Code Starts.
 int main() {
-    int t, n, m;
+    int t;
     cin >> t;
     while (t--) {
-        cin >> n >> m; // Take size of both the strings as input
-        string str1, str2;
-        cin >> str1 >> str2; // Take both the string as input
+        string s1, s2;
+        cin >> s1 >> s2; // Take both the strings as input
         Solution ob;
-        cout << ob.lcs(n, m, str1, str2) << endl;
+        cout << ob.getLCSLength(s1, s2) << endl; // Call the getLCSLength function
+        cout << "~\n";
     }
     return 0;
 }
