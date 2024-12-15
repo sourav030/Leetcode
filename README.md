@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/sourav030/Leetcode/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/sourav030/Leetcode/tree/master/0022-generate-parentheses) |
+| [0072-edit-distance](https://github.com/sourav030/Leetcode/tree/master/0072-edit-distance) |
 | [0171-excel-sheet-column-number](https://github.com/sourav030/Leetcode/tree/master/0171-excel-sheet-column-number) |
 | [0344-reverse-string](https://github.com/sourav030/Leetcode/tree/master/0344-reverse-string) |
 | [0516-longest-palindromic-subsequence](https://github.com/sourav030/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
@@ -62,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/sourav030/Leetcode/tree/master/0022-generate-parentheses) |
 | [0055-jump-game](https://github.com/sourav030/Leetcode/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/sourav030/Leetcode/tree/master/0070-climbing-stairs) |
+| [0072-edit-distance](https://github.com/sourav030/Leetcode/tree/master/0072-edit-distance) |
 | [0198-house-robber](https://github.com/sourav030/Leetcode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/sourav030/Leetcode/tree/master/0213-house-robber-ii) |
 | [0322-coin-change](https://github.com/sourav030/Leetcode/tree/master/0322-coin-change) |
