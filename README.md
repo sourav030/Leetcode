@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0061-rotate-list](https://github.com/sourav030/Leetcode/tree/master/0061-rotate-list) |
 | [0189-rotate-array](https://github.com/sourav030/Leetcode/tree/master/0189-rotate-array) |
 | [0234-palindrome-linked-list](https://github.com/sourav030/Leetcode/tree/master/0234-palindrome-linked-list) |
+| [0283-move-zeroes](https://github.com/sourav030/Leetcode/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/sourav030/Leetcode/tree/master/0344-reverse-string) |
 | [0908-middle-of-the-linked-list](https://github.com/sourav030/Leetcode/tree/master/0908-middle-of-the-linked-list) |
 ## Stack
@@ -99,6 +100,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0213-house-robber-ii](https://github.com/sourav030/Leetcode/tree/master/0213-house-robber-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/sourav030/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/sourav030/Leetcode/tree/master/0239-sliding-window-maximum) |
+| [0283-move-zeroes](https://github.com/sourav030/Leetcode/tree/master/0283-move-zeroes) |
 | [0322-coin-change](https://github.com/sourav030/Leetcode/tree/master/0322-coin-change) |
 | [0518-coin-change-ii](https://github.com/sourav030/Leetcode/tree/master/0518-coin-change-ii) |
 | [0713-subarray-product-less-than-k](https://github.com/sourav030/Leetcode/tree/master/0713-subarray-product-less-than-k) |
