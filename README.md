@@ -97,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/sourav030/Leetcode/tree/master/0011-container-with-most-water) |
 | [0018-4sum](https://github.com/sourav030/Leetcode/tree/master/0018-4sum) |
 | [0031-next-permutation](https://github.com/sourav030/Leetcode/tree/master/0031-next-permutation) |
+| [0033-search-in-rotated-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0055-jump-game](https://github.com/sourav030/Leetcode/tree/master/0055-jump-game) |
 | [0078-subsets](https://github.com/sourav030/Leetcode/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/sourav030/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
@@ -186,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search Tree
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0209-minimum-size-subarray-sum](https://github.com/sourav030/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0268-missing-number](https://github.com/sourav030/Leetcode/tree/master/0268-missing-number) |
 | [0713-subarray-product-less-than-k](https://github.com/sourav030/Leetcode/tree/master/0713-subarray-product-less-than-k) |
