@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/sourav030/Leetcode/tree/master/0011-container-with-most-water) |
 | [0018-4sum](https://github.com/sourav030/Leetcode/tree/master/0018-4sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/sourav030/Leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0031-next-permutation](https://github.com/sourav030/Leetcode/tree/master/0031-next-permutation) |
@@ -86,12 +87,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/sourav030/Leetcode/tree/master/0011-container-with-most-water) |
 | [0055-jump-game](https://github.com/sourav030/Leetcode/tree/master/0055-jump-game) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/sourav030/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 ## Array
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/sourav030/Leetcode/tree/master/0001-two-sum) |
+| [0011-container-with-most-water](https://github.com/sourav030/Leetcode/tree/master/0011-container-with-most-water) |
 | [0018-4sum](https://github.com/sourav030/Leetcode/tree/master/0018-4sum) |
 | [0031-next-permutation](https://github.com/sourav030/Leetcode/tree/master/0031-next-permutation) |
 | [0055-jump-game](https://github.com/sourav030/Leetcode/tree/master/0055-jump-game) |
