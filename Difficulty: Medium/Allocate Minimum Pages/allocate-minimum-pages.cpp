@@ -8,52 +8,51 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-   bool isPossible(vector<int>& arr, int n, int k, int maxPages) {
-    int studentCount = 1;  // At least one student is needed
-    int currentSum = 0;
-
-    for (int i = 0; i < n; i++) {
-        if (arr[i] > maxPages) {
-            return false;  // A single book exceeds maxPages, not possible
-        }
-
-        if (currentSum + arr[i] > maxPages) {
-            // Assign current book to a new student
-            studentCount++;
-            currentSum = arr[i];
-
-            if (studentCount > k) {
-                return false;  // More students than allowed
+    bool isValid(vector<int> &arr, int n, int k, int maxAlloc){
+        int student=1;
+        int page=0;
+        for(int i=0; i<n; i++){
+            if(arr[i]>maxAlloc){
+                return false;
             }
-        } else {
-            currentSum += arr[i];  // Accumulate pages
+            if(page+arr[i]<=maxAlloc){
+                page+=arr[i];
+            }
+            else{
+                student++;
+                page=arr[i];
+            }
+             if (student > k) {
+                return false; // Too many students required
+            }
         }
+        return true;;
     }
-
-    return true;
-}
-
-int findPages(vector<int>& arr, int k) {
-    int n = arr.size();
-    if (n < k) return -1;  // Not enough books for each student
-
-    int low = *max_element(arr.begin(), arr.end());  // Max pages in a single book
-    int high = accumulate(arr.begin(), arr.end(), 0);  // Sum of all pages
-    int result = high;
-
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-
-        if (isPossible(arr, n, k, mid)) {
-            result = mid;  // Update result with a smaller maximum
-            high = mid - 1;  // Search in the left half
-        } else {
-            low = mid + 1;  // Search in the right half
+    int findPages(vector<int> &arr, int k) {
+        // code here
+        if(k> arr.size()){
+            return -1;
         }
+        int start=0;
+        int end=0;
+        for(int i=0; i<arr.size(); i++){
+            end+=arr[i];
+        }
+        int n=arr.size();
+        int ans=-1;
+        while(start<=end){
+            int mid=start+(end-start)/2;
+            if(isValid(arr,n,k,mid)){
+                end=mid-1;
+                ans=mid;
+            }
+            else{
+                start=mid+1;
+            }
+            
+        }
+        return ans;
     }
-
-    return result;
-}
 };
 
 //{ Driver Code Starts.
