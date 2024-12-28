@@ -81,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0072-edit-distance](https://github.com/sourav030/Leetcode/tree/master/0072-edit-distance) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/sourav030/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/sourav030/Leetcode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
+| [0152-maximum-product-subarray](https://github.com/sourav030/Leetcode/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/sourav030/Leetcode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/sourav030/Leetcode/tree/master/0213-house-robber-ii) |
 | [0322-coin-change](https://github.com/sourav030/Leetcode/tree/master/0322-coin-change) |
@@ -120,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/sourav030/Leetcode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0134-gas-station](https://github.com/sourav030/Leetcode/tree/master/0134-gas-station) |
 | [0136-single-number](https://github.com/sourav030/Leetcode/tree/master/0136-single-number) |
+| [0152-maximum-product-subarray](https://github.com/sourav030/Leetcode/tree/master/0152-maximum-product-subarray) |
 | [0189-rotate-array](https://github.com/sourav030/Leetcode/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/sourav030/Leetcode/tree/master/0198-house-robber) |
 | [0209-minimum-size-subarray-sum](https://github.com/sourav030/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
