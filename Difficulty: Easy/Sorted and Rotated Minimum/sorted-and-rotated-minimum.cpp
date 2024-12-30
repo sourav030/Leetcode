@@ -8,13 +8,19 @@ class Solution {
   public:
     int findMin(vector<int>& arr) {
         // complete the function here
-        int min_element=INT_MAX;
-        for(int i=0; i<arr.size(); i++){
-            if(arr[i]<min_element){
-                min_element=arr[i];
-            }
-        }
-        return min_element;
+       int left=0;
+       int right=arr.size()-1;
+       while(left<right){
+           int mid=left+(right-left)/2;
+           if(arr[mid] > arr[right]){
+               left=mid+1;
+           }
+           else{
+               right=mid;
+           }
+       }
+       return arr[left];
+       
     }
 };
 
