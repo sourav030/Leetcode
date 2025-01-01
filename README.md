@@ -144,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0713-subarray-product-less-than-k](https://github.com/sourav030/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0907-koko-eating-bananas](https://github.com/sourav030/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/sourav030/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/sourav030/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [2195-time-needed-to-buy-tickets](https://github.com/sourav030/Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/sourav030/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -236,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0907-koko-eating-bananas](https://github.com/sourav030/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/sourav030/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/sourav030/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 ## Divide and Conquer
 |  |
