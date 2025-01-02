@@ -6,54 +6,57 @@ using namespace std;
 
 
 // } Driver Code Ends
+
+
 class Solution {
   public:
-    bool isValid(vector<int> &arr, int n, int k, int maxAlloc){
+    bool isPossible(vector<int> &arr, int k, int page){
+        int current=0;
         int student=1;
-        int page=0;
-        for(int i=0; i<n; i++){
-            if(arr[i]>maxAlloc){
+        for(int i=0; i<arr.size(); i++){
+            if(arr[i]>page){
                 return false;
             }
-            if(page+arr[i]<=maxAlloc){
-                page+=arr[i];
+            if(current+arr[i]<=page){
+                current+=arr[i];
             }
             else{
                 student++;
-                page=arr[i];
-            }
-             if (student > k) {
-                return false; // Too many students required
+                current=arr[i];
             }
         }
-        return true;;
+        return student<=k;
     }
     int findPages(vector<int> &arr, int k) {
         // code here
-        if(k> arr.size()){
+       
+        int n=arr.size();
+        if(n<k){
             return -1;
         }
-        int start=0;
-        int end=0;
+        int low=0;
+        int high=0;
         for(int i=0; i<arr.size(); i++){
-            end+=arr[i];
+            high+=arr[i];
+            low=max(low,arr[i]);
         }
-        int n=arr.size();
         int ans=-1;
-        while(start<=end){
-            int mid=start+(end-start)/2;
-            if(isValid(arr,n,k,mid)){
-                end=mid-1;
+        while(low<=high){
+            int mid=low+(high-low)/2;
+            if(isPossible(arr,k,mid)){
                 ans=mid;
+                high=mid-1;
+                
             }
             else{
-                start=mid+1;
+                low=mid+1;
             }
-            
         }
         return ans;
     }
 };
+
+
 
 //{ Driver Code Starts.
 
