@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/sourav030/Leetcode/tree/master/0020-valid-parentheses) |
 | [0084-largest-rectangle-in-histogram](https://github.com/sourav030/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
+| [0155-min-stack](https://github.com/sourav030/Leetcode/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/sourav030/Leetcode/tree/master/0234-palindrome-linked-list) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/sourav030/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
@@ -289,4 +290,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/sourav030/Leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0240-search-a-2d-matrix-ii](https://github.com/sourav030/Leetcode/tree/master/0240-search-a-2d-matrix-ii) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/sourav030/Leetcode/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
