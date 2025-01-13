@@ -8,7 +8,6 @@ using namespace std;
 // User function Template for C++
 
 
-
 class Solution {
 public:
     int row[4] = {1, -1, 0, 0};  // Direction vectors for moving up, down, left, right
