@@ -1,39 +1,35 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
-    int sizeOfLinkList(ListNode *head) {
-        int size = 0;
-        ListNode* temp = head;
-        while (temp != NULL) {
-            temp = temp->next;
-            size++;
-        }
-        return size;
-    }
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        int size = sizeOfLinkList(head);
-        
-        // Edge case: if the node to be removed is the head
-        if (n == size) {
-            ListNode* newHead = head->next;
-            delete head;  
-            return newHead;
+        if(head==NULL) return NULL;
+        int count=0;
+        ListNode* temp=head;
+        while(temp){
+            temp=temp->next;
+            count++;
         }
-        
-        ListNode* temp = head;
-        int stepsToTarget = size - n - 1;
-        
-        // Move temp to the node before the node to be removed
-        while (stepsToTarget > 0 && temp != NULL) {
-            temp = temp->next;
-            stepsToTarget--;
+        if(count==1) return NULL;
+        if(n==count) return head->next;
+        ListNode* temp2=head;
+        int a=1;
+        while(a<count-n){
+            temp2=temp2->next;
+            a++;
         }
-        
-        if (temp != NULL && temp->next != NULL) {
-           
-            temp->next = temp->next->next;
-
-        }
-        
+       
+        if(temp2->next!=NULL and temp2!=NULL)
+        temp2->next=temp2->next->next;
         return head;
+
     }
 };
