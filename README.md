@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/sourav030/Leetcode/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/sourav030/Leetcode/tree/master/0007-reverse-integer) |
+| [0062-unique-paths](https://github.com/sourav030/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/sourav030/Leetcode/tree/master/0070-climbing-stairs) |
 | [0171-excel-sheet-column-number](https://github.com/sourav030/Leetcode/tree/master/0171-excel-sheet-column-number) |
 | [0189-rotate-array](https://github.com/sourav030/Leetcode/tree/master/0189-rotate-array) |
@@ -98,6 +99,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0022-generate-parentheses](https://github.com/sourav030/Leetcode/tree/master/0022-generate-parentheses) |
 | [0055-jump-game](https://github.com/sourav030/Leetcode/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/sourav030/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/sourav030/Leetcode/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/sourav030/Leetcode/tree/master/0072-edit-distance) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/sourav030/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -379,4 +381,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/sourav030/Leetcode/tree/master/0547-number-of-provinces) |
 | [1073-number-of-enclaves](https://github.com/sourav030/Leetcode/tree/master/1073-number-of-enclaves) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/sourav030/Leetcode/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
