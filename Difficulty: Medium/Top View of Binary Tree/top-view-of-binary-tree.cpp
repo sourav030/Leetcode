@@ -1,20 +1,18 @@
 //{ Driver Code Starts
-//Initial Template for C++
+// Initial Template for C++
 
 #include <bits/stdc++.h>
 using namespace std;
 
 // Tree Node
-struct Node
-{
+struct Node {
     int data;
     Node* left;
     Node* right;
 };
 
 // Utility function to create a new Tree Node
-Node* newNode(int val)
-{
+Node* newNode(int val) {
     Node* temp = new Node;
     temp->data = val;
     temp->left = NULL;
@@ -24,8 +22,7 @@ Node* newNode(int val)
 }
 
 // Function to Build Tree
-Node* buildTree(string str)
-{
+Node* buildTree(string str) {
     // Corner Case
     if (str.length() == 0 || str[0] == 'N')
         return NULL;
@@ -35,7 +32,7 @@ Node* buildTree(string str)
     vector<string> ip;
 
     istringstream iss(str);
-    for (string str; iss >> str; )
+    for (string str; iss >> str;)
         ip.push_back(str);
 
     // Create the root of the tree
@@ -98,80 +95,52 @@ struct Node
 };
 */
 class Solution {
-public:
+  public:
     // Function to return a list of nodes visible from the top view
     // from left to right in Binary Tree.
-    
-    void find(Node* root, int pos, int &l, int &r) {
-        if(root == NULL) return;
-        l = min(pos, l); // update the leftmost position
-        r = max(pos, r); // update the rightmost position
-        find(root->left, pos - 1, l, r);
-        find(root->right, pos + 1, l, r);
-    }
-
     vector<int> topView(Node *root) {
-        if(root == NULL) return {};
+        // code here
+        vector<int>ans;
+        queue<pair<Node*,int>>q;
+        map<int,int>mp;
         
-        int l = 0, r = 0;
-        // Finding the leftmost and rightmost horizontal distances
-        find(root, 0, l, r);
-
-        vector<int> ans(r - l + 1); // result vector to store top view
-        vector<bool> filled(r - l + 1, 0); // to mark if a position is filled
-        queue<Node*> q;
-        queue<int> index;
-
-        // Start BFS traversal
-        q.push(root);
-        index.push(-1 * l); // initial index offset to make positions non-negative
-
-        while(!q.empty()) {
-            Node* temp = q.front();
+        q.push({root,0});
+        
+        while(!q.empty()){
+            int hr=q.front().second;
+            Node* node=q.front().first;
             q.pop();
-            int pos = index.front();
-            index.pop();
-            
-            // If position is not filled, place the node's data there
-            if(!filled[pos]) {
-                filled[pos] = 1;
-                ans[pos] = temp->data;
-            }
-            
-            // Move to the left and right children
-            if(temp->left) {
-                q.push(temp->left);
-                index.push(pos - 1);
-            }
-            
-            if(temp->right) {
-                q.push(temp->right);
-                index.push(pos + 1);
-            }
+            if(mp.find(hr)==mp.end()) mp[hr]=node->data;
+            if(node->left) q.push({node->left,hr-1});
+            if(node->right) q.push({node->right,hr+1});
+        }
+        
+        for(auto el:mp){
+            ans.push_back(el.second);
         }
         return ans;
     }
 };
 
 
-
-
-
 //{ Driver Code Starts.
 
 int main() {
     int tc;
-    cin>>tc;
+    cin >> tc;
     cin.ignore(256, '\n');
     while (tc--) {
         string treeString;
         getline(cin, treeString);
         Solution ob;
-        Node *root = buildTree(treeString);
+        Node* root = buildTree(treeString);
         vector<int> vec = ob.topView(root);
-        for(int x : vec)
-            cout<<x<<" ";
-        cout<<endl;
+        for (int x : vec)
+            cout << x << " ";
+        cout << endl;
+
+        cout << "~"
+             << "\n";
     }
     return 0;
 }
