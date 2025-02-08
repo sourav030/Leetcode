@@ -239,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/sourav030/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/sourav030/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
+| [2434-design-a-number-container-system](https://github.com/sourav030/Leetcode/tree/master/2434-design-a-number-container-system) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/sourav030/Leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 ## Monotonic Queue
 |  |
@@ -382,6 +383,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/sourav030/Leetcode/tree/master/0268-missing-number) |
 | [0560-subarray-sum-equals-k](https://github.com/sourav030/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [2434-design-a-number-container-system](https://github.com/sourav030/Leetcode/tree/master/2434-design-a-number-container-system) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/sourav030/Leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Counting
 |  |
@@ -405,6 +407,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0155-min-stack](https://github.com/sourav030/Leetcode/tree/master/0155-min-stack) |
 | [0937-online-stock-span](https://github.com/sourav030/Leetcode/tree/master/0937-online-stock-span) |
+| [2434-design-a-number-container-system](https://github.com/sourav030/Leetcode/tree/master/2434-design-a-number-container-system) |
 ## Data Stream
 |  |
 | ------- |
@@ -420,4 +423,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/sourav030/Leetcode/tree/master/0062-unique-paths) |
+## Ordered Set
+|  |
+| ------- |
+| [2434-design-a-number-container-system](https://github.com/sourav030/Leetcode/tree/master/2434-design-a-number-container-system) |
 <!---LeetCode Topics End-->
