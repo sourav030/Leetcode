@@ -293,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0110-balanced-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0110-balanced-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/sourav030/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0662-maximum-width-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
@@ -324,6 +325,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0110-balanced-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0110-balanced-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/sourav030/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0662-maximum-width-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
@@ -343,6 +345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0410-split-array-largest-sum](https://github.com/sourav030/Leetcode/tree/master/0410-split-array-largest-sum) |
 | [0540-single-element-in-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0713-subarray-product-less-than-k](https://github.com/sourav030/Leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0907-koko-eating-bananas](https://github.com/sourav030/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
