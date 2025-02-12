@@ -205,6 +205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2227-sum-of-subarray-ranges](https://github.com/sourav030/Leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/sourav030/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/sourav030/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/sourav030/Leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/sourav030/Leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Monotonic Stack
@@ -245,6 +246,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/sourav030/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2434-design-a-number-container-system](https://github.com/sourav030/Leetcode/tree/master/2434-design-a-number-container-system) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/sourav030/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/sourav030/Leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 ## Monotonic Queue
 |  |
@@ -286,6 +288,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/sourav030/Leetcode/tree/master/0268-missing-number) |
 | [0455-assign-cookies](https://github.com/sourav030/Leetcode/tree/master/0455-assign-cookies) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/sourav030/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 ## Tree
 |  |
 | ------- |
@@ -397,6 +400,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [2434-design-a-number-container-system](https://github.com/sourav030/Leetcode/tree/master/2434-design-a-number-container-system) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/sourav030/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/sourav030/Leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Counting
 |  |
