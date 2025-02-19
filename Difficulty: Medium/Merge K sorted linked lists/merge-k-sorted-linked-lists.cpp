@@ -80,6 +80,7 @@ class Solution {
 };
 
 
+
 //{ Driver Code Starts.
 
 // Driver program to test the above functions
@@ -88,39 +89,33 @@ int main() {
     cin >> t;
     cin.ignore();
     while (t--) {
-        vector<Node*> arr;
-        vector<int> nums;
-        string input;
+        int n;
+        cin >> n;
+        cin.ignore();
 
-        getline(cin, input); // Read the entire line for the array elements
-        stringstream ss(input);
-        int number;
-        while (ss >> number) {
-            nums.push_back(number);
-        }
-        int ind = 0;
-        int N = nums.size();
+        vector<Node*> v(n);
 
-        while (ind < N) {
-            int n = nums[ind++];
-            int x = nums[ind++];
-            Node* head = new Node(x);
-            Node* curr = head;
-            n--;
+        for (int i = 0; i < n; i++) {
+            string line;
+            getline(cin, line);
+            stringstream ss(line);
 
-            for (int i = 0; i < n; i++) {
-                x = nums[ind++];
-                Node* temp = new Node(x);
-                curr->next = temp;
-                curr = temp;
+            Node* head = new Node(0);
+            Node* temp = head;
+            int x;
+            while (ss >> x) {
+                Node* newNode = new Node(x);
+                temp->next = newNode;
+                temp = temp->next;
             }
-            arr.push_back(head);
+            v[i] = head->next;
         }
 
-        Solution obj;
-        Node* res = obj.mergeKLists(arr);
-        printList(res);
+        Solution ob;
+        Node* head = ob.mergeKLists(v);
+        printList(head);
     }
+
     return 0;
 }
 
