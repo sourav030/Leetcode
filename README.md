@@ -121,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/sourav030/Leetcode/tree/master/0322-coin-change) |
 | [0392-is-subsequence](https://github.com/sourav030/Leetcode/tree/master/0392-is-subsequence) |
 | [0410-split-array-largest-sum](https://github.com/sourav030/Leetcode/tree/master/0410-split-array-largest-sum) |
+| [0416-partition-equal-subset-sum](https://github.com/sourav030/Leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/sourav030/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0518-coin-change-ii](https://github.com/sourav030/Leetcode/tree/master/0518-coin-change-ii) |
 | [0542-01-matrix](https://github.com/sourav030/Leetcode/tree/master/0542-01-matrix) |
@@ -194,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0283-move-zeroes](https://github.com/sourav030/Leetcode/tree/master/0283-move-zeroes) |
 | [0322-coin-change](https://github.com/sourav030/Leetcode/tree/master/0322-coin-change) |
 | [0410-split-array-largest-sum](https://github.com/sourav030/Leetcode/tree/master/0410-split-array-largest-sum) |
+| [0416-partition-equal-subset-sum](https://github.com/sourav030/Leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0455-assign-cookies](https://github.com/sourav030/Leetcode/tree/master/0455-assign-cookies) |
 | [0503-next-greater-element-ii](https://github.com/sourav030/Leetcode/tree/master/0503-next-greater-element-ii) |
 | [0518-coin-change-ii](https://github.com/sourav030/Leetcode/tree/master/0518-coin-change-ii) |
