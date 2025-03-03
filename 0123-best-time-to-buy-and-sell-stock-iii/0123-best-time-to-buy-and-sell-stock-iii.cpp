@@ -1,27 +1,27 @@
 class Solution {
 public:
-    int solve(int day, int trans, int buy, int n, vector<int>& prices, vector<vector<vector<int>>>& dp) {
-    if (day == n || trans == 0) {
-        return 0;
-    }
-    if (dp[day][trans][buy] != -1) {
-        return dp[day][trans][buy];
+    int solve(int index, vector<int>& prices, int buy, int cap, vector<vector<vector<int>>> &dp) {
+        if (index >= prices.size() || cap == 0) return 0;  // Base case
+
+        if (dp[index][buy][cap] != -1) return dp[index][buy][cap];  // Memoization
+
+        int profit = 0;
+        if (buy) {
+            // Choice: Buy or Skip
+            profit = max(-prices[index] + solve(index+1, prices, 0, cap, dp),
+                         solve(index+1, prices, 1, cap, dp));
+        } else {
+            // Choice: Sell or Hold
+            profit = max(prices[index] + solve(index+1, prices, 1, cap-1, dp),
+                         solve(index+1, prices, 0, cap, dp));
+        }
+
+        return dp[index][buy][cap] = profit;  // Store result in DP table
     }
 
-    if (buy) {
-        return dp[day][trans][buy] = max(-prices[day] + solve(day + 1, trans, 0, n, prices, dp), 
-                                         solve(day + 1, trans, 1, n, prices, dp));
-    } else {
-        return dp[day][trans][buy] = max(prices[day] + solve(day + 1, trans - 1, 1, n, prices, dp), 
-                                         solve(day + 1, trans, 0, n, prices, dp));
+    int maxProfit(vector<int>& prices) {
+        int N = prices.size();  // Define N correctly
+        vector<vector<vector<int>>> dp(N, vector<vector<int>>(2, vector<int>(3, -1)));  // Initialize DP table
+        return solve(0, prices, 1, 2, dp);
     }
-}
-
-int maxProfit(vector<int>& prices) {
-    int n = prices.size();
-    vector<vector<vector<int>>> dp(n, vector<vector<int>>(3, vector<int>(2, -1)));  // 3 transactions max, buy/sell state
-    return solve(0, 2, 1, n, prices, dp);
-}
-
-  
 };
