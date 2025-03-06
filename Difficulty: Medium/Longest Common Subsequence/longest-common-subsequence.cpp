@@ -4,50 +4,31 @@ using namespace std;
 
 
 // } Driver Code Ends
-// function to find longest common subsequence
 
 class Solution {
-    int solve(string& s1, string& s2,int n,int m,vector<vector<int>> &dp){
-        if(n<=0 or m<=0){
-            return 0;
-        }
-        if(dp[n][m]!=-1){
-            return dp[n][m];
-        }
-        
-        if(s1[n-1]==s2[m-1]){
-            return  1+solve(s1,s2,n-1,m-1,dp);
-        }
-        else{
-            return dp[n][m]= max(solve(s1,s2,n,m-1,dp),solve(s1,s2,n-1,m,dp));
-        }
-    }
   public:
-    // Function to find the length of the longest common subsequence in two strings.
-    int getLCSLength(string& s1, string& s2) {
-        // your code here
-        
-        int n=s1.size();
-        int m=s2.size();
-        // vector<vector<int>>dp(n+1,vector<int>(m+1,-1));
-        // return solve(s1,s2,n,m,dp);
-        
-        vector<vector<int>>dp(n+1,vector<int>(m+1,0));
-        
-        for(int i=1; i<=n; i++){
-            for(int j=1; j<=m; j++){
-                
-                if(s1[i-1]==s2[j-1]){
-                    dp[i][j]=1+dp[i-1][j-1];
-                }
-                else{
-                    dp[i][j]=max(dp[i][j-1],dp[i-1][j]);
-                }
-            }
+    int solve(string &s1,string &s2,int n1,int n2, vector<vector<int>>&dp){
+        if(n1<=0 or n2<=0) return 0;
+        if(dp[n1][n2]!=-1) return dp[n1][n2];
+        if(s1[n1-1]==s2[n2-1]){
+            dp[n1][n2]= 1+solve(s1,s2,n1-1,n2-1,dp);
+            return dp[n1][n2];
         }
-        return dp[n][m];
+        int x=solve(s1,s2,n1-1,n2,dp);
+        int y=solve(s1,s2,n1,n2-1,dp);
+        dp[n1][n2]= max(x,y);
+        return dp[n1][n2];
+    }
+    int lcs(string &s1, string &s2) {
+        // code here
+        int n1=s1.size();
+        int n2=s2.size();
+        vector<vector<int>>dp(n1+1,vector<int>(n2+1,-1));
+        return solve(s1,s2,s1.size(),s2.size(),dp);
+        
     }
 };
+
 
 
 //{ Driver Code Starts.
@@ -58,7 +39,7 @@ int main() {
         string s1, s2;
         cin >> s1 >> s2; // Take both the strings as input
         Solution ob;
-        cout << ob.getLCSLength(s1, s2) << endl; // Call the getLCSLength function
+        cout << ob.lcs(s1, s2) << endl; // Call the lcs function
         cout << "~\n";
     }
     return 0;
