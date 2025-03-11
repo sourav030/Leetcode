@@ -372,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0110-balanced-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0110-balanced-binary-tree) |
 | [0173-binary-search-tree-iterator](https://github.com/sourav030/Leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0199-binary-tree-right-side-view](https://github.com/sourav030/Leetcode/tree/master/0199-binary-tree-right-side-view) |
+| [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
@@ -389,6 +390,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/sourav030/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0207-course-schedule](https://github.com/sourav030/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/sourav030/Leetcode/tree/master/0210-course-schedule-ii) |
+| [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/sourav030/Leetcode/tree/master/0547-number-of-provinces) |
 | [0662-maximum-width-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0733-flood-fill](https://github.com/sourav030/Leetcode/tree/master/0733-flood-fill) |
@@ -407,6 +409,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0110-balanced-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0110-balanced-binary-tree) |
 | [0173-binary-search-tree-iterator](https://github.com/sourav030/Leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0199-binary-tree-right-side-view](https://github.com/sourav030/Leetcode/tree/master/0199-binary-tree-right-side-view) |
+| [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
