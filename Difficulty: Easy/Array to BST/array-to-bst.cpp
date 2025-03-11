@@ -64,6 +64,7 @@ void inorder(Node* root, vector<int>& v) {
 
 
 // } Driver Code Ends
+
 /*
 struct Node {
     int data;
@@ -78,24 +79,21 @@ struct Node {
 */
 
 class Solution {
-   Node* solve(vector<int> &nums, int st, int end){
-        
-        if(st>end){
-            return NULL;
-        }
-        int mid=st+(end-st)/2;
+  public:
+    Node* solve(vector<int>& nums, int start, int end){
+        if(start>end) return NULL;
+        int mid=start+(end-start)/2;
         Node* root=new Node(nums[mid]);
-        root->left=solve(nums,st,mid-1);
+        root->left=solve(nums,start,mid-1);
         root->right=solve(nums,mid+1,end);
         return root;
-        
     }
-  public:
     Node* sortedArrayToBST(vector<int>& nums) {
         // Code here
-        return solve(nums, 0,nums.size()-1);
+        return solve(nums,0,nums.size()-1);
     }
 };
+
 
 //{ Driver Code Starts.
 int main() {
