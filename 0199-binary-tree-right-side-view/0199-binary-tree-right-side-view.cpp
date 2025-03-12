@@ -10,25 +10,16 @@
  * };
  */
 class Solution {
-    void leftside(TreeNode* root,int level,vector<int>&ans)
-{
-    if(root==NULL)
-    {
-        return;
-    }
-    if(level==ans.size())
-    {
-        ans.push_back(root->val);
-    }
-    leftside(root->right,level+1,ans);
-    leftside(root->left,level+1,ans);
-    
-}
 public:
+    void solve(TreeNode* root, vector<int>&ans,int idx){
+        if(!root) return;
+        if(idx==ans.size()) ans.push_back(root->val);
+        solve(root->right,ans,idx+1);
+        solve(root->left,ans,idx+1);
+    }
     vector<int> rightSideView(TreeNode* root) {
-        int level=0;
-        vector<int>an;
-        leftside(root,level,an);
-        return an;
+        vector<int>ans;
+        solve(root,ans,0);
+        return ans;
     }
 };
