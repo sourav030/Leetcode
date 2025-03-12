@@ -4,9 +4,9 @@ public:
         if(n<0 or m<0) return INT_MAX;
         if(n==0 and m==0) return grid[n][m];
         if(dp[n][m]!=-1) return dp[n][m];
-        long long right=solve(grid,n,m-1,dp);
-        long long down=solve(grid,n-1,m,dp);
-        return dp[n][m]= grid[n][m]+ min(right,down);
+        long long right=grid[n][m]+solve(grid,n,m-1,dp);
+        long long down=grid[n][m]+solve(grid,n-1,m,dp);
+        return dp[n][m]=  min(right,down);
     }
     int minPathSum(vector<vector<int>>& grid) {
         int n=grid.size();
