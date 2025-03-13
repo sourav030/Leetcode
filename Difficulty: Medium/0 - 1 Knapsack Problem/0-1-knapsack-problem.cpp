@@ -4,62 +4,32 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 class Solution {
   public:
-    // Function to return max value that can be put in knapsack of capacity.
-    int solve(int capacity, vector<int> &val, vector<int> &wt,int n,  vector<vector<int>> &dp){
-        // harmara sabse chota input hai n=0 and capacity=0;
-        // our uska valid output hai 0
-        if(n==0 || capacity==0){
-            return 0;
+    
+    int solve(int W, vector<int>&val, vector<int> &wt, int index, vector<vector<int>>&dp){
+        if(index>=wt.size()) return 0;
+        int include=INT_MIN;
+        int exclude=INT_MIN;
+        if(dp[index][W]!=-1) return dp[index][W];
+        if(wt[index]>W){
+            exclude= solve(W,val,wt,index+1,dp);
         }
-        // abb hum item ko bag main tab dalenge jab uska weight capacity se kam ya equal hog
-        
-        if(dp[n][capacity]!=-1){
-            return dp[n][capacity];
+        else{
+            include=val[index]+solve(W-wt[index],val,wt,index+1,dp);
+            exclude=solve(W,val,wt,index+1,dp);
         }
-        
-        if(wt[n-1]<=capacity){
-            // yaha pr do choice hai item ko le ya na le
-            return dp[n][capacity]= max(val[n-1]+solve(capacity-wt[n-1],val,wt,n-1,dp),solve(capacity,val,wt,n-1,dp));
-        }
-        else {
-            return dp[n][capacity]= solve(capacity,val,wt,n-1,dp);
-        }
+        return dp[index][W]= max(include,exclude);
     }
-    int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
+    int knapsack(int W, vector<int> &val, vector<int> &wt) {
         // code here
         int n=val.size();
-        vector<vector<int>>dp(n+1,vector<int>(capacity+1));
-        
-        // ye memoization wala code hai
-        // int x= solve(capacity,val,wt,n,dp);
-        // return x;
-        
-        // ye top to down wala
-        
-        for(int i=0; i<n+1; i++){
-            for(int j=0; j<capacity+1; j++){
-                if(i==0 or j==0){
-                    dp[i][j]=0;
-                }
-            }
-        }
-        
-        for(int i=1; i<n+1; i++){
-            for(int j=1; j<capacity+1; j++){
-                if(wt[i-1]<=j){
-                    dp[i][j]=max(val[i-1]+dp[i-1][j-wt[i-1]],dp[i-1][j]);
-                }
-                else{
-                    dp[i][j]=dp[i-1][j];
-                }
-            }
-        }
-        return dp[n][capacity];
-        
+        vector<vector<int>>dp(n+1,vector<int>(W+1,-1));
+        return solve(W,val,wt,0,dp);
     }
 };
+
 
 //{ Driver Code Starts.
 
@@ -98,7 +68,7 @@ int main() {
         }
 
         Solution solution;
-        cout << solution.knapSack(capacity, values, weights) << endl;
+        cout << solution.knapsack(capacity, values, weights) << endl;
         cout << "~" << endl;
     }
     return 0;
