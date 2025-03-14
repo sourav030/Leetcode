@@ -260,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/sourav030/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1073-number-of-enclaves](https://github.com/sourav030/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/sourav030/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/sourav030/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/sourav030/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -388,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0998-check-completeness-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
+| [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -408,6 +410,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1073-number-of-enclaves](https://github.com/sourav030/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Binary Tree
 |  |
@@ -429,6 +432,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0998-check-completeness-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
+| [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -507,6 +511,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/sourav030/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1160-letter-tile-possibilities](https://github.com/sourav030/Leetcode/tree/master/1160-letter-tile-possibilities) |
+| [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
 | [2434-design-a-number-container-system](https://github.com/sourav030/Leetcode/tree/master/2434-design-a-number-container-system) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
