@@ -6,23 +6,31 @@ using namespace std;
 // } Driver Code Ends
 
 class Solution {
-
   public:
-    int minCoins(vector<int> &coins, int sum) {
-        // Your code goes here
-         vector<int> dp(sum + 1, INT_MAX);
-    dp[0] = 0; // Base case: 0 coins needed for sum 0
+    int solve(vector<int> &coins, int sum, int i, vector<vector<int>> &dp) {
+    if (sum == 0) return 0;   // Base Case: If sum is 0, no coins are needed.
+    if (i >= coins.size() || sum < 0) return INT_MAX;  // Invalid case.
 
-    for (int i = 1; i <= sum; i++) {
-        for (int coin : coins) {
-            if (coin <= i && dp[i - coin] != INT_MAX) {
-                dp[i] = min(dp[i], 1 + dp[i - coin]);
-            }
-        }
-    }
+    if (dp[i][sum] != -1) return dp[i][sum];  // Memoization check.
+
+    // Exclude the current coin
+    int exclude = solve(coins, sum, i + 1, dp);
     
-    return (dp[sum] == INT_MAX) ? -1 : dp[sum];
+    // Include the current coin
+    int include = INT_MAX;
+    if (coins[i] <= sum) {
+        int res = solve(coins, sum - coins[i], i, dp);
+        if (res != INT_MAX) include = 1 + res;  // Avoid overflow
     }
+
+    return dp[i][sum] = min(include, exclude);
+}
+
+int minCoins(vector<int> &coins, int sum) {
+    vector<vector<int>> dp(coins.size(), vector<int>(sum + 1, -1));
+    int ans = solve(coins, sum, 0, dp);
+    return ans == INT_MAX ? -1 : ans;  // If no solution, return -1.
+}
 };
 
 
