@@ -5,35 +5,31 @@ using namespace std;
 
 
 // } Driver Code Ends
-// User function template for C++
 
 class Solution {
   public:
-    bool solve(vector<int>&arr,int target,int n, vector<vector<int>>&dp){
-        if(target==0){
-            return true;
-        }
-        if(n<=0 or target<0){
+    bool solve(vector<int>&arr,int sum, int index,vector<vector<int>>&dp){
+        if(sum==0)return true;
+        if(index>=arr.size()){
             return false;
         }
-        if(dp[n][target]!=-1){
-            return dp[n][target];
-        }
-        if(arr[n-1]>target){
-            dp[n][target]=solve(arr,target,n-1,dp);
-        }
+        if(dp[index][sum]!=-1) return dp[index][sum];
+        bool include=0;
+        bool exclude=0;
+        if(sum<arr[index]) exclude=solve(arr,sum,index+1,dp);
         else{
-            dp[n][target]=solve(arr,target-arr[n-1],n-1,dp)||solve(arr,target,n-1,dp);
+            include=solve(arr,sum-arr[index],index+1,dp);
+            exclude=solve(arr,sum,index+1,dp);
         }
-        return dp[n][target];
+        return dp[index][sum]=include||exclude;
     }
-    bool isSubsetSum(vector<int>& arr, int target) {
-        // code herei
-        int n=arr.size();
-        vector<vector<int>>dp(n+1,vector<int>(target+1,-1));
-       return solve(arr,target,n,dp);
+    bool isSubsetSum(vector<int>& arr, int sum) {
+        // code here
+        vector<vector<int>>dp(arr.size()+1,vector<int>(sum+1,-1));
+        return solve(arr,sum,0,dp);
     }
 };
+
 
 //{ Driver Code Starts.
 
