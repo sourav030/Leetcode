@@ -3,32 +3,34 @@
 using namespace std;
 
 // } Driver Code Ends
+
 //User function Template for C++
 
 class Solution
 {
   public:
-    vector<int> findOrder(int n, int m, vector<vector<int>> arr ) 
+    vector<int> findOrder(int n, int m, vector<vector<int>> pre) 
     {
         //code here
-        vector<vector<int>> adj(n);
-        for(int i=0; i<m; i++){
-            adj[arr[i][1]].push_back(arr[i][0]);
+        vector<vector<int>>adj(n);
+        for(int i=0; i<pre.size(); i++){
+            adj[pre[i][1]].push_back(pre[i][0]);
         }
         
-        vector<int>indegree(n,0);
+        vector<int>indegre(n,0);
         
-        for(int i=0; i<n; i++){
-            for(auto ele: adj[i]){
-                indegree[ele]++;
+        for(int i=0; i<adj.size(); i++){
+            for(int j=0; j<adj[i].size(); j++){
+                indegre[adj[i][j]]++;
             }
         }
         
         queue<int>q;
-        
-        for(int i=0; i<n; i++){
-            if(indegree[i]==0){
+        vector<int>visited(n,0);
+        for(int i=0; i<indegre.size(); i++){
+            if(indegre[i]==0){
                 q.push(i);
+                visited[i]=1;
             }
         }
         
@@ -36,20 +38,22 @@ class Solution
         
         while(!q.empty()){
             int node=q.front();
-            q.pop();
             ans.push_back(node);
-            for(auto ele: adj[node]){
-                indegree[ele]--;
-                if(indegree[ele]==0){
-                    q.push(ele);
+            q.pop();
+            for(int i:adj[node]){
+                indegre[i]--;
+                if(indegre[i]==0 ){
+                    q.push(i);
                 }
             }
         }
         
-        if(ans.size()==n) return ans;
-        return {};
+        return ans.size() == n ? ans : vector<int>{};
+
+        
     }
 };
+
 
 //{ Driver Code Starts.
 
