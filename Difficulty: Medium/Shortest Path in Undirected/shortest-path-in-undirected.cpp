@@ -8,32 +8,36 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 class Solution {
   public:
     // Function to find the shortest path from source to all other nodes
     vector<int> shortestPath(vector<vector<int>>& adj, int src) {
         // code here
-        
-           int n = adj.size(); 
-        vector<int>dis(n,-1);
-        queue<int>q;
-        q.push(src);
-        dis[src]=0;
+        int V=adj.size();
+        vector<int>visited(V,0);
+        vector<int>distance(V,-1);
+        queue<pair<int,int>>q;
+        q.push({src,0});
+        visited[src]=1;
+        distance[src]=0;
         
         while(!q.empty()){
-            int node=q.front();
+            int node=q.front().first;
+            int dis=q.front().second;
+            distance[node]=dis;
             q.pop();
-            for(auto ele: adj[node]){
-                if(dis[ele]==-1){
-                    q.push(ele);
-                    dis[ele]=1+dis[node];
+            for(auto Node:adj[node]){
+                if(!visited[Node]){
+                    q.push({Node,dis+1});
+                    visited[Node]=1;
                 }
             }
         }
-        
-        return dis;
+        return distance;
     }
 };
+
 
 //{ Driver Code Starts.
 int main() {
