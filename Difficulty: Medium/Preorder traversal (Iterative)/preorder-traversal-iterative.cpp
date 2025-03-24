@@ -86,6 +86,7 @@ Node* buildTree(string str) {
 
 
 // } Driver Code Ends
+
 //User function Template for C++
 
 /* Tree Node
@@ -100,32 +101,24 @@ class Solution{
     vector<int> preOrder(Node* root)
     {
         //code here
+        stack<Node*>st;
         vector<int>ans;
-        while(root){
-            if(!root->left){
-                ans.push_back(root->data);
-                root=root->right;
+        st.push(root);
+        while(!st.empty()){
+            Node* node=st.top();
+            ans.push_back(node->data);
+            st.pop();
+            if(node->right){
+                st.push(node->right);
             }
-            else{
-                Node* curr=root->left;
-                while(curr->right and curr->right !=root){
-                    curr=curr->right;
-                }
-                if(curr->right==NULL){
-                      ans.push_back(root->data);
-                    curr->right=root;
-                  
-                    root=root->left;
-                }
-                else{
-                    curr->right=NULL;
-                    root=root->right;
-                }
+            if(node->left){
+                st.push(node->left);
             }
         }
         return ans;
     }
 };
+
 
 //{ Driver Code Starts.
 
