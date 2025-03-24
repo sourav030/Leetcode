@@ -86,6 +86,7 @@ Node* buildTree(string str) {
 
 
 // } Driver Code Ends
+
 //User function Template for C++
 
 /* Tree Node
@@ -99,36 +100,24 @@ public:
     vector<int> inOrder(Node* root)
     {
         //code here
+        Node* curr=root;
+        stack<Node*>st;
         vector<int>ans;
-        while(root){
-            // left part does not exit
-            if(!root->left){
-                ans.push_back(root->data);
-                root=root->right;
+        
+        while(curr!=nullptr or !st.empty()){
+            while(curr!=nullptr){
+                st.push(curr);
+                curr=curr->left;
             }
-            // left part exist krta hai
-            else{
-                Node* curr =root->left;
-                while(curr->right and curr->right!=root){
-                    curr=curr->right;
-                }
-                // left subtree Not traverse
-                if(curr->right==NULL){
-                    curr->right=root;
-                    root=root->left;
-                }
-                // left subtree traverse hai
-                else{
-                    curr->right=NULL;
-                    ans.push_back(root->data);
-                    root=root->right;
-                }
-                
-            }
+            Node* node=st.top();
+            st.pop();
+            ans.push_back(node->data);
+            curr=node->right;
         }
         return ans;
     }
 };
+
 
 //{ Driver Code Starts.
 
