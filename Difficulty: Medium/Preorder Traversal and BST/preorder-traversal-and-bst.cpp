@@ -5,25 +5,43 @@
 using namespace std;
 
 // } Driver Code Ends
+
 // User function Template for C++
 
 class Solution {
-    void check(int arr[], int &index, int lower, int upper, int n){
-        if(index==n or arr[index]< lower or arr[index] > upper)
-        return;
-        int val=arr[index++];
-        // for left side
-        check(arr, index, lower,val,n);
-        check(arr, index, val, upper,n);
-    }
   public:
-    int canRepresentBST(int arr[], int N) {
+    int canRepresentBST(int pre[], int N) {
         // code here
-        int index=0;
-        check(arr, index, INT_MIN, INT_MAX, N);
-        return index==N;
+         stack<int> s;
+
+    // Initialize current root as minimum possible
+    // value
+    int root = INT_MIN;
+
+    for (int i = 0; i < N; i++) {
+      
+        // If we find a node who is on right side
+        // and smaller than root, return false
+        if (pre[i] < root)
+            return false;
+
+        // If pre[i] is in right subtree of stack top,
+        // Keep removing items smaller than pre[i]
+        // and make the last removed item as new
+        // root.
+        while (!s.empty() && s.top() < pre[i]) {
+            root = s.top();
+            s.pop();
+        }
+
+        // At this point either stack is empty or
+        // pre[i] is smaller than root, push pre[i]
+        s.push(pre[i]);
+    }
+    return true;
     }
 };
+
 
 //{ Driver Code Starts.
 int main() {
