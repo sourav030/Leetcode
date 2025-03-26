@@ -107,6 +107,7 @@ void printPostorder(Node* node) {
 
 
 // } Driver Code Ends
+
 // User function template in C++
 
 /*
@@ -131,31 +132,34 @@ Node* newNode( int data )
 
 class Solution {
   public:
-  Node* check(int pre[], int &index, int size, int x, int y){
-      if(index==size){
-          return NULL;
-      }
-      
-      // now we create the root node
-      Node* root=newNode(pre[index++]);
-      // now check for left subtree
-      if(index < size and pre[index]> x and pre[index] < root->data){
-          root->left=check(pre, index, size, x, root->data);
-      }
-      
-      if(index <size and pre[index]> root->data and pre[index] < y){
-          root->right=check(pre, index,size, root->data, y);
-      }
-      
-      return root;
-  }
     // Function that constructs BST from its preorder traversal.
+    Node* solve(Node* root,int data){
+        if(!root){
+         
+         Node* temp = (Node *)malloc( sizeof( Node ) );
+         temp->data=data;
+         return temp;
+        }
+        if(root->data<data){
+          root->right=  solve(root->right,data);
+        }
+        else{
+          root->left=  solve(root->left,data);
+        }
+        return root;
+    }
     Node* Bst(int pre[], int size) {
         // code here
-        int index=0;
-      return  check(pre, index, size, INT_MIN, INT_MAX);
+        Node* root=NULL;
+        
+        for(int i=0; i<size; i++){
+           root= solve(root,pre[i]);
+        }
+        
+        return root;
     }
 };
+
 
 //{ Driver Code Starts.
 
