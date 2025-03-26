@@ -27,6 +27,7 @@ void printPostOrder(Node *root) {
 
 
 // } Driver Code Ends
+
 // Class that contains the logic to build the binary tree
 /*
 Definition of the Node class
@@ -45,37 +46,32 @@ public:
 */
 class Solution {
   public:
-    unordered_map<int,int> mp;
-
-Node* solve(vector<int>& preorder, int start, int end, int& preIndex) {
-    // Base condition
-    if (end < start) return NULL;
-
-    Node* root = new Node(preorder[preIndex]);
-    preIndex++;  // Move to the next index in preorder
-
-    // Find the index of the root in the inorder array
-    int value = mp[root->data];
-
-    // Recursively build the left and right subtrees
-    root->left = solve(preorder, start, value - 1, preIndex);
-    root->right = solve(preorder, value + 1, end, preIndex);
-
-    return root;
-}
-
-// Function to build the tree from given inorder and preorder traversals
-Node* buildTree(vector<int>& inorder, vector<int>& preorder) {
-    // Map inorder values to their indices
-    for (int i = 0; i < inorder.size(); i++) {
-        mp[inorder[i]] = i;
+    // Function to build the tree from given inorder and preorder traversals
+    unordered_map<int,int>mp;
+    Node* solve(vector<int>&preorder,int &index, int start,int end){
+        if(end<start  ){
+            return NULL;
+        }
+        int val=preorder[index++];
+        int i=mp[val];
+        Node* root=new Node(val);
+        root->left=solve(preorder,index,start,i-1);
+        root->right=solve(preorder,index,i+1,end);
+        return root;
     }
-
-    int preIndex = 0;  // Initialize the preorder index
-    return solve(preorder, 0, inorder.size() - 1, preIndex);  // Return the constructed tree
-}
-
+    Node *buildTree(vector<int> &inorder, vector<int> &preorder) {
+        // code here
+        for(int i=0; i<inorder.size(); i++){
+            mp[inorder[i]]=i;
+        }
+        
+        int index=0;
+        int start=0;
+        int end=inorder.size()-1;
+        return solve(preorder,index,start,end);
+    }
 };
+
 
 //{ Driver Code Starts.
 
