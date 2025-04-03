@@ -6,43 +6,32 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 // User function template for C++
 
 class Solution {
   public:
     int kthMissing(vector<int> &arr, int k) {
         // Your code goes here
-        vector<int>ans;
-        int i=1;
-        int j=0;
-        int n=arr.size();
-        while(j<n){
-            if(arr[j]==i){
-                i++;
-                j++;
+        
+        int lo = 0, hi = arr.size() - 1;
+        int res = arr.size() + k;
+    
+        while (lo <= hi) {
+            int mid = (lo + hi) / 2;
+            if (arr[mid] > mid + k) {
+                res = mid + k;
+                hi = mid - 1;
             }
-            else{
-                ans.push_back(i);
-                i++;
+            else {
+                lo = mid + 1;
             }
-           
         }
-        
-        int m=ans.size();
-        if(m==0){
-            return arr[n-1]+k;
-        }
-          if(k>m){
-            k=k-m;
-             return arr[n-1]+k;
-        }
-        
-        else{
-            return ans[k-1];
-        }
-        
+    
+        return res;
     }
 };
+
 
 //{ Driver Code Starts.
 
