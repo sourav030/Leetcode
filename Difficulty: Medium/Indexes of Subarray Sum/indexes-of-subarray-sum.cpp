@@ -4,30 +4,30 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 class Solution {
   public:
     vector<int> subarraySum(vector<int> &arr, int target) {
         // code here
-        unordered_map<int,int>mp;
+        int start=0;
+        int end=0;
+        int n=arr.size();
         int sum=0;
-        for(int i=0; i<arr.size(); i++){
-            sum+=arr[i];
-            if(arr[i]==target){
-                return {i+1,i+1};
+        while(end<n){
+            sum+=arr[end];
+            while(sum>target and start<end){
+                sum-=arr[start];
+                start++;
             }
             if(sum==target){
-                return {1,i+1};
+                return {start+1,end+1};
             }
-            int element=sum-target;
-            if(mp.find(element)!=mp.end()){
-                int x=mp[element]+2;
-                return {x,i+1};
-            }
-            mp[sum]=i;
+            end++;
         }
         return {-1};
     }
 };
+
 
 //{ Driver Code Starts.
 
