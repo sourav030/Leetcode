@@ -4,30 +4,33 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 class Solution {
   public:
     int longestSubarray(vector<int>& arr, int k) {
         // code here
+        int sum=0;
         int ans=0;
         unordered_map<int,int>mp;
-        int sum=0;
-        for(int i=0; i<arr.size(); i++){
-            sum+=arr[i];
-            if(sum==k){
-                ans=max(ans,i-0+1);
-            }
-            
-            if(mp.find(sum-k)!=mp.end()){
-                ans=max(ans,i-mp[sum-k]);
-            }
-            
-            if (mp.find(sum) == mp.end()) {
-            mp[sum] = i;
-        }
+        int n=arr.size();
+        int start=0;
+        while(start<n){
+           sum+=arr[start];
+           if(sum==k){
+               ans=max(ans,start-0+1);
+           }
+           if(mp.find(sum-k)!=mp.end()){
+               ans=max(ans,start-mp[sum-k]);
+           }
+           if(mp.find(sum)==mp.end()){
+               mp[sum]=start;
+           }
+           start++;
         }
         return ans;
     }
 };
+
 
 //{ Driver Code Starts.
 
