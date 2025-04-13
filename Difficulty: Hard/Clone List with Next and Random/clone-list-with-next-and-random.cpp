@@ -118,6 +118,7 @@ bool validateInput(map<Node*, int>& orgAddress, Node* head, vector<pair<int, int
 
 
 // } Driver Code Ends
+
 /* Link list Node
 struct Node {
     int data;
@@ -133,44 +134,36 @@ struct Node {
 
 class Solution {
   public:
-      Node *cloneLinkedList(Node *head) {
-        if (head == NULL) return NULL;
-        
-        // Step 1: Interleave the original list with the cloned nodes
-        Node *temp = head;
-        while (temp != NULL) {
-            Node *clonedNode = new Node(temp->data);
-            clonedNode->next = temp->next;
-            temp->next = clonedNode;
-            temp = clonedNode->next;
+    Node *cloneLinkedList(Node *head) {
+        // Write your code here
+        Node* tem=head;
+        Node* curr=new Node(head->data);
+        Node* temp=curr;
+        unordered_map<Node* , Node*>mp;
+        mp[head]=curr;
+       
+        tem=tem->next;
+        while(tem){
+            temp->next=new Node(tem->data);
+            temp=temp->next;
+            mp[tem]=temp;
+            tem=tem->next;
         }
         
-        // Step 2: Copy the random pointer
-        temp = head;
-        while (temp != NULL) {
-            if (temp->random != NULL) {
-                temp->next->random = temp->random->next;
-            }
-            temp = temp->next->next;
+        for(auto it:mp){
+            Node* orignal=it.first;
+            Node* duplicate=it.second;
+            if(orignal->random)
+            duplicate->random=mp[orignal->random];
+            else
+             duplicate->random=nullptr;
+            
         }
         
-        // Step 3: Separate the original list and the cloned list
-        Node *original = head;
-        Node *clonedHead = head->next;
-        Node *cloned = clonedHead;
-        
-        while (original != NULL) {
-            original->next = original->next->next;
-            if (cloned->next != NULL) {
-                cloned->next = cloned->next->next;
-            }
-            original = original->next;
-            cloned = cloned->next;
-        }
-        
-        return clonedHead;
+        return curr;
     }
 };
+
 
 //{ Driver Code Starts.
 
