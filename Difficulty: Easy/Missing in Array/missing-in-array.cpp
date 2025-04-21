@@ -4,29 +4,29 @@ using namespace std;
 
 
 // } Driver Code Ends
-// User function template for C++
+
 class Solution {
   public:
-    int missingNumber(vector<int>& arr) {
+    int missingNum(vector<int>& arr) {
         // code here
+        sort(arr.begin(),arr.end());
         
-        int n=arr.size();
-        if(n==1 and arr[0]==1){
-            return 2;
-        }
-        vector<int>ans(n+1,-1);
+        int a=1;
         for(int i=0; i<arr.size(); i++){
-            ans[arr[i]-1]=arr[i];
-        }
-        int a;
-        for(int i=0; i<n+1; i++){
-            if(ans[i]==-1){
-                a=i+1;
+            if(arr[i]!=a){
+                return a;
+            }
+            else{
+                a++;
             }
         }
+        
         return a;
+            
+        
     }
 };
+
 
 //{ Driver Code Starts.
 
@@ -47,7 +47,7 @@ int main() {
             a.push_back(num);
 
         Solution obj;
-        cout << obj.missingNumber(a) << endl;
+        cout << obj.missingNum(a) << endl;
         cout << "~\n";
     }
 
