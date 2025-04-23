@@ -9,8 +9,7 @@ class Solution {
   public:
     vector<int> singleNum(vector<int>& arr) {
         // Code here.
-        
-        map<int,int>mp;
+         map<int,int>mp;
         for(int i=0; i<arr.size(); i++){
             mp[arr[i]]++;
         }
