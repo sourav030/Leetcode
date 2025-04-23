@@ -64,6 +64,7 @@ bool notOriginal(Node* head, unordered_map<Node*, int>& myMap) {
 
 
 // } Driver Code Ends
+
 /*
 structure of linked list node:
 
@@ -86,39 +87,35 @@ class Solution {
     // Function to remove a loop in the linked list.
     void removeLoop(Node* head) {
         // code here
-        // just remove the loop without losing any nodes
-        Node* fast=head;
         Node* slow=head;
-        Node* temp=NULL;
+        Node* fast=head;
+        bool loop=0;
         
         while(fast!=NULL and fast->next!=NULL){
             fast=fast->next->next;
             slow=slow->next;
-            if(slow==fast){
-               break;
+            if(fast==slow){
+                loop=1;
+                break;
             }
         }
         
-        if(slow!=fast){
-            return;
+        if(!loop) return;
+        fast=head;
+        
+        while(fast!=slow){
+            fast=fast->next;
+            slow=slow->next;
         }
         
-        else
-        {
-            Node* temp=head;
-            while(temp!=fast){
-                temp=temp->next;
-                fast=fast->next;
-            }
-            while(temp->next!=fast){
-                temp=temp->next;
-            }
-            temp->next=NULL;
+        while(fast->next!=slow){
+            fast=fast->next;
         }
-        return;
         
+        fast->next=NULL;
     }
 };
+
 
 //{ Driver Code Starts.
 
@@ -166,6 +163,7 @@ int main() {
             cout << "false\n";
         else
             cout << "true\n";
+        cout << "~" << endl;
     }
     return 0;
 }
