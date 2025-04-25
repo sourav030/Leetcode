@@ -96,6 +96,7 @@ void inorder(Node *root)
 
 
 // } Driver Code Ends
+
 /*
 
 Definition for Binary Tree Node
@@ -113,22 +114,23 @@ struct Node
 */
 
 class Solution {
-    void find(Node* node,vector<int> &ans){
-        if(node==NULL){
-            return;
-        }
-        ans.push_back(node->data);
-        find(node->left,ans);
-        find(node->right,ans);
-    }
   public:
     int getSize(Node* node) {
         // code here
-        vector<int>ans;
-        find(node, ans);
-        return ans.size();
+        queue<Node*>q;
+        int count=0;
+        q.push(node);
+        while(!q.empty()){
+            Node* adj=q.front();
+            count++;
+            q.pop();
+            if(adj->left) q.push(adj->left);
+            if(adj->right) q.push(adj->right); 
+        }
+        return count;
     }
 };
+
 
 
 //{ Driver Code Starts.
@@ -145,7 +147,9 @@ int main(){
         
         cout<<res<<endl;
         
-    }
+    
+cout << "~" << "\n";
+}
 }
 
 // } Driver Code Ends
