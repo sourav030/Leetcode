@@ -2,98 +2,138 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct Node
-{
-	int key;
-	struct Node *left;
-	struct Node *right;
-	
-	Node(int x){
-	    key = x;
-	    left = NULL;
-	    right = NULL;
-	}
+// Tree Node
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
 };
 
-Node* make_tree()
-{
-	int n;
-	cin>>n;
-    
-	Node* head=NULL;
-	queue <Node*> q;
+// Utility function to create a new Tree Node
+Node* newNode(int val) {
+    Node* temp = new Node;
+    temp->data = val;
+    temp->left = NULL;
+    temp->right = NULL;
 
-	for( ; n>0 ; n-=2 )
-	{
-		int a,b;
-		char c;
-		cin>> a >> b >> c;
-
-        if(!head)
-		{
-			head = new Node(a);
-			q.push(head);
-		}
-
-        Node* pick = q.front();
-		q.pop();
-
-		if(c == 'L')
-		{
-			pick->left = new Node(b);
-			q.push( pick->left );
-		}
-		
-		
-		cin>> a >> b >> c;
-		
-		if(c == 'R')
-		{
-			pick->right = new Node(b);
-			q.push( pick->right );
-		}
-	}
-	return head;
+    return temp;
 }
 
-long int sumBT(Node* root);
+// Function to Build Tree
+Node* buildTree(string str) {
+    // Corner Case
+    if (str.length() == 0 || str[0] == 'N')
+        return NULL;
 
+    // Creating vector of strings from input string after splitting by space
+    vector<string> ip;
+    istringstream iss(str);
+    for (string str; iss >> str;)
+        ip.push_back(str);
 
-int main()
-{
-    int t;cin>>t;while(t--){
-    	
-    	Node* head = make_tree();
-    
-        cout<<sumBT(head)<<endl;
+    // Create the root of the tree
+    Node* root = newNode(stoi(ip[0]));
+
+    // Push the root to the queue
+    queue<Node*> queue;
+    queue.push(root);
+
+    // Starting from the second element
+    int i = 1;
+    while (!queue.empty() && i < ip.size()) {
+        // Get and remove the front of the queue
+        Node* currNode = queue.front();
+        queue.pop();
+
+        // Get the current node's value from the string
+        string currVal = ip[i];
+
+        // If the left child is not null
+        if (currVal != "N") {
+            // Create the left child for the current node
+            currNode->left = newNode(stoi(currVal));
+
+            // Push it to the queue
+            queue.push(currNode->left);
+        }
+
+        // For the right child
+        i++;
+        if (i >= ip.size())
+            break;
+        currVal = ip[i];
+
+        // If the right child is not null
+        if (currVal != "N") {
+            // Create the right child for the current node
+            currNode->right = newNode(stoi(currVal));
+
+            // Push it to the queue
+            queue.push(currNode->right);
+        }
+        i++;
     }
-	return 1;
+
+    return root;
 }
+
 
 // } Driver Code Ends
 
-
-/*Structure of the node of the binary tree
+/* A binary tree node has data, pointer to left child
+   and a pointer to right child
 struct Node
 {
-	int key;
-	Node* left, *right;
-};
-*/
-// Function should return the sum of all the elements
-// of the binary tree
-void sum(Node* root,  int &summ){
-    if(root==NULL){
-        return;
+    int data;
+    struct Node* left;
+    struct Node* right;
+
+    Node(int x){
+        data = x;
+        left = right = NULL;
     }
-    summ+=root->key;
-    sum(root->left,summ);
-    sum(root->right,summ);
+}; */
+
+// Function to return a list containing the level order traversal in spiral form.
+class Solution {
+  public:
+    int sumBT(Node* root) {
+        // code here
+        int sum=0;
+        queue<Node*>q;
+        q.push(root);
+        
+        while(!q.empty()){
+            Node* node=q.front();
+            sum+=node->data;
+            q.pop();
+            if(node->left) q.push(node->left);
+            if(node->right) q.push(node->right);
+        }
+        return sum;
+    }
+};
+
+
+//{ Driver Code Starts.
+
+int main() {
+    int t;
+    string tc;
+    getline(cin, tc);
+    t = stoi(tc);
+    Solution sol; // Create Solution object
+    while (t--) {
+        string s;
+        getline(cin, s);
+        Node* root = buildTree(s);
+
+        // Call the findSpiral function from Solution class
+        int ans = sol.sumBT(root);
+        cout << ans << endl;
+        cout << "~" << endl;
+    }
+    return 0;
 }
-long int sumBT(Node* root)
-{
-    // Code here
-     int summ=0;
-    sum( root, summ);
-    return summ;
-}
+
+// } Driver Code Ends
