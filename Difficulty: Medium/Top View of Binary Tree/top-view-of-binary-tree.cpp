@@ -86,6 +86,7 @@ Node* buildTree(string str) {
 
 
 // } Driver Code Ends
+
 /*
 struct Node
 {
@@ -100,27 +101,33 @@ class Solution {
     // from left to right in Binary Tree.
     vector<int> topView(Node *root) {
         // code here
-        vector<int>ans;
+        unordered_map<int,int>mp;
         queue<pair<Node*,int>>q;
-        map<int,int>mp;
-        
         q.push({root,0});
+        vector<int>ans;
+        int mini=INT_MAX;
+        int maxi=INT_MIN;
         
         while(!q.empty()){
-            int hr=q.front().second;
             Node* node=q.front().first;
+            int index=q.front().second;
             q.pop();
-            if(mp.find(hr)==mp.end()) mp[hr]=node->data;
-            if(node->left) q.push({node->left,hr-1});
-            if(node->right) q.push({node->right,hr+1});
+            mini=min(index,mini);
+            maxi=max(index,maxi);
+            if(mp.find(index)==mp.end()){
+                mp[index]=node->data;
+            }
+            if(node->left) q.push({node->left,index-1});
+            if(node->right) q.push({node->right,index+1});
         }
         
-        for(auto el:mp){
-            ans.push_back(el.second);
+        for(int i=mini; i<=maxi ; i++){
+            ans.push_back(mp[i]);
         }
         return ans;
     }
 };
+
 
 
 //{ Driver Code Starts.
