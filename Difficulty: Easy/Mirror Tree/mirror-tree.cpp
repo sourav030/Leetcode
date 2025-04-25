@@ -108,6 +108,7 @@ string levelOrder(Node *root) {
 
 
 // } Driver Code Ends
+
 // Full function Template for C++
 /*
 class Node {
@@ -125,18 +126,19 @@ public:
 
 class Solution {
   public:
-    // Function to convert a binary tree into its mirror tree
+    // Function to convert a binary tree into its mirror tree.
     void solve(Node* node){
         if(!node) return;
+        swap(node->left,node->right);
         solve(node->left);
         solve(node->right);
-        swap(node->left,node->right);
     }
     void mirror(Node* node) {
         // code here
         solve(node);
     }
 };
+
 
 
 //{ Driver Code Starts.
