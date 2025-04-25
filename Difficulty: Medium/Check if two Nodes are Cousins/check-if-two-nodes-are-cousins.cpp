@@ -76,29 +76,8 @@ Node* buildTree(string str) {
     return root;
 }
 
-bool isCousins(Node* root, int x, int y);
 
-int main() {
-
-    int t;
-    scanf("%d ", &t);
-    while (t--) {
-        string s;
-        getline(cin, s);
-        Node* root = buildTree(s);
-        int x, y;
-        scanf("%d ", &x);
-        scanf("%d ", &y);
-        if (x == y) {
-            cout << "0\n";
-            continue;
-        }
-        cout << isCousins(root, x, y) << endl;
-    }
-    return 1;
-}
 // } Driver Code Ends
-
 
 /*Complete the function below
 Node is as follows:
@@ -113,56 +92,66 @@ struct Node {
     }
 };
 */
-// Returns true if the nodes with values 'a' and 'b' are cousins. Else returns false
-bool parent(Node* root, int a, int b) {
-    if (root == NULL) {
-        return false;
-    }
-    if (root->left && root->right) {
-        if ((root->left->data == a && root->right->data == b) || 
-            (root->left->data == b && root->right->data == a)) {
-            return true;
-        }
-    }
-    return parent(root->left, a, b) || parent(root->right, a, b);
-}
+class Solution {
+  public:
+    // Function to check if two nodes are cousins in a tree
+   vector<pair<int, pair<int, int>>> arr; // node, {level, parent}
 
-bool isCousins(Node *root, int a, int b) {
-    if (root == NULL) return false;
+void solve(Node* root, int parent, int level) {
+    if (!root) return;
     
-    queue<Node*> q;
-    int l1 = -1, l2 = -1;
-    int level = 0;
-    q.push(root);
-
-    while (!q.empty()) {
-        int n = q.size();
-        while (n--) {
-            Node* temp = q.front();
-            q.pop();
-            if (temp->data == a) {
-                l1 = level;
-            }
-            if (temp->data == b) {
-                l2 = level;
-            }
-            if (temp->left) {
-                q.push(temp->left);
-            }
-            if (temp->right) {
-                q.push(temp->right);
-            }
-        }
-        // After one level is processed, check if both nodes are found at the same level
-        if (l1 != -1 && l2 != -1) {
-            // Check if they are not siblings
-            return (l1 == l2) && !parent(root, a, b);
-        }
-        // If one is found but not the other, they can't be cousins
-        if ((l1 != -1 && l2 == -1) || (l1 == -1 && l2 != -1)) {
-            return false;
-        }
-        level++;
-    }
-    return false;
+    arr.push_back({root->data, {level, parent}});
+    
+    solve(root->left, root->data, level + 1);
+    solve(root->right, root->data, level + 1);
 }
+
+bool isCousins(Node* root, int x, int y) {
+    arr.clear(); 
+    
+    solve(root, -1, 0); 
+    
+    int levelX = -1, levelY = -1;
+    int parentX = -1, parentY = -1;
+    
+    for (auto ele : arr) {
+        int node = ele.first;
+        int level = ele.second.first;
+        int parent = ele.second.second;
+        
+        if (node == x) {
+            levelX = level;
+            parentX = parent;
+        }
+        if (node == y) {
+            levelY = level;
+            parentY = parent;
+        }
+    }
+    
+    return (levelX == levelY && parentX != parentY);
+}
+
+};
+
+
+//{ Driver Code Starts.
+
+int main() {
+
+    int t;
+    scanf("%d ", &t);
+    Solution solution;
+    while (t--) {
+        string s;
+        getline(cin, s);
+        Node* root = buildTree(s);
+        int x, y;
+        scanf("%d ", &x);
+        scanf("%d ", &y);
+        cout << solution.isCousins(root, x, y) << endl;
+        cout << "~" << endl;
+    }
+    return 1;
+}
+// } Driver Code Ends
