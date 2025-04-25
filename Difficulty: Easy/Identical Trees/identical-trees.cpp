@@ -2,13 +2,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct Node
-{
+struct Node {
     int data;
     struct Node *left;
     struct Node *right;
 
-    Node(int x){
+    Node(int x) {
         data = x;
         left = NULL;
         right = NULL;
@@ -17,6 +16,7 @@ struct Node
 
 
 // } Driver Code Ends
+
 /* A binary tree node
 
 
@@ -25,7 +25,7 @@ struct Node
     int data;
     struct Node* left;
     struct Node* right;
-    
+
     Node(int x){
         data = x;
         left = right = NULL;
@@ -33,30 +33,21 @@ struct Node
 };
 */
 
-
-   
-class Solution
-{
-    public:
-    bool find(Node* r1, Node* r2){
-        if(r1==NULL and r2==NULL) return 1;
-        if(r1==NULL and r2!=NULL) return 0;
-        if(r1!=NULL and r2==NULL) return 0;
-        if(r1->data !=r2->data)return 0;
-        bool x= find(r1->left,r2->left);
-        bool y=find(r1->right,r2->right);
-        if(x and y) return 1;
-        else {
-            return 0;
-        }
+class Solution {
+  public:
+    // Function to check if two trees are identical.
+    bool solve(Node* r1,Node* r2){
+        if(!r1 and !r2) return true;
+        if(!r1 and r2 or r1 and !r2) return false;
+        if(r1->data!=r2->data) return false;
+        return solve(r1->left,r2->left) and solve(r1->right,r2->right);
     }
-    //Function to check if two trees are identical.
-    bool isIdentical(Node *r1, Node *r2)
-    {
-        //Your Code here
-        return find(r1,r2);
+    bool isIdentical(Node *r1, Node *r2) {
+        // Your Code here
+        return solve(r1,r2);
     }
 };
+
 
 //{ Driver Code Starts.
 
@@ -134,10 +125,13 @@ int main() {
         Node *rootB = buildTree(str1);
         Solution ob;
         if (ob.isIdentical(rootA, rootB)) {
-            cout << "Yes\n";
+            cout << "true\n";
         } else {
-            cout << "No\n";
+            cout << "false\n";
         }
+
+        cout << "~"
+             << "\n";
     }
     return 0;
 }
