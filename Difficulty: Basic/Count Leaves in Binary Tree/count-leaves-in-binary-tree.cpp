@@ -2,30 +2,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Tree Node
 struct Node {
     int data;
     struct Node* left;
     struct Node* right;
 };
 
+// Function to create a new node
 Node* newNode(int val) {
     Node* temp = new Node;
     temp->data = val;
     temp->left = NULL;
     temp->right = NULL;
-
     return temp;
 }
 
+// Function to build the tree from a string input
 Node* buildTree(string str) {
     // Corner Case
     if (str.length() == 0 || str[0] == 'N')
         return NULL;
 
-    // Creating vector of strings from input
-    // string after spliting by space
+    // Creating a vector of strings from the input string
     vector<string> ip;
-
     istringstream iss(str);
     for (string str; iss >> str;)
         ip.push_back(str);
@@ -40,7 +40,6 @@ Node* buildTree(string str) {
     // Starting from the second element
     int i = 1;
     while (!queue.empty() && i < ip.size()) {
-
         // Get and remove the front of the queue
         Node* currNode = queue.front();
         queue.pop();
@@ -50,10 +49,8 @@ Node* buildTree(string str) {
 
         // If the left child is not null
         if (currVal != "N") {
-
             // Create the left child for the current node
             currNode->left = newNode(stoi(currVal));
-
             // Push it to the queue
             queue.push(currNode->left);
         }
@@ -66,10 +63,8 @@ Node* buildTree(string str) {
 
         // If the right child is not null
         if (currVal != "N") {
-
             // Create the right child for the current node
             currNode->right = newNode(stoi(currVal));
-
             // Push it to the queue
             queue.push(currNode->right);
         }
@@ -79,22 +74,8 @@ Node* buildTree(string str) {
     return root;
 }
 
-int countLeaves(struct Node* root);
-
-int main() {
-    int t;
-    scanf("%d ", &t);
-    while (t--) {
-        string s;
-        getline(cin, s);
-        Node* root = buildTree(s);
-        cout << countLeaves(root) << endl;
-    }
-    return 0;
-}
 
 // } Driver Code Ends
-
 
 // User function Template for C++
 
@@ -107,25 +88,41 @@ struct Node
     Node* right;
 }; */
 
-/* Should return count of leaves. For example, return
-    value should be 2 for following tree.
-         10
-      /      \
-   20       30 */
-  void  count(Node* root, int &leaf){
-       if(root==NULL)
-       {
-           return;
-       }
-       if(root->left==NULL and root->right==NULL){
-           leaf+=1;
-       }
-       count(root->left,leaf);
-       count(root->right,leaf);
-   }
-int countLeaves(Node* root) {
-    // Your code here
-    int leaf=0;
-    count(root,leaf);
-    return leaf;
+// Class Solution
+class Solution {
+  public:
+    // Function to count the number of leaf nodes in a binary tree.
+    int countLeaves(Node* root) {
+        // write code here
+        int leveNode=0;
+        queue<Node*>q;
+        q.push(root);
+        while(!q.empty()){
+            Node* node=q.front();
+            q.pop();
+            if(node->left) q.push(node->left);
+            if(node->right) q.push(node->right);
+            if(!node->left and !node->right) leveNode++;
+        }
+        return leveNode;
+    }
+};
+
+
+//{ Driver Code Starts.
+int main() {
+    int t;
+    scanf("%d ", &t);
+    Solution solution; // Create an instance of Solution
+    while (t--) {
+        string s;
+        getline(cin, s);
+        Node* root = buildTree(s);
+        cout << solution.countLeaves(root)
+             << endl; // Call countLeaves on the Solution instance
+        cout << "~" << endl;
+    }
+    return 0;
 }
+
+// } Driver Code Ends
