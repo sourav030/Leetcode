@@ -32,6 +32,7 @@ void preOrder(Node* node) {
 
 
 // } Driver Code Ends
+
 /* Tree node structure
 
 struct Node
@@ -48,32 +49,33 @@ struct Node
 
 class Solution {
   public:
+
+    // Function to return a tree created from postorder and inoreder traversals.
+    unordered_map<int,int>mp;
     
-    int find(vector<int>inorder, int start, int end, int target){
-        for(int i=start; i<=end; i++){
-            if(target==inorder[i]) return i;
-        }
-        return -1;
-    }
-    
-    Node* Tree(vector<int> inorder, vector<int> postorder, int start,int end,int index){
-        while(start>end) return NULL;
-        Node* root=new Node(postorder[index]);
-        
-        int pos=find(inorder, start, end,postorder[index]);
-        
-        root->right=Tree(inorder, postorder,pos+1,end,index-1);
-        root->left=Tree(inorder,postorder,start,pos-1,index-(end-pos)-1);
+    Node* solve(vector<int>&postorder, int start,int end, int &index){
+        if(start>end or index<0) return nullptr;
+        int rootValue=postorder[index--];
+        Node* root=new Node(rootValue);
+        int mid=mp[rootValue];
+        root->right=solve(postorder,mid+1,end,index);
+        root->left=solve(postorder,start,mid-1,index);
         return root;
     }
-    // Function to return a tree created from postorder and inoreder traversals.
     Node* buildTree(vector<int> inorder, vector<int> postorder) {
-        // code here-1
+        // code here
+        mp.clear();
+        for(int i=0; i<inorder.size(); i++){
+            mp[inorder[i]]=i;
+        }
         int start=0;
-        int n=inorder.size()-1;
-        return Tree(inorder,postorder,start,n,n);
+        int end=inorder.size()-1;
+        int index=postorder.size()-1;
+        return solve(postorder,start,end,index);
+        
     }
 };
+
 
 
 //{ Driver Code Starts.
