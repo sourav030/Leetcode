@@ -48,27 +48,29 @@ class Solution {
   public:
     // Function to build the tree from given inorder and preorder traversals
     unordered_map<int,int>mp;
-    Node* solve(vector<int>&preorder,int &index, int start,int end){
-        if(end<start  ){
-            return NULL;
+    Node* solve(vector<int>& preorder, int start,int end,int &index){
+        if(index>=preorder.size() or start>end){
+            return nullptr;
         }
-        int val=preorder[index++];
-        int i=mp[val];
-        Node* root=new Node(val);
-        root->left=solve(preorder,index,start,i-1);
-        root->right=solve(preorder,index,i+1,end);
+        
+        int rootValue=preorder[index++];
+        Node* root=new Node(rootValue);
+        int mid=mp[rootValue];
+        root->left=solve(preorder,start,mid-1,index);
+        root->right=solve(preorder,mid+1,end,index);
         return root;
+        
     }
     Node *buildTree(vector<int> &inorder, vector<int> &preorder) {
         // code here
         for(int i=0; i<inorder.size(); i++){
             mp[inorder[i]]=i;
         }
-        
         int index=0;
         int start=0;
         int end=inorder.size()-1;
-        return solve(preorder,index,start,end);
+        int n=preorder.size()-1;
+        return solve(preorder,start,end,index);
     }
 };
 
