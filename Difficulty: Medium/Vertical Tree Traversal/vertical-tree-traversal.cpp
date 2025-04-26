@@ -112,24 +112,23 @@ class Node {
 
 class Solution {
   public:
-    map<int,vector<int>>mp;
-    void solve(Node* root, int index){
-        if(!root) return ;
-        
-        mp[index].push_back(root->data);
-        solve(root->left,index-1);
-        solve(root->right,index+1);
-    }
-    vector<vector<int>> verticalOrder(Node *root) {
-        // Your code her
-        solve(root,0);
-        vector<vector<int>>ans;
-        for(auto it:mp){
-            ans.push_back(it.second);
-        }
-        return ans;
-        
-    }
+  vector<vector<int>>res;
+    map<int, vector<int>> mp;
+  void solve(Node* root, int hd){
+      if(!root) return;
+      mp[hd].push_back(root->data);
+      solve(root->left,hd-1);
+      solve(root->right,hd+1);
+  }
+  vector<vector<int>> verticalOrder(Node *root) {
+
+     int hd=0;
+     solve(root,hd);
+     for(auto ele:mp){
+         res.push_back(ele.second);
+     }
+     return res;
+}
 };
 
 
