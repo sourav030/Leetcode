@@ -85,6 +85,7 @@ Node* buildTree(string str) {
 
 
 // } Driver Code Ends
+
 // User function Template for C++
 
 // Function to find the minimum element in the given BST.
@@ -120,6 +121,8 @@ class Solution {
         return mini;
     }
 };
+
+
 
 
 //{ Driver Code Starts.
