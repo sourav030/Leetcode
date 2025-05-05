@@ -9,31 +9,33 @@ using namespace std;
 
 class Solution {
   public:
-    int minJumps(vector<int>& arr) {
-        // code 
-        if(arr[0]==0){
-            return -1;
+int minJumpsHelper(vector<int>& arr, int index, int n, vector<int>& memo) {
+    // Base Cases:
+    if (index >= n - 1) return 0; // Already at or beyond the last index
+    if (arr[index] == 0) return -1; // Cannot move forward
+    if (memo[index] != -1) return memo[index]; // Return cached result
+
+    int minJumps = INT_MAX;
+
+    // Try every step size from 1 to arr[index]
+    for (int step = 1; step <= arr[index]; step++) {
+        int result = minJumpsHelper(arr, index + step, n, memo);
+        if (result != -1) {
+            minJumps = min(minJumps, result + 1);
         }
-        int maxReach=arr[0];
-        int jump=1;
-        int step=arr[0];
-        for(int i=1; i<arr.size(); i++){
-            if(i==arr.size()-1){
-                return jump;
-            }
-            maxReach=max(maxReach, i+arr[i]);
-            step--;
-            if(step==0){
-                jump++;
-                if(i>=maxReach){
-                    return -1;
-                }
-                step=maxReach-i;
-            }
-        }
-        return -1;
-        
     }
+
+    // Store the result for this index in the memo table
+    memo[index] = (minJumps == INT_MAX) ? -1 : minJumps;
+    return memo[index];
+}
+
+int minJumps(vector<int>& arr) {
+    int n = arr.size();
+    vector<int> memo(n, -1); // Memoization array initialized with -1
+    return minJumpsHelper(arr, 0, n, memo);
+}
+
 };
 
 
