@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/sourav030/Leetcode/tree/master/0455-assign-cookies) |
 | [0908-middle-of-the-linked-list](https://github.com/sourav030/Leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/sourav030/Leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/sourav030/Leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/sourav030/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/sourav030/Leetcode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## Stack
@@ -283,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2195-time-needed-to-buy-tickets](https://github.com/sourav030/Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
 | [2227-sum-of-subarray-ranges](https://github.com/sourav030/Leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2249-count-the-hidden-sequences](https://github.com/sourav030/Leetcode/tree/master/2249-count-the-hidden-sequences) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/sourav030/Leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/sourav030/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/sourav030/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
@@ -312,6 +314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0735-asteroid-collision](https://github.com/sourav030/Leetcode/tree/master/0735-asteroid-collision) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/sourav030/Leetcode/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2195-time-needed-to-buy-tickets](https://github.com/sourav030/Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/sourav030/Leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/sourav030/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/sourav030/Leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/sourav030/Leetcode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
