@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2551-apply-operations-to-an-array](https://github.com/sourav030/Leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/sourav030/Leetcode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/sourav030/Leetcode/tree/master/2816-lexicographically-smallest-palindrome) |
+| [3018-make-string-a-subsequence-using-cyclic-increments](https://github.com/sourav030/Leetcode/tree/master/3018-make-string-a-subsequence-using-cyclic-increments) |
 ## Stack
 |  |
 | ------- |
@@ -136,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/sourav030/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/sourav030/Leetcode/tree/master/2816-lexicographically-smallest-palindrome) |
+| [3018-make-string-a-subsequence-using-cyclic-increments](https://github.com/sourav030/Leetcode/tree/master/3018-make-string-a-subsequence-using-cyclic-increments) |
 | [3447-clear-digits](https://github.com/sourav030/Leetcode/tree/master/3447-clear-digits) |
 ## Dynamic Programming
 |  |
