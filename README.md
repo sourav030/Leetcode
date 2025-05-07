@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0392-is-subsequence](https://github.com/sourav030/Leetcode/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/sourav030/Leetcode/tree/master/0443-string-compression) |
 | [0455-assign-cookies](https://github.com/sourav030/Leetcode/tree/master/0455-assign-cookies) |
+| [0556-next-greater-element-iii](https://github.com/sourav030/Leetcode/tree/master/0556-next-greater-element-iii) |
 | [0908-middle-of-the-linked-list](https://github.com/sourav030/Leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/sourav030/Leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/sourav030/Leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
@@ -81,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/sourav030/Leetcode/tree/master/0268-missing-number) |
 | [0279-perfect-squares](https://github.com/sourav030/Leetcode/tree/master/0279-perfect-squares) |
 | [0371-sum-of-two-integers](https://github.com/sourav030/Leetcode/tree/master/0371-sum-of-two-integers) |
+| [0556-next-greater-element-iii](https://github.com/sourav030/Leetcode/tree/master/0556-next-greater-element-iii) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/sourav030/Leetcode/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
@@ -111,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/sourav030/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0443-string-compression](https://github.com/sourav030/Leetcode/tree/master/0443-string-compression) |
 | [0516-longest-palindromic-subsequence](https://github.com/sourav030/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
+| [0556-next-greater-element-iii](https://github.com/sourav030/Leetcode/tree/master/0556-next-greater-element-iii) |
 | [0678-valid-parenthesis-string](https://github.com/sourav030/Leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/sourav030/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/sourav030/Leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
