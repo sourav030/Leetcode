@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0031-next-permutation](https://github.com/sourav030/Leetcode/tree/master/0031-next-permutation) |
 | [0061-rotate-list](https://github.com/sourav030/Leetcode/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/sourav030/Leetcode/tree/master/0075-sort-colors) |
+| [0125-valid-palindrome](https://github.com/sourav030/Leetcode/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/sourav030/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0151-reverse-words-in-a-string](https://github.com/sourav030/Leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0160-intersection-of-two-linked-lists](https://github.com/sourav030/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
@@ -105,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/sourav030/Leetcode/tree/master/0022-generate-parentheses) |
 | [0058-length-of-last-word](https://github.com/sourav030/Leetcode/tree/master/0058-length-of-last-word) |
 | [0072-edit-distance](https://github.com/sourav030/Leetcode/tree/master/0072-edit-distance) |
+| [0125-valid-palindrome](https://github.com/sourav030/Leetcode/tree/master/0125-valid-palindrome) |
 | [0131-palindrome-partitioning](https://github.com/sourav030/Leetcode/tree/master/0131-palindrome-partitioning) |
 | [0151-reverse-words-in-a-string](https://github.com/sourav030/Leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0171-excel-sheet-column-number](https://github.com/sourav030/Leetcode/tree/master/0171-excel-sheet-column-number) |
