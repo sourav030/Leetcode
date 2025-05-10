@@ -94,6 +94,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0371-sum-of-two-integers](https://github.com/sourav030/Leetcode/tree/master/0371-sum-of-two-integers) |
 | [0556-next-greater-element-iii](https://github.com/sourav030/Leetcode/tree/master/0556-next-greater-element-iii) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
+| [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/sourav030/Leetcode/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
 ## Bit Manipulation
@@ -314,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/sourav030/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
+| [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/sourav030/Leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1923-sentence-similarity-iii](https://github.com/sourav030/Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
@@ -563,6 +565,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/sourav030/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/sourav030/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
+| [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2249-count-the-hidden-sequences](https://github.com/sourav030/Leetcode/tree/master/2249-count-the-hidden-sequences) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/sourav030/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
