@@ -188,6 +188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1250-longest-common-subsequence](https://github.com/sourav030/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/sourav030/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1457-minimum-difficulty-of-a-job-schedule](https://github.com/sourav030/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
+| [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/sourav030/Leetcode/tree/master/2415-count-the-number-of-ideal-arrays) |
 ## Backtracking
 |  |
@@ -317,6 +318,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1923-sentence-similarity-iii](https://github.com/sourav030/Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
 | [2195-time-needed-to-buy-tickets](https://github.com/sourav030/Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
+| [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2227-sum-of-subarray-ranges](https://github.com/sourav030/Leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2249-count-the-hidden-sequences](https://github.com/sourav030/Leetcode/tree/master/2249-count-the-hidden-sequences) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/sourav030/Leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
@@ -561,6 +563,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/sourav030/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/sourav030/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
+| [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2249-count-the-hidden-sequences](https://github.com/sourav030/Leetcode/tree/master/2249-count-the-hidden-sequences) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/sourav030/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sourav030/Leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
