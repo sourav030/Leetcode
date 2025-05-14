@@ -1,0 +1,6 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/max-consecutive-one/1?page=1&category=Arrays&difficulty=Easy,Medium&status=unsolved&sortBy=latest">Max consecutive one</a></h2><h3>Difficulty Level : Difficulty: Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p>Given an array<strong> arr[] </strong>consisting of only <strong>0’s and 1’s</strong>, return <strong>count</strong> of a maximum number of consecutive 1’s or 0’s present in the array.&nbsp;</p>
+<p><strong>Examples:</strong></p>
+<pre><strong>Input: </strong>arr[] = [1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1]<strong><br></strong><strong>Output: </strong>4<strong><br></strong><strong>Explanation: </strong>The maximum number of consecutive 1’s in the array is 4 from index 8-11.</pre>
+<pre><strong>Input: </strong>arr[] = [0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]<strong><br></strong><strong>Output: </strong>2<strong><br></strong><strong>Explanation: </strong>The maximum number of consecutive 0’s in the array is 2 from index 0-1.</pre>
+<pre><strong>Input: </strong>arr[] = [0, 0, 0, 0]<strong><br></strong><strong>Output: </strong>4<br><strong>Explanation: </strong>The maximum number of consecutive 0’s in the array is 4.</pre>
+<p><strong>Constraints:<br></strong>1 &lt;= arr.size() &lt;= 10<sup>5</sup></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Arrays</code>&nbsp;
