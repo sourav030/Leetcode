@@ -198,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1457-minimum-difficulty-of-a-job-schedule](https://github.com/sourav030/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
 | [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/sourav030/Leetcode/tree/master/2415-count-the-number-of-ideal-arrays) |
+| [2504-find-all-good-indices](https://github.com/sourav030/Leetcode/tree/master/2504-find-all-good-indices) |
 ## Backtracking
 |  |
 | ------- |
@@ -337,6 +338,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2271-rearrange-array-elements-by-sign](https://github.com/sourav030/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/sourav030/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
+| [2504-find-all-good-indices](https://github.com/sourav030/Leetcode/tree/master/2504-find-all-good-indices) |
 | [2551-apply-operations-to-an-array](https://github.com/sourav030/Leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sourav030/Leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/sourav030/Leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
@@ -580,6 +582,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2249-count-the-hidden-sequences](https://github.com/sourav030/Leetcode/tree/master/2249-count-the-hidden-sequences) |
+| [2504-find-all-good-indices](https://github.com/sourav030/Leetcode/tree/master/2504-find-all-good-indices) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/sourav030/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sourav030/Leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
 ## Graph
