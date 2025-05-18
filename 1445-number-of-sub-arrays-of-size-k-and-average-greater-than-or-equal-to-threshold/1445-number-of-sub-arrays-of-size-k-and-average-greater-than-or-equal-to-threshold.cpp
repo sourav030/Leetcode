@@ -7,14 +7,18 @@ public:
         int count=0;
         while(end<arr.size()){
             sum+=arr[end];
+            if(end-start+1>k){
+                sum-=arr[start];
+                start++;
+            }
             if(end-start+1==k){
                 int ans=sum/k;
                 if(ans>=threshold){
                     count++;
                 }
-                sum-=arr[start];
-                start++;
+            
             }
+            
             end++;
         }
         return count;
