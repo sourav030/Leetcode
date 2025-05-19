@@ -24,6 +24,7 @@ void printList(Node* node) {
 
 
 // } Driver Code Ends
+
 // User function template for C++
 
 /*
@@ -43,44 +44,41 @@ struct Node
 
 class Solution {
   public:
-   Node* reverse(Node* prev, Node* curr) {
-    if (curr == NULL) {
-        return prev;
+   Node* reverse(Node* head, Node* prev){
+       if(!head) return prev;
+       Node* Next=head->next;
+       head->next=prev;
+       return reverse(Next,head);
+   }
+    Node* addOne(Node* head) {
+        // Your Code here
+         head=reverse(head,nullptr);
+         Node* curr=head;
+         int carry=0;
+         int val=curr->data;
+         val=val+1;
+         carry=val/10;
+         val=val%10;
+         curr->data=val;
+         curr=curr->next;
+         while(curr and carry){
+             int sum=curr->data+carry;
+              val=sum%10;
+             carry=sum/10;
+             curr->data=val;
+             curr=curr->next;
+         }
+         head=reverse(head,nullptr);
+         if(carry and !curr){
+             Node* newNode=new Node(carry);
+             newNode->next=head;
+             head=newNode;
+         }
+         return head;
+        // return head of list after adding one
     }
-    Node* nextNode = curr->next;
-    curr->next = prev;
-    return reverse(curr, nextNode);
-}
-
-Node* addOne(Node* head) {
-    Node* revHead = reverse(NULL, head);
-    Node* curr = revHead;
-    int carry = 1;
-
-    while (curr) {
-        int val = curr->data + carry;
-        curr->data = val % 10;
-        carry = val / 10;
-
-        if (carry == 0) {
-            break;
-        }
-
-        if (curr->next == NULL && carry > 0) {
-            Node* newNode = new Node(carry);
-            newNode->data = carry;
-            newNode->next = NULL;
-            curr->next = newNode;
-            break;
-        }
-
-        curr = curr->next;
-    }
-
-    return reverse(NULL, revHead);
-}
-
 };
+
 
 //{ Driver Code Starts.
 
