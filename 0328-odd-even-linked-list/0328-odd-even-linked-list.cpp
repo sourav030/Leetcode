@@ -10,36 +10,32 @@
  */
 class Solution {
 public:
-    void solve(ListNode* &ans, ListNode* head) {
-    ListNode* temp = head;
-    while (temp != NULL) {
-        ListNode* newNode = new ListNode(temp->val);
-        ans->next = newNode;
-        ans = ans->next;
-        temp = temp->next;
-        if (temp != NULL) temp = temp->next; // Skip to next odd/even node
+    ListNode* oddEvenList(ListNode* head) {
+        ListNode* curr=new ListNode(-1);
+        ListNode* newNode=curr;
+        int count=1;
+        ListNode* tem=head;
+        while(tem){
+            if(count%2!=0){
+                ListNode* new_Node=new ListNode(tem->val);
+                newNode->next=new_Node;
+                newNode=newNode->next;
+            }
+            tem=tem->next;
+            count++;
+        }
+        tem=head;
+        count=1;
+        while(tem){
+            if(count%2==0){
+                ListNode* new_Node=new ListNode(tem->val);
+                newNode->next=new_Node;
+                newNode=newNode->next;
+            }
+            count++;
+            tem=tem->next;
+        }
+        return curr->next;;
+
     }
-}
-
-ListNode* oddEvenList(ListNode* head) {
-    if (head == NULL) return NULL;
-
-    // Dummy nodes for odd and even lists
-    ListNode* oddDummy = new ListNode(-1);
-    ListNode* evenDummy = new ListNode(-1);
-
-    // Pointers to build odd and even lists
-    ListNode* odd = oddDummy;
-    ListNode* even = evenDummy;
-
-    // Split the list into odd and even
-    solve(odd, head);           // Odd nodes
-    solve(even, head->next);    // Even nodes
-
-    odd->next = evenDummy->next; // Merge even list at the end of odd list
-    even->next = NULL;           // Terminate even list
-
-    return oddDummy->next;       // Return head of the new list
-}
-
 };
