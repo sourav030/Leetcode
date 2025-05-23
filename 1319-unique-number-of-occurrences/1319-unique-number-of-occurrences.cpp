@@ -7,7 +7,7 @@ public:
         }
         unordered_map<int,int>mp2;
         for(auto ele:mp){
-            if(mp2.find(ele.second)!=mp.end()){
+            if(mp2.find(ele.second)!=mp2.end()){
                 return false;
             }
             mp2[ele.second]=1;
