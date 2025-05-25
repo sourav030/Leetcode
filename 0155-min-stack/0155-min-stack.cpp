@@ -1,52 +1,42 @@
 class MinStack {
-private:
-    int arr[100005];
-    int minStack[100005]; // Auxiliary stack to keep track of minimums
-    int topIndex;
-
 public:
-    // Constructor
+    vector<int>arr;
+    vector<int>minArray;
+    int mini=INT_MAX;
     MinStack() {
-        topIndex = -1;
+        
     }
     
-    // Push an element onto the stack
     void push(int val) {
-        if (topIndex < 100004) { // Check if the stack has space
-            topIndex++;
-            arr[topIndex] = val;
-            if (topIndex == 0) {
-                minStack[topIndex] = val; // First element is the minimum
-            } else {
-                minStack[topIndex] = std::min(minStack[topIndex - 1], val);
-            }
+        arr.push_back(val);
+         if (minArray.empty()) {
+            minArray.push_back(val);
+        } else {
+            minArray.push_back(min(val, minArray.back()));
         }
     }
     
-    // Pop the top element from the stack
     void pop() {
-        if (topIndex > -1) { // Check if the stack is not empty
-            topIndex--;
+        if(!arr.empty()){
+            arr.pop_back();
+            minArray.pop_back();
         }
     }
     
-    // Get the top element of the stack
     int top() {
-        if (topIndex > -1) { // Check if the stack is not empty
-            return arr[topIndex];
+        if(arr.empty()){
+            return -1;
         }
-        return -1; // Return a default value when the stack is empty
+        return arr.back();
     }
     
-    // Retrieve the minimum element in the stack
     int getMin() {
-        if (topIndex > -1) { // Check if the stack is not empty
-            return minStack[topIndex];
+        if(minArray.empty()){
+            return -1;
         }
-        return -1; // Return a default value when the stack is empty
+        return minArray.back();
     }
 };
-
 
 /**
  * Your MinStack object will be instantiated and called as such:
