@@ -13,47 +13,48 @@ class Node {
 */
 class Solution {
   public:
-      
-    int findDepth(Node* root) {
-    if (root == nullptr) return 0;
-    
-    int left = findDepth(root->left);
-    int right = findDepth(root->right);
-    
-    return max(left, right) + 1;
-}
-
-int findTarNode(Node* root, int target, int &ans) {
-    if (root == nullptr)
-        return -1;
-    
-    if (root->data == target) {
-        int depth = findDepth(root) - 1;
-        ans = max(ans, depth);
-        return 1;
+    unordered_map<int,vector<int>>mp;
+    void buildGraph(Node* root){
+        queue<Node*>q;
+        q.push(root);
+        while(!q.empty()){
+            Node* node=q.front();
+            q.pop();
+            if(node->left){
+                mp[node->data].push_back(node->left->data);
+                mp[node->left->data].push_back(node->data);
+                q.push(node->left);
+            }
+            if(node->right){
+                 mp[node->data].push_back(node->right->data);
+                mp[node->right->data].push_back(node->data);
+                q.push(node->right);
+            }
+        }
     }
     
-    int left = findTarNode(root->left, target, ans);
-    if (left != -1) {
-        int depth = findDepth(root->right);
-        ans = max(ans, left + depth);
-        return left + 1;
+    int minTime(Node* root, int target) {
+        // code here
+        buildGraph(root);
+        vector<bool>visited(pow(10,5),0);
+        queue<pair<int,int>>q;
+        q.push({target,0});
+        int time=-1;
+        visited[target]=1;
+        while(!q.empty()){
+            auto node=q.front();
+            time=max(time,node.second);
+            q.pop();
+            
+            for(auto ele:mp[node.first]){
+                if(visited[ele]==0){
+                    visited[ele]=1;
+                    q.push({ele,node.second+1});
+                }
+            }
+            
+        }
+        return time;
+        
     }
-    
-    int right = findTarNode(root->right, target, ans);
-    if (right != -1) {
-        int depth = findDepth(root->left);
-        ans = max(ans, right + depth);
-        return right + 1;
-    }
-    
-    return -1;
-}
-
-int minTime(Node *root, int target) {
-    int ans = 0;
-    findTarNode(root, target, ans);
-    return ans;
-}
-
 };
