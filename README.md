@@ -172,6 +172,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/sourav030/Leetcode/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1880-largest-merge-of-two-strings](https://github.com/sourav030/Leetcode/tree/master/1880-largest-merge-of-two-strings) |
 | [1923-sentence-similarity-iii](https://github.com/sourav030/Leetcode/tree/master/1923-sentence-similarity-iii) |
+| [1960-check-if-the-sentence-is-pangram](https://github.com/sourav030/Leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/sourav030/Leetcode/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2032-largest-odd-number-in-string](https://github.com/sourav030/Leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
@@ -716,6 +717,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1423-maximum-number-of-occurrences-of-a-substring](https://github.com/sourav030/Leetcode/tree/master/1423-maximum-number-of-occurrences-of-a-substring) |
 | [1635-number-of-good-pairs](https://github.com/sourav030/Leetcode/tree/master/1635-number-of-good-pairs) |
 | [1694-make-sum-divisible-by-p](https://github.com/sourav030/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
+| [1960-check-if-the-sentence-is-pangram](https://github.com/sourav030/Leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
 | [2434-design-a-number-container-system](https://github.com/sourav030/Leetcode/tree/master/2434-design-a-number-container-system) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
