@@ -1,34 +1,33 @@
 class Solution {
 public:
     vector<int> getSubarrayBeauty(vector<int>& nums, int k, int x) {
-          vector<int> answer;
-        vector<int> count(101,0);
-        // -50 -> 0 index ans so on...
+        multiset<int> window;
+        vector<int> ans;
 
-        for(int i=0; i<k; i++) {
-            count[nums[i] + 50]++;
-        }
+        for (int i = 0; i < nums.size(); ++i) {
+           
+            if (nums[i] < 0)
+                window.insert(nums[i]);
 
-        for(int i=k; i<=nums.size(); i++) {
-            int negativeSeen = 0;
-            int beauty = 0;
-
-            for(int j=0; j<50; j++) {
-                negativeSeen += count[j];
-                if(negativeSeen >= x) {
-                    beauty = j - 50;
-                    break;
+          
+            if (i >= k) {
+                if (nums[i - k] < 0) {
+                    window.erase(window.find(nums[i - k]));
                 }
             }
 
-            answer.push_back(negativeSeen >= x ? beauty : 0);
-
-            // REMOVE STARTING AND ADD CURRENT
-            if(i < nums.size()) {
-                count[nums[i] + 50]++;
-                count[nums[i-k] + 50]--;
+          
+            if (i >= k - 1) {
+                if (window.size() < x) {
+                    ans.push_back(0);  
+                } else {
+                    auto it = window.begin();
+                    advance(it, x - 1);  
+                    ans.push_back(*it);
+                }
             }
         }
-        return answer;
+
+        return ans;
     }
 };
