@@ -113,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0371-sum-of-two-integers](https://github.com/sourav030/Leetcode/tree/master/0371-sum-of-two-integers) |
 | [0523-continuous-subarray-sum](https://github.com/sourav030/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0556-next-greater-element-iii](https://github.com/sourav030/Leetcode/tree/master/0556-next-greater-element-iii) |
+| [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/sourav030/Leetcode/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/sourav030/Leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1635-number-of-good-pairs](https://github.com/sourav030/Leetcode/tree/master/1635-number-of-good-pairs) |
@@ -266,6 +267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/sourav030/Leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0890-lemonade-change](https://github.com/sourav030/Leetcode/tree/master/0890-lemonade-change) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/sourav030/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/sourav030/Leetcode/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1880-largest-merge-of-two-strings](https://github.com/sourav030/Leetcode/tree/master/1880-largest-merge-of-two-strings) |
 | [2032-largest-odd-number-in-string](https://github.com/sourav030/Leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/sourav030/Leetcode/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
@@ -361,6 +363,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1138-grumpy-bookstore-owner](https://github.com/sourav030/Leetcode/tree/master/1138-grumpy-bookstore-owner) |
 | [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1319-unique-number-of-occurrences](https://github.com/sourav030/Leetcode/tree/master/1319-unique-number-of-occurrences) |
+| [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/sourav030/Leetcode/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/sourav030/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/sourav030/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/sourav030/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
