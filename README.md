@@ -88,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1497-design-a-stack-with-increment-operation](https://github.com/sourav030/Leetcode/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1582-design-browser-history](https://github.com/sourav030/Leetcode/tree/master/1582-design-browser-history) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/sourav030/Leetcode/tree/master/2021-remove-all-occurrences-of-a-substring) |
+| [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sourav030/Leetcode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2227-sum-of-subarray-ranges](https://github.com/sourav030/Leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/sourav030/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
 | [3447-clear-digits](https://github.com/sourav030/Leetcode/tree/master/3447-clear-digits) |
@@ -179,6 +180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2032-largest-odd-number-in-string](https://github.com/sourav030/Leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/sourav030/Leetcode/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
+| [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sourav030/Leetcode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/sourav030/Leetcode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/sourav030/Leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/sourav030/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
@@ -275,6 +277,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1880-largest-merge-of-two-strings](https://github.com/sourav030/Leetcode/tree/master/1880-largest-merge-of-two-strings) |
 | [2032-largest-odd-number-in-string](https://github.com/sourav030/Leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/sourav030/Leetcode/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
+| [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sourav030/Leetcode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/sourav030/Leetcode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/sourav030/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/sourav030/Leetcode/tree/master/2767-maximum-sum-with-exactly-k-elements) |
