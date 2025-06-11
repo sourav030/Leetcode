@@ -424,6 +424,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2751-sliding-subarray-beauty](https://github.com/sourav030/Leetcode/tree/master/2751-sliding-subarray-beauty) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/sourav030/Leetcode/tree/master/2767-maximum-sum-with-exactly-k-elements) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/3206-find-common-elements-between-two-arrays) |
+| [3330-modify-the-matrix](https://github.com/sourav030/Leetcode/tree/master/3330-modify-the-matrix) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/sourav030/Leetcode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/sourav030/Leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/sourav030/Leetcode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
@@ -820,6 +821,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1253-sort-the-matrix-diagonally](https://github.com/sourav030/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1663-detect-cycles-in-2d-grid](https://github.com/sourav030/Leetcode/tree/master/1663-detect-cycles-in-2d-grid) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
+| [3330-modify-the-matrix](https://github.com/sourav030/Leetcode/tree/master/3330-modify-the-matrix) |
 ## Design
 |  |
 | ------- |
