@@ -126,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2032-largest-odd-number-in-string](https://github.com/sourav030/Leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/sourav030/Leetcode/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
+| [3215-matrix-similarity-after-cyclic-shifts](https://github.com/sourav030/Leetcode/tree/master/3215-matrix-similarity-after-cyclic-shifts) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -424,6 +425,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2751-sliding-subarray-beauty](https://github.com/sourav030/Leetcode/tree/master/2751-sliding-subarray-beauty) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/sourav030/Leetcode/tree/master/2767-maximum-sum-with-exactly-k-elements) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/3206-find-common-elements-between-two-arrays) |
+| [3215-matrix-similarity-after-cyclic-shifts](https://github.com/sourav030/Leetcode/tree/master/3215-matrix-similarity-after-cyclic-shifts) |
 | [3330-modify-the-matrix](https://github.com/sourav030/Leetcode/tree/master/3330-modify-the-matrix) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/sourav030/Leetcode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/sourav030/Leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
@@ -455,6 +457,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2271-rearrange-array-elements-by-sign](https://github.com/sourav030/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2551-apply-operations-to-an-array](https://github.com/sourav030/Leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/sourav030/Leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
+| [3215-matrix-similarity-after-cyclic-shifts](https://github.com/sourav030/Leetcode/tree/master/3215-matrix-similarity-after-cyclic-shifts) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/sourav030/Leetcode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/sourav030/Leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3447-clear-digits](https://github.com/sourav030/Leetcode/tree/master/3447-clear-digits) |
@@ -821,6 +824,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1253-sort-the-matrix-diagonally](https://github.com/sourav030/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1663-detect-cycles-in-2d-grid](https://github.com/sourav030/Leetcode/tree/master/1663-detect-cycles-in-2d-grid) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
+| [3215-matrix-similarity-after-cyclic-shifts](https://github.com/sourav030/Leetcode/tree/master/3215-matrix-similarity-after-cyclic-shifts) |
 | [3330-modify-the-matrix](https://github.com/sourav030/Leetcode/tree/master/3330-modify-the-matrix) |
 ## Design
 |  |
