@@ -403,6 +403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/sourav030/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1073-number-of-enclaves](https://github.com/sourav030/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1127-last-stone-weight](https://github.com/sourav030/Leetcode/tree/master/1127-last-stone-weight) |
 | [1138-grumpy-bookstore-owner](https://github.com/sourav030/Leetcode/tree/master/1138-grumpy-bookstore-owner) |
 | [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1253-sort-the-matrix-diagonally](https://github.com/sourav030/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
@@ -505,6 +506,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0264-ugly-number-ii](https://github.com/sourav030/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0347-top-k-frequent-elements](https://github.com/sourav030/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/sourav030/Leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [1127-last-stone-weight](https://github.com/sourav030/Leetcode/tree/master/1127-last-stone-weight) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2434-design-a-number-container-system](https://github.com/sourav030/Leetcode/tree/master/2434-design-a-number-container-system) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/sourav030/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
