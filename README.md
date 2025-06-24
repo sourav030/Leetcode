@@ -615,6 +615,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0437-path-sum-iii](https://github.com/sourav030/Leetcode/tree/master/0437-path-sum-iii) |
 | [0450-delete-node-in-a-bst](https://github.com/sourav030/Leetcode/tree/master/0450-delete-node-in-a-bst) |
+| [0501-find-mode-in-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/sourav030/Leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0617-merge-two-binary-trees](https://github.com/sourav030/Leetcode/tree/master/0617-merge-two-binary-trees) |
@@ -650,6 +651,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0437-path-sum-iii](https://github.com/sourav030/Leetcode/tree/master/0437-path-sum-iii) |
+| [0501-find-mode-in-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/sourav030/Leetcode/tree/master/0547-number-of-provinces) |
 | [0572-subtree-of-another-tree](https://github.com/sourav030/Leetcode/tree/master/0572-subtree-of-another-tree) |
@@ -692,6 +694,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0437-path-sum-iii](https://github.com/sourav030/Leetcode/tree/master/0437-path-sum-iii) |
 | [0450-delete-node-in-a-bst](https://github.com/sourav030/Leetcode/tree/master/0450-delete-node-in-a-bst) |
+| [0501-find-mode-in-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/sourav030/Leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0617-merge-two-binary-trees](https://github.com/sourav030/Leetcode/tree/master/0617-merge-two-binary-trees) |
@@ -726,6 +729,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/sourav030/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0410-split-array-largest-sum](https://github.com/sourav030/Leetcode/tree/master/0410-split-array-largest-sum) |
 | [0450-delete-node-in-a-bst](https://github.com/sourav030/Leetcode/tree/master/0450-delete-node-in-a-bst) |
+| [0501-find-mode-in-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0540-single-element-in-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0713-subarray-product-less-than-k](https://github.com/sourav030/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
