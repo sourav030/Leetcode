@@ -175,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0402-remove-k-digits](https://github.com/sourav030/Leetcode/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/sourav030/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0443-string-compression](https://github.com/sourav030/Leetcode/tree/master/0443-string-compression) |
+| [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0451-sort-characters-by-frequency](https://github.com/sourav030/Leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0516-longest-palindromic-subsequence](https://github.com/sourav030/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0556-next-greater-element-iii](https://github.com/sourav030/Leetcode/tree/master/0556-next-greater-element-iii) |
@@ -548,6 +549,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0279-perfect-squares](https://github.com/sourav030/Leetcode/tree/master/0279-perfect-squares) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0322-coin-change](https://github.com/sourav030/Leetcode/tree/master/0322-coin-change) |
+| [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0542-01-matrix](https://github.com/sourav030/Leetcode/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/sourav030/Leetcode/tree/master/0547-number-of-provinces) |
 | [0617-merge-two-binary-trees](https://github.com/sourav030/Leetcode/tree/master/0617-merge-two-binary-trees) |
@@ -614,6 +616,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0437-path-sum-iii](https://github.com/sourav030/Leetcode/tree/master/0437-path-sum-iii) |
+| [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0450-delete-node-in-a-bst](https://github.com/sourav030/Leetcode/tree/master/0450-delete-node-in-a-bst) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
@@ -651,6 +654,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0437-path-sum-iii](https://github.com/sourav030/Leetcode/tree/master/0437-path-sum-iii) |
+| [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/sourav030/Leetcode/tree/master/0547-number-of-provinces) |
@@ -693,6 +697,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0437-path-sum-iii](https://github.com/sourav030/Leetcode/tree/master/0437-path-sum-iii) |
+| [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0450-delete-node-in-a-bst](https://github.com/sourav030/Leetcode/tree/master/0450-delete-node-in-a-bst) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
@@ -728,6 +733,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/sourav030/Leetcode/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/sourav030/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0410-split-array-largest-sum](https://github.com/sourav030/Leetcode/tree/master/0410-split-array-largest-sum) |
+| [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0450-delete-node-in-a-bst](https://github.com/sourav030/Leetcode/tree/master/0450-delete-node-in-a-bst) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0540-single-element-in-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0540-single-element-in-a-sorted-array) |
@@ -875,6 +881,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0173-binary-search-tree-iterator](https://github.com/sourav030/Leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0225-implement-stack-using-queues](https://github.com/sourav030/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0817-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0817-design-hashmap) |
 | [0937-online-stock-span](https://github.com/sourav030/Leetcode/tree/master/0937-online-stock-span) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
