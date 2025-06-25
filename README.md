@@ -601,6 +601,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1253-sort-the-matrix-diagonally](https://github.com/sourav030/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/sourav030/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
+| [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 | [1464-reduce-array-size-to-the-half](https://github.com/sourav030/Leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/sourav030/Leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/sourav030/Leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
@@ -644,6 +645,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1035-cousins-in-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -686,6 +688,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1035-cousins-in-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1073-number-of-enclaves](https://github.com/sourav030/Leetcode/tree/master/1073-number-of-enclaves) |
 | [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/sourav030/Leetcode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [1663-detect-cycles-in-2d-grid](https://github.com/sourav030/Leetcode/tree/master/1663-detect-cycles-in-2d-grid) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
@@ -729,6 +732,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1035-cousins-in-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1207-delete-nodes-and-return-forest](https://github.com/sourav030/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -761,6 +765,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/sourav030/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/sourav030/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/sourav030/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+| [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/sourav030/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Divide and Conquer
