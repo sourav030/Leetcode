@@ -519,6 +519,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0264-ugly-number-ii](https://github.com/sourav030/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0347-top-k-frequent-elements](https://github.com/sourav030/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/sourav030/Leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/sourav030/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1127-last-stone-weight](https://github.com/sourav030/Leetcode/tree/master/1127-last-stone-weight) |
 | [1304-longest-happy-string](https://github.com/sourav030/Leetcode/tree/master/1304-longest-happy-string) |
 | [1464-reduce-array-size-to-the-half](https://github.com/sourav030/Leetcode/tree/master/1464-reduce-array-size-to-the-half) |
@@ -636,6 +637,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/sourav030/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/sourav030/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0832-binary-tree-pruning](https://github.com/sourav030/Leetcode/tree/master/0832-binary-tree-pruning) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -723,6 +725,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/sourav030/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/sourav030/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0832-binary-tree-pruning](https://github.com/sourav030/Leetcode/tree/master/0832-binary-tree-pruning) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -758,6 +761,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/sourav030/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0713-subarray-product-less-than-k](https://github.com/sourav030/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/sourav030/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/sourav030/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0907-koko-eating-bananas](https://github.com/sourav030/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1046-max-consecutive-ones-iii](https://github.com/sourav030/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
@@ -904,6 +908,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/sourav030/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/sourav030/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0817-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0817-design-hashmap) |
 | [0860-design-circular-queue](https://github.com/sourav030/Leetcode/tree/master/0860-design-circular-queue) |
 | [0937-online-stock-span](https://github.com/sourav030/Leetcode/tree/master/0937-online-stock-span) |
@@ -915,6 +920,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Data Stream
 |  |
 | ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/sourav030/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0937-online-stock-span](https://github.com/sourav030/Leetcode/tree/master/0937-online-stock-span) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1582-design-browser-history](https://github.com/sourav030/Leetcode/tree/master/1582-design-browser-history) |
