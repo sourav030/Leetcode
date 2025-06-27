@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0841-shortest-distance-to-a-character](https://github.com/sourav030/Leetcode/tree/master/0841-shortest-distance-to-a-character) |
 | [0901-advantage-shuffle](https://github.com/sourav030/Leetcode/tree/master/0901-advantage-shuffle) |
 | [0908-middle-of-the-linked-list](https://github.com/sourav030/Leetcode/tree/master/0908-middle-of-the-linked-list) |
+| [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 | [1880-largest-merge-of-two-strings](https://github.com/sourav030/Leetcode/tree/master/1880-largest-merge-of-two-strings) |
 | [1923-sentence-similarity-iii](https://github.com/sourav030/Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/sourav030/Leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
@@ -428,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1457-minimum-difficulty-of-a-job-schedule](https://github.com/sourav030/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
 | [1464-reduce-array-size-to-the-half](https://github.com/sourav030/Leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
+| [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/sourav030/Leetcode/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1582-design-browser-history](https://github.com/sourav030/Leetcode/tree/master/1582-design-browser-history) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/sourav030/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
@@ -610,6 +612,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1352-maximum-profit-in-job-scheduling](https://github.com/sourav030/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 | [1464-reduce-array-size-to-the-half](https://github.com/sourav030/Leetcode/tree/master/1464-reduce-array-size-to-the-half) |
+| [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/sourav030/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/sourav030/Leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/sourav030/Leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
@@ -780,6 +783,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1352-maximum-profit-in-job-scheduling](https://github.com/sourav030/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/sourav030/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
+| [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/sourav030/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/sourav030/Leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
