@@ -382,6 +382,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0410-split-array-largest-sum](https://github.com/sourav030/Leetcode/tree/master/0410-split-array-largest-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/sourav030/Leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/sourav030/Leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0436-find-right-interval](https://github.com/sourav030/Leetcode/tree/master/0436-find-right-interval) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/sourav030/Leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0446-arithmetic-slices-ii-subsequence](https://github.com/sourav030/Leetcode/tree/master/0446-arithmetic-slices-ii-subsequence) |
 | [0455-assign-cookies](https://github.com/sourav030/Leetcode/tree/master/0455-assign-cookies) |
@@ -605,6 +606,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/sourav030/Leetcode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/sourav030/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/sourav030/Leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0436-find-right-interval](https://github.com/sourav030/Leetcode/tree/master/0436-find-right-interval) |
 | [0451-sort-characters-by-frequency](https://github.com/sourav030/Leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0455-assign-cookies](https://github.com/sourav030/Leetcode/tree/master/0455-assign-cookies) |
 | [0901-advantage-shuffle](https://github.com/sourav030/Leetcode/tree/master/0901-advantage-shuffle) |
@@ -767,6 +769,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/sourav030/Leetcode/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/sourav030/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0410-split-array-largest-sum](https://github.com/sourav030/Leetcode/tree/master/0410-split-array-largest-sum) |
+| [0436-find-right-interval](https://github.com/sourav030/Leetcode/tree/master/0436-find-right-interval) |
 | [0441-arranging-coins](https://github.com/sourav030/Leetcode/tree/master/0441-arranging-coins) |
 | [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0450-delete-node-in-a-bst](https://github.com/sourav030/Leetcode/tree/master/0450-delete-node-in-a-bst) |
