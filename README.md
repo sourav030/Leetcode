@@ -316,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/sourav030/Leetcode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/sourav030/Leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/sourav030/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
+| [2469-longest-subsequence-with-limited-sum](https://github.com/sourav030/Leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 | [2767-maximum-sum-with-exactly-k-elements](https://github.com/sourav030/Leetcode/tree/master/2767-maximum-sum-with-exactly-k-elements) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/sourav030/Leetcode/tree/master/2816-lexicographically-smallest-palindrome) |
 ## Array
@@ -447,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2271-rearrange-array-elements-by-sign](https://github.com/sourav030/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/sourav030/Leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
+| [2469-longest-subsequence-with-limited-sum](https://github.com/sourav030/Leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/sourav030/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2504-find-all-good-indices](https://github.com/sourav030/Leetcode/tree/master/2504-find-all-good-indices) |
 | [2551-apply-operations-to-an-array](https://github.com/sourav030/Leetcode/tree/master/2551-apply-operations-to-an-array) |
@@ -610,6 +612,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/sourav030/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/sourav030/Leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/sourav030/Leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
+| [2469-longest-subsequence-with-limited-sum](https://github.com/sourav030/Leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/sourav030/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 ## Tree
 |  |
@@ -777,6 +780,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/sourav030/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
+| [2469-longest-subsequence-with-limited-sum](https://github.com/sourav030/Leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -808,6 +812,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
 | [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2249-count-the-hidden-sequences](https://github.com/sourav030/Leetcode/tree/master/2249-count-the-hidden-sequences) |
+| [2469-longest-subsequence-with-limited-sum](https://github.com/sourav030/Leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 | [2504-find-all-good-indices](https://github.com/sourav030/Leetcode/tree/master/2504-find-all-good-indices) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/sourav030/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sourav030/Leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
