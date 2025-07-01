@@ -442,6 +442,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/sourav030/Leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1923-sentence-similarity-iii](https://github.com/sourav030/Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
+| [2179-most-beautiful-item-for-each-query](https://github.com/sourav030/Leetcode/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2195-time-needed-to-buy-tickets](https://github.com/sourav030/Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/sourav030/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
@@ -616,6 +617,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 | [1464-reduce-array-size-to-the-half](https://github.com/sourav030/Leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
+| [2179-most-beautiful-item-for-each-query](https://github.com/sourav030/Leetcode/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/sourav030/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2210-find-target-indices-after-sorting-array](https://github.com/sourav030/Leetcode/tree/master/2210-find-target-indices-after-sorting-array) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/sourav030/Leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
@@ -791,6 +793,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/sourav030/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1753-path-with-minimum-effort](https://github.com/sourav030/Leetcode/tree/master/1753-path-with-minimum-effort) |
+| [2179-most-beautiful-item-for-each-query](https://github.com/sourav030/Leetcode/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2210-find-target-indices-after-sorting-array](https://github.com/sourav030/Leetcode/tree/master/2210-find-target-indices-after-sorting-array) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/sourav030/Leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
 ## Divide and Conquer
