@@ -10,35 +10,35 @@
  */
 class Solution {
 public:
-    ListNode* merge(ListNode* head1,ListNode* head2){
-        if(!head1) return head2;
-        if(!head2) return head1;
-        ListNode* head3=new ListNode(-1);
-        ListNode* tail=head3;
-        while(head1 and head2){
-            if(head1->val<head2->val){
-                tail->next=head1;
-                head1=head1->next;
-            }
-            else{
-                tail->next=head2;
-                head2=head2->next;
-            }
-            tail=tail->next;
-        }
-        if(head1){
-            tail->next=head1;
-        }
-        if(head2){
-            tail->next=head2;
-        }
-        return head3->next;
+    struct comp {
+    bool operator()(ListNode* a, ListNode* b) {
+        return a->val > b->val; // min-heap
     }
+};
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        ListNode* head=nullptr;
-        for(int i=0; i<lists.size(); i++){
-            head=merge(head,lists[i]);
+        if(lists.size()==0){
+            return nullptr;
         }
-        return head;
+       priority_queue<ListNode*, vector<ListNode*>, comp> pq;
+
+        for(int i=0; i<lists.size(); i++){
+            if(lists[i])
+            pq.push(lists[i]);
+        }
+
+        ListNode* head=new ListNode(-1);
+        ListNode* tail=head;
+
+        while(!pq.empty()){
+            ListNode* temp=pq.top();
+            pq.pop();
+            tail->next=temp;
+            tail=tail->next;
+            if(temp->next){
+                pq.push(temp->next);
+            }
+        }
+
+        return head->next;
     }
 };
