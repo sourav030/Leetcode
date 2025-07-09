@@ -1,42 +1,47 @@
 class Solution {
 public:
     string reorganizeString(string s) {
-        string ans="";
-        unordered_map<char,int>mp;
+        unordered_map<char,double>mp;
         for(auto ele:s){
             mp[ele]++;
         }
-        priority_queue<pair<int,char>>pq;
+        priority_queue<pair<double,char>>pq;
         for(auto ele:mp){
             pq.push({ele.second,ele.first});
         }
+        string ans="";
         while(!pq.empty()){
-            int currCount=pq.top().first;
-            char currChar=pq.top().second;
+            int currChar=pq.top().second;
+            double currCount=pq.top().first;
             pq.pop();
-            int n=ans.length();
-            if(n>=1 and ans[n-1]==currChar){
-                if(pq.empty()){
-                    return "";
-                }
-                int nextCount=pq.top().first;
-                int nextChar=pq.top().second;
-                pq.pop();
-                ans+=nextChar;
-                nextCount--;
-                if(nextCount>0){
-                    pq.push({nextCount,nextChar});
-                }
+            if(ans.empty()){
+                ans.push_back(currChar);
+                currCount--;
+                if(currCount>0)
                 pq.push({currCount,currChar});
             }
             else{
-                ans+=currChar;
-                currCount--;
+                if(ans.back()!=currChar){
+                    ans.push_back(currChar);
+                    currCount--;
+                }
+                else{
+                    if(pq.empty()){
+                        return "";
+                    }
+                    int newCur=pq.top().second;
+                    double newCount=pq.top().first;
+                    pq.pop();
+                    ans+=newCur;
+                    newCount--;
+                    if(newCount>0){
+                        pq.push({newCount,newCur});
+                    }
+                }
                 if(currCount>0){
-                    pq.push({currCount,currChar});
+                      pq.push({currCount,currChar});
                 }
             }
-
         }
         return ans;
     }
