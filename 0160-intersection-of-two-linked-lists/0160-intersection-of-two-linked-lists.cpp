@@ -8,7 +8,7 @@
  */
 class Solution {
 public:
-    int Length(ListNode* head){
+    int length(ListNode* head){
         int count=0;
         while(head){
             count++;
@@ -17,17 +17,17 @@ public:
         return count;
     }
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        int headAlen=Length(headA);
-        int headBlen=Length(headB);
-        if(headAlen>headBlen){
-            int a=headAlen-headBlen;
-            while(a--){
+        int len1=length(headA);
+        int len2=length(headB);
+        if(len1>len2){
+            int index=len1-len2;
+            while(index--){
                 headA=headA->next;
             }
         }
-        else if(headBlen>headAlen){
-            int a=headBlen-headAlen;
-            while(a--){
+        else if(len2>len1){
+            int index=len2-len1;
+            while(index--){
                 headB=headB->next;
             }
         }
@@ -36,6 +36,5 @@ public:
             headB=headB->next;
         }
         return headA;
-
     }
 };
