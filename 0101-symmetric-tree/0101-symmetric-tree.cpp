@@ -12,15 +12,18 @@
 class Solution {
 public:
     bool solve(TreeNode* root1, TreeNode* root2){
-        if(root1==NULL and root2==NULL) return 1;
-        if(root1 and !root2) return 0;
-        if(!root1 and root2) return 0;
-        if(root1->val!=root2->val) return 0;
-       return solve(root1->left,root2->right) and solve(root1->right,root2->left);
-
+        if(!root1 and !root2){
+            return true;
+        }
+        if(!root1 or !root2){
+            return false;
+        }
+        if(root1->val!=root2->val){
+            return false;
+        }
+        return solve(root1->left,root2->right) and solve(root1->right,root2->left);
     }
     bool isSymmetric(TreeNode* root) {
-        if(!root) return 1;
         return solve(root->left,root->right);
     }
 };
