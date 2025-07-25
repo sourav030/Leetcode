@@ -1,34 +1,44 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
-        vector<vector<int>> ans;
-        if (root == NULL) return ans;
-
-        queue<TreeNode*> q;
+        if(!root ){
+            vector<vector<int>>ar;
+            return ar;
+        }
+        queue<TreeNode*>q;
         q.push(root);
-        bool flag = 0; // 0 -> Left to Right, 1 -> Right to Left
-
-        while (!q.empty()) {
-            int n = q.size();
-            vector<int> vec;
-
-            for (int i = 0; i < n; i++) {
-                TreeNode* node = q.front();
+        vector<vector<int>>ans;
+        bool flag=0;
+        while(!q.empty()){
+            int n=q.size();
+            vector<int>arr;
+            for(int i=0; i<n; i++){
+                TreeNode* node=q.front();
+                arr.push_back(node->val);
                 q.pop();
-                vec.push_back(node->val);
-
-                
-                if (node->left) q.push(node->left);
-                if (node->right) q.push(node->right);
+                if(node->left){
+                    q.push(node->left);
+                }
+                if(node->right){
+                    q.push(node->right);
+                }
             }
-
-          
-            if (flag) {
-                reverse(vec.begin(), vec.end());
+            if(flag){
+                reverse(arr.begin(),arr.end());
             }
-
-            ans.push_back(vec);
-            flag = !flag; // Toggle flag for next level
+            flag=!flag;
+            ans.push_back(arr);
         }
         return ans;
     }
