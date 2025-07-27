@@ -11,30 +11,22 @@
  */
 class Solution {
 public:
-    void solve(TreeNode* root, vector<int>&nums){
-        if(!root) return;
-        solve(root->left, nums);
-        nums.push_back(root->val);
-        solve(root->right,nums);
+    unordered_map<int,int>mp;
+    
+    bool solve(TreeNode* root , int k){
+        if(!root){
+            return false;
+        }
+        if(mp.find(k-root->val)!=mp.end()){
+            return true;
+        }
+        mp[root->val]=1;
+        bool left=solve(root->left,k);
+        bool right=solve(root->right,k);
+        return left|| right;
     }
     bool findTarget(TreeNode* root, int k) {
-        vector<int>nums;
-        solve(root,nums);
-        int start=0;
-        int end=nums.size()-1;
-        if(nums.size()<2) return false;
-        while(start<end){
-            int sum=nums[start]+nums[end];
-            if(sum>k){
-                end--;
-            }
-            else if(sum<k){
-                start++;
-            }
-            else{
-                return true;
-            }
-        }
-        return false;
+        
+        return solve(root,k);
     }
 };
