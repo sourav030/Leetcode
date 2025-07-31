@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/sourav030/Leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0696-count-binary-substrings](https://github.com/sourav030/Leetcode/tree/master/0696-count-binary-substrings) |
 | [0841-shortest-distance-to-a-character](https://github.com/sourav030/Leetcode/tree/master/0841-shortest-distance-to-a-character) |
+| [0874-backspace-string-compare](https://github.com/sourav030/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0901-advantage-shuffle](https://github.com/sourav030/Leetcode/tree/master/0901-advantage-shuffle) |
 | [0908-middle-of-the-linked-list](https://github.com/sourav030/Leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
@@ -105,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/sourav030/Leetcode/tree/master/0503-next-greater-element-ii) |
 | [0678-valid-parenthesis-string](https://github.com/sourav030/Leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0735-asteroid-collision](https://github.com/sourav030/Leetcode/tree/master/0735-asteroid-collision) |
+| [0874-backspace-string-compare](https://github.com/sourav030/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0937-online-stock-span](https://github.com/sourav030/Leetcode/tree/master/0937-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/sourav030/Leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/sourav030/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
@@ -214,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0753-open-the-lock](https://github.com/sourav030/Leetcode/tree/master/0753-open-the-lock) |
 | [0778-reorganize-string](https://github.com/sourav030/Leetcode/tree/master/0778-reorganize-string) |
 | [0841-shortest-distance-to-a-character](https://github.com/sourav030/Leetcode/tree/master/0841-shortest-distance-to-a-character) |
+| [0874-backspace-string-compare](https://github.com/sourav030/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/sourav030/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/sourav030/Leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
 | [1044-find-common-characters](https://github.com/sourav030/Leetcode/tree/master/1044-find-common-characters) |
@@ -538,6 +541,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/sourav030/Leetcode/tree/master/0735-asteroid-collision) |
+| [0874-backspace-string-compare](https://github.com/sourav030/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0898-transpose-matrix](https://github.com/sourav030/Leetcode/tree/master/0898-transpose-matrix) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/sourav030/Leetcode/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2195-time-needed-to-buy-tickets](https://github.com/sourav030/Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
