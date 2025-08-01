@@ -187,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/sourav030/Leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/sourav030/Leetcode/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/sourav030/Leetcode/tree/master/0022-generate-parentheses) |
+| [0049-group-anagrams](https://github.com/sourav030/Leetcode/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/sourav030/Leetcode/tree/master/0058-length-of-last-word) |
 | [0071-simplify-path](https://github.com/sourav030/Leetcode/tree/master/0071-simplify-path) |
 | [0072-edit-distance](https://github.com/sourav030/Leetcode/tree/master/0072-edit-distance) |
@@ -380,6 +381,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/sourav030/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/sourav030/Leetcode/tree/master/0045-jump-game-ii) |
 | [0046-permutations](https://github.com/sourav030/Leetcode/tree/master/0046-permutations) |
+| [0049-group-anagrams](https://github.com/sourav030/Leetcode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/sourav030/Leetcode/tree/master/0051-n-queens) |
 | [0055-jump-game](https://github.com/sourav030/Leetcode/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/sourav030/Leetcode/tree/master/0056-merge-intervals) |
@@ -671,6 +673,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/sourav030/Leetcode/tree/master/0015-3sum) |
 | [0016-3sum-closest](https://github.com/sourav030/Leetcode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/sourav030/Leetcode/tree/master/0018-4sum) |
+| [0049-group-anagrams](https://github.com/sourav030/Leetcode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/sourav030/Leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/sourav030/Leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0088-merge-sorted-array) |
@@ -990,6 +993,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/sourav030/Leetcode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/sourav030/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/sourav030/Leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0049-group-anagrams](https://github.com/sourav030/Leetcode/tree/master/0049-group-anagrams) |
 | [0076-minimum-window-substring](https://github.com/sourav030/Leetcode/tree/master/0076-minimum-window-substring) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/sourav030/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/sourav030/Leetcode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
