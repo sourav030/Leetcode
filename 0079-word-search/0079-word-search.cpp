@@ -1,40 +1,44 @@
 class Solution {
 public:
-    int n,m;
-    vector<int> rows={0,0,-1,1};
-    vector<int> cols={1,-1,0,0};
-    bool isValid(vector<vector<char>>& board, string word,int idx, int row, int col){
-        if(idx>=word.length()) return true;
-        if(row<0 or row>=n or col<0 or col>=m){
-            return false;
-        }
-        if(board[row][col]!=word[idx]){
-            return false;
-        }
-        char tem=board[row][col];
-        board[row][col]='&';
-        for(int i=0; i<4; i++){
-            int newRow=row+rows[i];
-            int newCol=col+cols[i];
-            if(isValid(board,word,idx+1,newRow,newCol)){
-                return true;
-            }
-        }
-        board[row][col]=tem;
-        return false;
+    vector<int> row = {-1, 1, 0, 0};
+    vector<int> col = {0, 0, 1, -1};
+    int n, m;
 
-    }
-    bool exist(vector<vector<char>>& board, string word) {
-        n=board.size();
-        m=board[0].size();
-        for(int i=0; i<board.size(); i++){
-            for(int j=0; j<board[0].size(); j++){
-                if(board[i][j]==word[0] and isValid(board,word,0,i,j)){
+    bool solve(vector<vector<char>>& matrix, int r, int c, string& word, int idx) {
+        if (idx == word.length()) return true;
+
+        char temp = matrix[r][c];
+        matrix[r][c] = '#';  
+
+        for (int i = 0; i < 4; i++) {
+            int new_r = r + row[i];
+            int new_c = c + col[i];
+
+            if (new_r >= 0 && new_r < n && new_c >= 0 && new_c < m &&
+                matrix[new_r][new_c] == word[idx]) {
+                if (solve(matrix, new_r, new_c, word, idx + 1)) {
                     return true;
                 }
             }
         }
 
+        matrix[r][c] = temp;  
+        return false;
+    }
+
+    bool exist(vector<vector<char>>& board, string word) {
+        n = board.size();
+        m = board[0].size();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (board[i][j] == word[0]) {
+                    if (solve(board, i, j, word, 1)) {
+                        return true;
+                    }
+                }
+            }
+        }
         return false;
     }
 };
