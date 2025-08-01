@@ -142,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/sourav030/Leetcode/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/sourav030/Leetcode/tree/master/0007-reverse-integer) |
+| [0043-multiply-strings](https://github.com/sourav030/Leetcode/tree/master/0043-multiply-strings) |
 | [0062-unique-paths](https://github.com/sourav030/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/sourav030/Leetcode/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/sourav030/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -187,6 +188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/sourav030/Leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/sourav030/Leetcode/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/sourav030/Leetcode/tree/master/0022-generate-parentheses) |
+| [0043-multiply-strings](https://github.com/sourav030/Leetcode/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/sourav030/Leetcode/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/sourav030/Leetcode/tree/master/0058-length-of-last-word) |
 | [0071-simplify-path](https://github.com/sourav030/Leetcode/tree/master/0071-simplify-path) |
@@ -551,6 +553,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0043-multiply-strings](https://github.com/sourav030/Leetcode/tree/master/0043-multiply-strings) |
 | [0735-asteroid-collision](https://github.com/sourav030/Leetcode/tree/master/0735-asteroid-collision) |
 | [0874-backspace-string-compare](https://github.com/sourav030/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0898-transpose-matrix](https://github.com/sourav030/Leetcode/tree/master/0898-transpose-matrix) |
