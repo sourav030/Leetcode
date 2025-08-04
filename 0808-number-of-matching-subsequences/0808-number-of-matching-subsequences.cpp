@@ -1,29 +1,24 @@
 class Solution {
 public:
-    bool iSolve(string str1,string str2){
-        if(str1.length()>str2.length()){
-            return false;
+    bool isSubsequence(const string& word, const string& s) {
+        int i = 0, j = 0;
+        while (j < s.length() && i < word.length()) {
+            if (word[i] == s[j]) i++;
+            j++;
         }
-        int idx1=0, idx2=0;
-        while(idx2<str2.length()){
-
-            if(str1[idx1]==str2[idx2]){
-                idx1++;
-            }
-            idx2++;
-        }
-        return idx1==str1.length();
+        return i == word.length();
     }
+
     int numMatchingSubseq(string s, vector<string>& words) {
-        unordered_map<string,int>mp;
-        for(auto ele:words){
-            mp[ele]++;
+        unordered_map<string, int> freq;
+        for (const auto& word : words) {
+            freq[word]++;
         }
 
-        int count=0;
-        for(auto ele:mp){
-            if(iSolve(ele.first,s)){
-                count+=ele.second;
+        int count = 0;
+        for (const auto& [word, occ] : freq) {
+            if (isSubsequence(word, s)) {
+                count += occ;
             }
         }
 
