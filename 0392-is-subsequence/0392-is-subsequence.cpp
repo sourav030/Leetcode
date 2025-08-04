@@ -1,29 +1,17 @@
 class Solution {
 public:
-    bool isSubsequence(string s, string t) {
-        int n=s.length();
-        int m=t.length();
-        if(n>m){
-            return false;
-        }
-        if(n==1 and m>1){
-            if(s[0]==t[0]){
-                return true;
-            }
-        }
-
+    bool solve(string s, string t){
         int i=0;
         int j=0;
-
-        while(i<n and j<m){
+        while(j<t.length()){
             if(s[i]==t[j]){
                 i++;
-                j++;
             }
-            else{
-                j++;
-            }
+            j++;
         }
-        return i==n;
+        return i==s.length();
+    }
+    bool isSubsequence(string s, string t) {
+        return solve(s,t);
     }
 };
