@@ -1,37 +1,33 @@
 class Solution {
-    int solve(string& s1,string& s2, int n, int m, vector<vector<int>>&dp){
-        if(n==0)
-        {
+public:
+    vector<vector<int>>dp;
+    int solve(int n, int m, string word1,string word2){
+        if(n==0){
             return m;
         }
         if(m==0){
             return n;
         }
-        
         if(dp[n][m]!=-1){
             return dp[n][m];
         }
-        
-        if(s1[n-1]==s2[m-1]){
-            return dp[n][m]= 0+ solve(s1,s2,n-1,m-1,dp);
+        if(word1[n-1]==word2[m-1]){
+            return dp[n][m]=solve(n-1,m-1,word1,word2);
         }
         else{
-            return dp[n][m]=1+min({solve(s1, s2, n, m - 1, dp), // Insert
-                                       solve(s1, s2, n - 1, m, dp), // Delete
-                                       solve(s1, s2, n - 1, m - 1, dp)});
-            
+            return dp[n][m]=1+min(
+                {
+                solve(n,m-1,word1,word2), // insert opertaion perform
+                solve(n-1,m,word1,word2), // delete operation perform
+                solve(n-1,m-1,word1,word2) // replace opertion perform
+            }
+            );
         }
-        
-        
     }
-public:
-    int minDistance(string s1, string s2) {
-        int n=s1.size();
-        
-        int m=s2.size();
-        
-        vector<vector<int>> dp(n+1,vector<int>(m+1,-1));
-        
-      return  solve(s1,s2,n,m,dp);
+    int minDistance(string word1, string word2) {
+        int n=word1.length();
+        int m=word2.length();
+        dp.resize(n+1,vector<int>(m+1,-1));
+        return solve(n,m,word1,word2);
     }
 };
