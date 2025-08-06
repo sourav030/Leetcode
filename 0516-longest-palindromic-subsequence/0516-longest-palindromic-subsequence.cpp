@@ -1,26 +1,25 @@
 class Solution {
-    int find(int n, int m, string &a,string &b,vector<vector<int>> &dp){
-        if(n<=0 or m<=0){
+public:
+    vector<vector<int>>dp;
+    int solve(int n1,int n2,string &s1,string &s2){
+        if(n1==0 || n2==0){
             return 0;
         }
-        if(dp[n][m]!=-1){
-            return dp[n][m];
+        if(dp[n1][n2]!=-1){
+            return dp[n1][n2];
         }
-        if(a[n-1]==b[m-1]){
-            return dp[n][m]= 1+find(n-1,m-1,a,b,dp);
+        if(s1[n1-1]==s2[n2-1]){
+            return dp[n1][n2]=1+solve(n1-1,n2-1, s1,s2);
         }
         else{
-            return dp[n][m]=max(find(n-1,m,a,b,dp),find(n,m-1,a,b,dp));
+            return dp[n1][n2]=max(solve(n1-1,n2,s1,s2),solve(n1,n2-1,s1,s2));
         }
     }
-public:
     int longestPalindromeSubseq(string s) {
-        string a=s;
-        string b=a;
-        int n=a.size();
-        int m=b.size();
-        vector<vector<int>>dp(n+1,vector<int>(m+1,-1));
-        reverse(b.begin(),b.end());
-        return find(a.size(),b.size(),a,b,dp);
+        int n=s.length();
+        dp.resize(n+1,vector<int>(n+1,-1));
+        string str1=s;
+        reverse(str1.begin(),str1.end());
+        return solve(n,n,s,str1);
     }
 };
