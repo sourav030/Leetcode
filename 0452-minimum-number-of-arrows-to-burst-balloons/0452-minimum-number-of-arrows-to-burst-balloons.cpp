@@ -1,30 +1,18 @@
 class Solution {
 public:
     int findMinArrowShots(vector<vector<int>>& points) {
-        if (points.empty()) return 0;
+        sort(points.begin(),points.end(),[](const vector<int>&a,const vector<int>&b){
+            return a[1]<b[1];
+        });
 
-        // Step 1: Sort by start time (optional: can sort by end also)
-        sort(points.begin(), points.end());
-
-        // Step 2: Use merged intervals
-        vector<vector<int>> merged;
-        merged.push_back(points[0]);
-
-        for (int i = 1; i < points.size(); i++) {
-            vector<int>& last = merged.back();
-
-            // Check for overlap
-            if (points[i][0] <= last[1]) {
-                // Merge the intervals (intersection is better here)
-                last[0] = max(last[0], points[i][0]); // updated start
-                last[1] = min(last[1], points[i][1]); // updated end
-            } else {
-                // No overlap, push as new group
-                merged.push_back(points[i]);
+        int arrow=1;
+        int endTime=points[0][1];
+        for(int i=1; i<points.size(); i++){
+            if(points[i][0]>endTime){
+                arrow++;
+                endTime=points[i][1];
             }
         }
-
-        // Number of merged groups = number of arrows needed
-        return merged.size();
+        return arrow;
     }
 };
