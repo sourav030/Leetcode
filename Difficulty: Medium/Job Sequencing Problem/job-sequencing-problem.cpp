@@ -1,74 +1,46 @@
-//{ Driver Code Starts
-// Driver code
-#include <bits/stdc++.h>
-using namespace std;
-
-
-// } Driver Code Ends
-
 class Solution {
   public:
-    vector<int> jobSequencing(vector<int> &deadline, vector<int> &profit) {
-        // code here
-        int n = deadline.size();
-        vector<int> ans = {0, 0};
-        
-        vector<pair<int, int>> jobs;
-        for (int i = 0; i < n; i++) {
-            jobs.push_back({deadline[i], profit[i]});
-        }
-        
-        sort(jobs.begin(), jobs.end());
-        
-        priority_queue<int, vector<int>, greater<int>> pq;
-        
-        for (const auto &job : jobs) {
-            if (job.first > pq.size())
-                pq.push(job.second);
-            else if (!pq.empty() && pq.top() < job.second) {
-                pq.pop();
-                pq.push(job.second);
+   vector<int> jobSequencing(vector<int> &deadline, vector<int> &profit) {
+    int n = deadline.size();
+    vector<pair<int,int>> jobs;
+    
+    for (int i = 0; i < n; i++) {
+        jobs.push_back({profit[i], deadline[i]});
+    }
+
+    // Sort by profit in descending order
+    sort(jobs.begin(), jobs.end(), [](const pair<int,int> &a, const pair<int,int> &b) {
+        return a.first > b.first;
+    });
+
+    // Find max deadline
+    int maxDeadline = 0;
+    for (int d : deadline) {
+        maxDeadline = max(maxDeadline, d);
+    }
+
+    // Time slots (-1 means free)
+    vector<int> slot(maxDeadline + 1, -1);
+
+    int totalProfit = 0;
+    int jobCount = 0;
+
+    // Assign jobs
+    for (auto &job : jobs) {
+        int profit = job.first;
+        int d = job.second;
+
+        // Try to place this job at the last possible free slot
+        for (int t = d; t > 0; t--) {
+            if (slot[t] == -1) {
+                slot[t] = profit; // mark as filled
+                totalProfit += profit;
+                jobCount++;
+                break;
             }
         }
-        
-        while (!pq.empty()) {
-            ans[1] += pq.top();
-            pq.pop();
-            ans[0]++;
-        }
-        
-        return ans;
-
     }
-};
 
-
-//{ Driver Code Starts.
-
-int main() {
-    int t;
-    cin >> t;
-    cin.ignore();
-    while (t--) {
-        vector<int> deadlines, profits;
-        string temp;
-        getline(cin, temp);
-        int x;
-        istringstream ss1(temp);
-        while (ss1 >> x)
-            deadlines.push_back(x);
-
-        getline(cin, temp);
-        istringstream ss2(temp);
-        while (ss2 >> x)
-            profits.push_back(x);
-
-        Solution obj;
-        vector<int> ans = obj.jobSequencing(deadlines, profits);
-        cout << ans[0] << " " << ans[1] << endl;
-        cout << "~" << endl;
-    }
-    return 0;
+    return {jobCount, totalProfit};
 }
-
-// } Driver Code Ends
+};
