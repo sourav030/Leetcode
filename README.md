@@ -373,6 +373,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0901-advantage-shuffle](https://github.com/sourav030/Leetcode/tree/master/0901-advantage-shuffle) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/sourav030/Leetcode/tree/master/0902-minimum-number-of-refueling-stops) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/sourav030/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1047-maximize-sum-of-array-after-k-negations](https://github.com/sourav030/Leetcode/tree/master/1047-maximize-sum-of-array-after-k-negations) |
 | [1304-longest-happy-string](https://github.com/sourav030/Leetcode/tree/master/1304-longest-happy-string) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/sourav030/Leetcode/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1451-minimum-number-of-taps-to-open-to-water-a-garden](https://github.com/sourav030/Leetcode/tree/master/1451-minimum-number-of-taps-to-open-to-water-a-garden) |
@@ -499,6 +500,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/sourav030/Leetcode/tree/master/1036-rotting-oranges) |
 | [1044-find-common-characters](https://github.com/sourav030/Leetcode/tree/master/1044-find-common-characters) |
 | [1046-max-consecutive-ones-iii](https://github.com/sourav030/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1047-maximize-sum-of-array-after-k-negations](https://github.com/sourav030/Leetcode/tree/master/1047-maximize-sum-of-array-after-k-negations) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/sourav030/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/sourav030/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1073-number-of-enclaves](https://github.com/sourav030/Leetcode/tree/master/1073-number-of-enclaves) |
@@ -730,6 +732,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0901-advantage-shuffle](https://github.com/sourav030/Leetcode/tree/master/0901-advantage-shuffle) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1047-maximize-sum-of-array-after-k-negations](https://github.com/sourav030/Leetcode/tree/master/1047-maximize-sum-of-array-after-k-negations) |
 | [1253-sort-the-matrix-diagonally](https://github.com/sourav030/Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/sourav030/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1427-all-elements-in-two-binary-search-trees](https://github.com/sourav030/Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
