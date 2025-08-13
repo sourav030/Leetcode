@@ -12,21 +12,21 @@
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
-        if(!root ){
-            vector<vector<int>>ar;
-            return ar;
+        if(!root){
+            vector<vector<int>>ans;
+            return ans;
         }
-        queue<TreeNode*>q;
-        q.push(root);
+        queue<TreeNode*>q; //  we need to performa level order travserl
+        bool track=0;
         vector<vector<int>>ans;
-        bool flag=0;
+        q.push(root);
         while(!q.empty()){
-            int n=q.size();
             vector<int>arr;
+            int n=q.size(); // each how many element are present
             for(int i=0; i<n; i++){
                 TreeNode* node=q.front();
-                arr.push_back(node->val);
                 q.pop();
+                arr.push_back(node->val);
                 if(node->left){
                     q.push(node->left);
                 }
@@ -34,11 +34,15 @@ public:
                     q.push(node->right);
                 }
             }
-            if(flag){
-                reverse(arr.begin(),arr.end());
+            if(!track){
+                ans.push_back(arr);
+                track=!track;
             }
-            flag=!flag;
-            ans.push_back(arr);
+            else{
+                reverse(arr.begin(),arr.end());
+                ans.push_back(arr);
+                track=!track;
+            }
         }
         return ans;
     }
