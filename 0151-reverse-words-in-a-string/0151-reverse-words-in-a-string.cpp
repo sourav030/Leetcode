@@ -14,17 +14,18 @@ public:
                 word="";
             }
         }
+
         if(!word.empty()){
             st.push(word);
         }
-        string ans="";
+        word="";
         while(!st.empty()){
-            ans+=st.top();
+            word+=st.top();
             st.pop();
             if(!st.empty()){
-                ans+=" ";
+                word+=" ";
             }
         }
-        return ans;
+        return word;
     }
 };
