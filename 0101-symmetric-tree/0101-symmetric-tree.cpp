@@ -21,7 +21,7 @@ public:
         if(root1->val!=root2->val){
             return false;
         }
-        return solve(root1->left,root2->right) and solve(root1->right,root2->left);
+        return solve(root1->left,root2->right) and solve(root1->right, root2->left);
     }
     bool isSymmetric(TreeNode* root) {
         return solve(root->left,root->right);
