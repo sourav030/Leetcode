@@ -10,15 +10,15 @@
  */
 class Solution {
 public:
-    ListNode* solve(ListNode* prev,ListNode* head){
+    ListNode* solve(ListNode* head, ListNode* prev){
         if(!head){
             return prev;
         }
         ListNode* Next=head->next;
         head->next=prev;
-        return solve(head,Next);
+        return solve(Next,head);
     }
     ListNode* reverseList(ListNode* head) {
-        return solve(nullptr,head);
+        return solve(head,nullptr);
     }
 };
