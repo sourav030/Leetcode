@@ -238,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0874-backspace-string-compare](https://github.com/sourav030/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/sourav030/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/sourav030/Leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
+| [0981-delete-columns-to-make-sorted](https://github.com/sourav030/Leetcode/tree/master/0981-delete-columns-to-make-sorted) |
 | [1044-find-common-characters](https://github.com/sourav030/Leetcode/tree/master/1044-find-common-characters) |
 | [1078-remove-outermost-parentheses](https://github.com/sourav030/Leetcode/tree/master/1078-remove-outermost-parentheses) |
 | [1160-letter-tile-possibilities](https://github.com/sourav030/Leetcode/tree/master/1160-letter-tile-possibilities) |
@@ -502,6 +503,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0943-sum-of-subarray-minimums](https://github.com/sourav030/Leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [0966-binary-subarrays-with-sum](https://github.com/sourav030/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/sourav030/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [0981-delete-columns-to-make-sorted](https://github.com/sourav030/Leetcode/tree/master/0981-delete-columns-to-make-sorted) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1025-minimum-cost-for-tickets](https://github.com/sourav030/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1036-rotting-oranges](https://github.com/sourav030/Leetcode/tree/master/1036-rotting-oranges) |
