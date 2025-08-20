@@ -252,6 +252,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/sourav030/Leetcode/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/sourav030/Leetcode/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1770-minimum-deletions-to-make-character-frequencies-unique](https://github.com/sourav030/Leetcode/tree/master/1770-minimum-deletions-to-make-character-frequencies-unique) |
+| [1777-determine-if-two-strings-are-close](https://github.com/sourav030/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 | [1880-largest-merge-of-two-strings](https://github.com/sourav030/Leetcode/tree/master/1880-largest-merge-of-two-strings) |
 | [1923-sentence-similarity-iii](https://github.com/sourav030/Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/sourav030/Leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
@@ -745,6 +746,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1464-reduce-array-size-to-the-half](https://github.com/sourav030/Leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 | [1770-minimum-deletions-to-make-character-frequencies-unique](https://github.com/sourav030/Leetcode/tree/master/1770-minimum-deletions-to-make-character-frequencies-unique) |
+| [1777-determine-if-two-strings-are-close](https://github.com/sourav030/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/sourav030/Leetcode/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/sourav030/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2210-find-target-indices-after-sorting-array](https://github.com/sourav030/Leetcode/tree/master/2210-find-target-indices-after-sorting-array) |
@@ -1085,6 +1087,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1635-number-of-good-pairs](https://github.com/sourav030/Leetcode/tree/master/1635-number-of-good-pairs) |
 | [1694-make-sum-divisible-by-p](https://github.com/sourav030/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1770-minimum-deletions-to-make-character-frequencies-unique](https://github.com/sourav030/Leetcode/tree/master/1770-minimum-deletions-to-make-character-frequencies-unique) |
+| [1777-determine-if-two-strings-are-close](https://github.com/sourav030/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/sourav030/Leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/sourav030/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
@@ -1108,6 +1111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1160-letter-tile-possibilities](https://github.com/sourav030/Leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/sourav030/Leetcode/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1635-number-of-good-pairs](https://github.com/sourav030/Leetcode/tree/master/1635-number-of-good-pairs) |
+| [1777-determine-if-two-strings-are-close](https://github.com/sourav030/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
 ## Matrix
 |  |
