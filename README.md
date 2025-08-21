@@ -222,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0443-string-compression](https://github.com/sourav030/Leetcode/tree/master/0443-string-compression) |
 | [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0451-sort-characters-by-frequency](https://github.com/sourav030/Leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [0472-concatenated-words](https://github.com/sourav030/Leetcode/tree/master/0472-concatenated-words) |
 | [0516-longest-palindromic-subsequence](https://github.com/sourav030/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0520-detect-capital](https://github.com/sourav030/Leetcode/tree/master/0520-detect-capital) |
 | [0556-next-greater-element-iii](https://github.com/sourav030/Leetcode/tree/master/0556-next-greater-element-iii) |
@@ -311,6 +312,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/sourav030/Leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/sourav030/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0446-arithmetic-slices-ii-subsequence](https://github.com/sourav030/Leetcode/tree/master/0446-arithmetic-slices-ii-subsequence) |
+| [0472-concatenated-words](https://github.com/sourav030/Leetcode/tree/master/0472-concatenated-words) |
 | [0494-target-sum](https://github.com/sourav030/Leetcode/tree/master/0494-target-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/sourav030/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0518-coin-change-ii](https://github.com/sourav030/Leetcode/tree/master/0518-coin-change-ii) |
@@ -474,6 +476,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0446-arithmetic-slices-ii-subsequence](https://github.com/sourav030/Leetcode/tree/master/0446-arithmetic-slices-ii-subsequence) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/sourav030/Leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/sourav030/Leetcode/tree/master/0455-assign-cookies) |
+| [0472-concatenated-words](https://github.com/sourav030/Leetcode/tree/master/0472-concatenated-words) |
 | [0494-target-sum](https://github.com/sourav030/Leetcode/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/sourav030/Leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/sourav030/Leetcode/tree/master/0503-next-greater-element-ii) |
@@ -737,6 +740,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/sourav030/Leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/sourav030/Leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/sourav030/Leetcode/tree/master/0455-assign-cookies) |
+| [0472-concatenated-words](https://github.com/sourav030/Leetcode/tree/master/0472-concatenated-words) |
 | [0621-task-scheduler](https://github.com/sourav030/Leetcode/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/sourav030/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/sourav030/Leetcode/tree/master/0778-reorganize-string) |
@@ -845,6 +849,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0437-path-sum-iii](https://github.com/sourav030/Leetcode/tree/master/0437-path-sum-iii) |
 | [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
+| [0472-concatenated-words](https://github.com/sourav030/Leetcode/tree/master/0472-concatenated-words) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0538-convert-bst-to-greater-tree](https://github.com/sourav030/Leetcode/tree/master/0538-convert-bst-to-greater-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourav030/Leetcode/tree/master/0543-diameter-of-binary-tree) |
@@ -1218,6 +1223,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0014-longest-common-prefix](https://github.com/sourav030/Leetcode/tree/master/0014-longest-common-prefix) |
 | [0139-word-break](https://github.com/sourav030/Leetcode/tree/master/0139-word-break) |
+| [0472-concatenated-words](https://github.com/sourav030/Leetcode/tree/master/0472-concatenated-words) |
 | [0692-top-k-frequent-words](https://github.com/sourav030/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [0808-number-of-matching-subsequences](https://github.com/sourav030/Leetcode/tree/master/0808-number-of-matching-subsequences) |
 ## Merge Sort
