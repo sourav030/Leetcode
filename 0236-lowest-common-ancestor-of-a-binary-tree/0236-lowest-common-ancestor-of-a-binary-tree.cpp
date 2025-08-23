@@ -10,29 +10,29 @@
 class Solution {
 public:
     TreeNode* solve(TreeNode* root, TreeNode* p, TreeNode* q){
-         if(!root){
+        if(!root){
             return nullptr;
-         }
-         if(root==p){
+        }
+        if(root==p){
             return root;
-         }
-         if(root==q){
+        }
+        if(root==q){
             return root;
-         }
-         TreeNode* left1=solve(root->left,p,q);
-         TreeNode* right1=solve(root->right,p,q);
-         if(left1 and right1){
+        }
+        TreeNode* left=solve(root->left,p,q);
+        TreeNode* right=solve(root->right,p,q);
+        if(left and right){
             return root;
-         }
-         else if(left1){
-            return left1;
-         }
-         else{
-            return right1;
-         }
+        }
+        else if(left){
+            return left;
+        }
+        else{
+            return right;
+        }
+
     }
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        
-        return solve(root, p,q);
+        return solve(root,p,q);
     }
 };
