@@ -1,38 +1,33 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution {
 public:
-    int length(ListNode* head){
-        int len=0;
-        while(head){
-            len++;
-            head=head->next;
-        }
-        return len;
+    ListNode* reverse(ListNode* head, ListNode* prev){
+        if(!head) return prev;
+        ListNode* Next = head->next;
+        head->next = prev;
+        return reverse(Next, head);
     }
+
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        int len=length(head);
-        int index=len-n;
-        ListNode *orignal=head;
-        if(index==0){
-            return head->next;
+        head = reverse(head, nullptr);  // reverse the list
+        if(n == 1){
+            // Remove the first node of the reversed list
+            ListNode* temp = head;
+            head = head->next;
+            delete temp;
+            return reverse(head, nullptr);
         }
-        while(index!=1 and head){
-            head=head->next;
-            index--;
+
+        ListNode* curr = head;
+        for(int i = 1; i < n-1 && curr; i++){
+            curr = curr->next;
         }
-        if(head){
-            head->next=head->next->next;
+
+        if(curr && curr->next){
+            ListNode* temp = curr->next;
+            curr->next = curr->next->next;
+            delete temp;
         }
-       
-        return orignal;
+
+        return reverse(head, nullptr); 
     }
 };
