@@ -11,9 +11,8 @@
  */
 class Solution {
 public:
-    unordered_map<int,int>mp;
-    
-    bool solve(TreeNode* root , int k){
+    unordered_map<int, int>mp;
+    bool solve(TreeNode* root, int k){
         if(!root){
             return false;
         }
@@ -21,12 +20,9 @@ public:
             return true;
         }
         mp[root->val]=1;
-        bool left=solve(root->left,k);
-        bool right=solve(root->right,k);
-        return left|| right;
+        return solve(root->left, k)||solve(root->right,k);
     }
     bool findTarget(TreeNode* root, int k) {
-        
         return solve(root,k);
     }
 };
