@@ -11,31 +11,27 @@
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        unordered_map<int,int>mp;
-        ListNode* tem=head;
-        while(tem){
-            mp[tem->val]++;
-            tem=tem->next;
-        }
         ListNode* ans=new ListNode(-1);
-        tem=ans;
-        ListNode* prev=nullptr;
+        ListNode* tail1=head;
+        ListNode* tail=ans;
+        unordered_map<int,int>mp;
+
+        while(tail1){
+            mp[tail1->val]++;
+            tail1=tail1->next;
+        }
+
         while(head){
             if(mp[head->val]==1){
-                cout<<mp[head->val]<<" ";
-                ans->next=head;
-                ans=ans->next;
-                prev=head->next;
-                ans->next=nullptr;
+                tail->next=head;
+                tail=tail->next;
+                head=head->next;
+                tail->next =nullptr;
             }
             else{
-                prev=nullptr;
+                head=head->next;
             }
-            if(!prev)
-              head=head->next;
-            else
-                head=prev;
         }
-        return tem->next;
+        return ans->next;
     }
 };
