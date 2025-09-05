@@ -1,24 +1,8 @@
 class Solution {
 public:
     vector<vector<string>> ans;
-    vector<string> arr;
-    
-    void solve(int index, const string &str) {
-        if (index >= str.length()) {
-            ans.push_back(arr);
-            return;
-        }
-        
-        for (int i = index; i < str.length(); i++) {
-            if (isPalindrome(index, i, str)) {  // pass end index, not length
-                arr.push_back(str.substr(index, i - index + 1));
-                solve(i + 1, str);
-                arr.pop_back();
-            }
-        }
-    }
-    
-    bool isPalindrome(int start, int end, const string &str) {
+
+    bool isPalindrome(string &str, int start, int end) {
         while (start < end) {
             if (str[start] != str[end]) return false;
             start++;
@@ -26,9 +10,26 @@ public:
         }
         return true;
     }
-    
+
+    void solve(vector<string>& arr, string &str, int index) {
+        if (index >= str.length()) {
+            ans.push_back(arr);
+            return;
+        }
+
+        // Partition the string
+        for (int i = index; i < str.length(); i++) {
+            if (isPalindrome(str, index, i)) {
+                arr.push_back(str.substr(index, i - index + 1));
+                solve(arr, str, i + 1);
+                arr.pop_back();
+            }
+        }
+    }
+
     vector<vector<string>> partition(string s) {
-        solve(0, s);
+        vector<string> arr;
+        solve(arr, s, 0);
         return ans;
     }
 };
