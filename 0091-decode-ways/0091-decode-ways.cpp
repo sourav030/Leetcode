@@ -1,29 +1,27 @@
 class Solution {
 public:
-    int solve(int index, string s, int n, vector<int>&dp){
-        if(index == n) {
+    vector<int>arr;
+    int solve(int idx, string s){
+        if(s[idx]=='0'){
+            return 0;
+        }
+        if(idx>=s.length()){
             return 1;
         }
-        if(dp[index]!=-1){
-            return dp[index];
+        if(arr[idx]!=-1){
+            return arr[idx];
         }
-        if(s[index] == '0'){
-            return dp[index]=0;;
-        }
-
-        int result = solve(index + 1, s, n,dp); 
-
-        if(index + 1 < n){
-            if((s[index] == '1') || (s[index] == '2' && s[index + 1] <= '6')){
-                result += solve(index + 2, s, n,dp); 
+        int result=solve(idx+1,s);
+        if(idx+1<s.length()){
+            if(s[idx]=='1' or s[idx]=='2' and s[idx+1]<='6'){
+                result+=solve(idx+2,s);
             }
         }
-        return dp[index]= result;
+       return arr[idx]=result;
     }
-
     int numDecodings(string s) {
-        vector<int>dp(s.length(),-1);
-        int n = s.length();
-        return solve(0, s, n,dp);
+        arr.resize(s.length()+1,-1);
+       return solve(0,s);
+        
     }
 };
