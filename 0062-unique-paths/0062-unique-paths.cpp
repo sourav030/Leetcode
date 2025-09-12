@@ -1,16 +1,24 @@
 class Solution {
 public:
-    int solve(int m, int n,vector<vector<int>>& dp){
-        if(m==0 and n==0) return 1;
-        if(m<0 or n<0) return 0;
-        if(dp[m][n]!=-1) return dp[m][n];
-        int left=solve(m,n-1,dp);
-        int right=solve(m-1,n,dp);
-        return dp[m][n]= left+right;
+    int row, col;
+    vector<vector<int>> dp;
+
+    int solve(int r, int c) {
+        if (r == row - 1 && c == col - 1) return 1; // reached destination
+        if (r >= row || c >= col) return 0;         // out of bounds
+
+        if (dp[r][c] != -1) return dp[r][c];        // already computed
+
+        int right = solve(r, c + 1);
+        int down = solve(r + 1, c);
+
+        return dp[r][c] = right + down;
     }
+
     int uniquePaths(int m, int n) {
-        
-        vector<vector<int>>dp(m,vector<int>(n,-1));
-        return solve(m-1,n-1,dp);
+        row = m;
+        col = n;
+        dp.assign(m, vector<int>(n, -1)); 
+        return solve(0, 0);
     }
 };
