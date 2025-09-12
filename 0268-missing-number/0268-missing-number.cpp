@@ -6,7 +6,7 @@ public:
         for(int i=0; i<nums.size(); i++){
             sum+=nums[i];
         }
-        int mising=(n*(n+1)/2)-sum;
-        return mising;
+        int missing=(n*(n+1)/2)-sum;
+        return missing;
     }
 };
