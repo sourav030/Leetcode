@@ -474,6 +474,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/sourav030/Leetcode/tree/master/0162-find-peak-element) |
 | [0164-maximum-gap](https://github.com/sourav030/Leetcode/tree/master/0164-maximum-gap) |
+| [0169-majority-element](https://github.com/sourav030/Leetcode/tree/master/0169-majority-element) |
 | [0179-largest-number](https://github.com/sourav030/Leetcode/tree/master/0179-largest-number) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/sourav030/Leetcode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0189-rotate-array](https://github.com/sourav030/Leetcode/tree/master/0189-rotate-array) |
@@ -763,6 +764,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0147-insertion-sort-list](https://github.com/sourav030/Leetcode/tree/master/0147-insertion-sort-list) |
 | [0148-sort-list](https://github.com/sourav030/Leetcode/tree/master/0148-sort-list) |
 | [0164-maximum-gap](https://github.com/sourav030/Leetcode/tree/master/0164-maximum-gap) |
+| [0169-majority-element](https://github.com/sourav030/Leetcode/tree/master/0169-majority-element) |
 | [0179-largest-number](https://github.com/sourav030/Leetcode/tree/master/0179-largest-number) |
 | [0215-kth-largest-element-in-an-array](https://github.com/sourav030/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/sourav030/Leetcode/tree/master/0217-contains-duplicate) |
@@ -1035,6 +1037,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/sourav030/Leetcode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sourav030/Leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0148-sort-list](https://github.com/sourav030/Leetcode/tree/master/0148-sort-list) |
+| [0169-majority-element](https://github.com/sourav030/Leetcode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/sourav030/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/sourav030/Leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0347-top-k-frequent-elements](https://github.com/sourav030/Leetcode/tree/master/0347-top-k-frequent-elements) |
@@ -1100,6 +1103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/sourav030/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/sourav030/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/sourav030/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
+| [0169-majority-element](https://github.com/sourav030/Leetcode/tree/master/0169-majority-element) |
 | [0205-isomorphic-strings](https://github.com/sourav030/Leetcode/tree/master/0205-isomorphic-strings) |
 | [0217-contains-duplicate](https://github.com/sourav030/Leetcode/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/sourav030/Leetcode/tree/master/0229-majority-element-ii) |
@@ -1154,6 +1158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/sourav030/Leetcode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/sourav030/Leetcode/tree/master/0229-majority-element-ii) |
 | [0347-top-k-frequent-elements](https://github.com/sourav030/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/sourav030/Leetcode/tree/master/0451-sort-characters-by-frequency) |
