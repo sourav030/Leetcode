@@ -1,26 +1,22 @@
 class Solution {
 public:
-
-    bool solve(vector<int>& arr, int weight, int Day){
-        int loadWeight=0;
-        int day=1;
-        for(int i=0; i<arr.size(); i++){
-            if(loadWeight+arr[i]>weight){
-                day++;
-                loadWeight=arr[i];
+    bool isValid(vector<int>&weights, int day, int w){
+        int d=1;
+        int val=0;
+        for(int i=0; i<weights.size(); i++){
+            if(val+weights[i]>w){
+                d++;
+                val=weights[i];
             }
             else{
-                loadWeight+=arr[i];
+                val+=weights[i];
+            }
+            if(d>day){
+                return false;
             }
         }
-        if(day<=Day){
-            return 1;
-        }
-        else{
-            return 0;
-        }
+        return d<=day;
     }
-
     int shipWithinDays(vector<int>& weights, int days) {
         int low=INT_MIN;
         int high=0;
@@ -30,10 +26,9 @@ public:
         }
 
         int ans=-1;
-
         while(low<=high){
             int mid=low+(high-low)/2;
-            if(solve(weights,mid,days)){
+            if(isValid(weights,days,mid)){
                 ans=mid;
                 high=mid-1;
             }
