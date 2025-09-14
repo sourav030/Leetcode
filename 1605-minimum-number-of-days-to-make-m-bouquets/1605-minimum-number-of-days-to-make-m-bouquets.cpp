@@ -1,42 +1,43 @@
 class Solution {
 public:
-    bool possible(vector<int>& arr, int day, int m, int k) {
-        int count = 0;  // Consecutive flowers available
-        int bouquet = 0;  // Total bouquets formed
-
-        for (int i = 0; i < arr.size(); i++) {
-            if (arr[i] <= day) {
+    bool isValid(vector<int>&bloomDay,int m, int k, int val){
+        int count=0;
+        int bouket=0;
+        for(int i=0; i<bloomDay.size(); i++){
+            if(bloomDay[i]<=val){
                 count++;
-                if (count == k) {  // Form a bouquet
-                    bouquet++;
-                    count = 0;  // Reset count
-                }
-            } else {
-                count = 0;  // Reset count as flowers are not blooming
+            }
+            else{
+                count=0;
+            }
+            if(count==k){
+                bouket++;
+                count=0;
+            }
+            if(bouket==m){
+                return true;
             }
         }
-        return bouquet >= m;  // Check if we can form at least m bouquets
+        return bouket==m;
     }
-
-    int minDays(vector<int>& arr, int m, int k) {
-        if(m>arr.size()){
-            return -1;
+    int minDays(vector<int>& bloomDay, int m, int k) {
+        int n=bloomDay.size();
+        // long long a=m*k;
+        // if(a>bloomDay.size()) return -1;
+        int low=1;
+        int high=1;
+        for(int i=0; i<bloomDay.size(); i++){
+            high=max(high,bloomDay[i]);
         }
-        if (m * k > arr.size()) {
-            return -1;  // Not enough flowers to form m bouquets
-        }
-
-        int low = *min_element(arr.begin(), arr.end());
-        int high = *max_element(arr.begin(), arr.end());
-        int ans = -1;
-
-        while (low <= high) {
-            int mid = low + (high - low) / 2;
-            if (possible(arr, mid, m, k)) {
-                ans = mid;  // Update answer
-                high = mid - 1;  // Look for smaller days
-            } else {
-                low = mid + 1;  // Look for larger days
+        int ans=-1;
+        while(low<=high){
+            int mid=low+(high-low)/2;
+            if(isValid(bloomDay,m,k,mid)){
+                ans=mid;
+                high=mid-1;
+            }
+            else{
+                low=mid+1;
             }
         }
         return ans;
