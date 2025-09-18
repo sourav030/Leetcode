@@ -1,20 +1,18 @@
 class Solution {
 public:
-    bool isPossible(vector<int>& nums, int target, int k){
-        int count =1;
-        int sum=0;
+    bool solve(vector<int>&nums, int sum, int k){
+        int count=1;
+        int currsum=0;
         for(int i=0; i<nums.size(); i++){
-
-            if(nums[i]>target){
+            if(nums[i]>sum){
                 return false;
             }
-            if(sum+nums[i]<=target){
-            sum+=nums[i];
-            
+            if(currsum+nums[i]>sum){
+                currsum=nums[i];
+                count++;
             }
             else{
-                count++;
-                sum=nums[i];
+                currsum+=nums[i];
             }
         }
         return count<=k;
@@ -23,13 +21,13 @@ public:
         int low=0;
         int high=0;
         for(int i=0; i<nums.size(); i++){
-            high+=nums[i];
             low=max(low,nums[i]);
+            high+=nums[i];
         }
-        int ans=-1;
+        int ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
-            if(isPossible(nums,mid,k)){
+            if(solve(nums,mid, k)){
                 ans=mid;
                 high=mid-1;
             }
