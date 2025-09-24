@@ -273,6 +273,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1770-minimum-deletions-to-make-character-frequencies-unique](https://github.com/sourav030/Leetcode/tree/master/1770-minimum-deletions-to-make-character-frequencies-unique) |
 | [1777-determine-if-two-strings-are-close](https://github.com/sourav030/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 | [1880-largest-merge-of-two-strings](https://github.com/sourav030/Leetcode/tree/master/1880-largest-merge-of-two-strings) |
+| [1890-sum-of-beauty-of-all-substrings](https://github.com/sourav030/Leetcode/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [1923-sentence-similarity-iii](https://github.com/sourav030/Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/sourav030/Leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/sourav030/Leetcode/tree/master/2021-remove-all-occurrences-of-a-substring) |
@@ -1152,6 +1153,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1694-make-sum-divisible-by-p](https://github.com/sourav030/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1770-minimum-deletions-to-make-character-frequencies-unique](https://github.com/sourav030/Leetcode/tree/master/1770-minimum-deletions-to-make-character-frequencies-unique) |
 | [1777-determine-if-two-strings-are-close](https://github.com/sourav030/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
+| [1890-sum-of-beauty-of-all-substrings](https://github.com/sourav030/Leetcode/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/sourav030/Leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/sourav030/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
@@ -1177,6 +1179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/sourav030/Leetcode/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1635-number-of-good-pairs](https://github.com/sourav030/Leetcode/tree/master/1635-number-of-good-pairs) |
 | [1777-determine-if-two-strings-are-close](https://github.com/sourav030/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
+| [1890-sum-of-beauty-of-all-substrings](https://github.com/sourav030/Leetcode/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [2448-count-number-of-bad-pairs](https://github.com/sourav030/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
 ## Matrix
 |  |
