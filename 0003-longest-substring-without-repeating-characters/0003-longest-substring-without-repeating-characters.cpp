@@ -1,20 +1,23 @@
 class Solution {
 public:
-    int lengthOfLongestSubstring(string nums) {
-        int start=0;
-        int end=0;
-        unordered_set<char>st;
+    int lengthOfLongestSubstring(string s) {
         int ans=0;
-        while(end<nums.length()){
-            if(st.find(nums[end])==st.end()){
-                st.insert(nums[end]);
+        int start=0; 
+        int end=0;
+        unordered_map<char,int>mp;
+        while(end<s.length()){
+            if(mp.find(s[end])==mp.end()){
+                mp[s[end]]=1;
             }
             else{
-                while(start<end and st.find(nums[end])!=st.end()){
-                    st.erase(nums[start]);
+                while(mp.find(s[end])!=mp.end() and start<end){
+                    mp[s[start]]--;
+                    if(mp[s[start]]==0){
+                        mp.erase(s[start]);
+                    }
                     start++;
                 }
-                st.insert(nums[end]);
+                mp[s[end]]=1;
             }
             ans=max(ans,end-start+1);
             end++;
