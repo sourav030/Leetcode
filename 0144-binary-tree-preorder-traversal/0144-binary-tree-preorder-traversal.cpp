@@ -19,14 +19,14 @@ public:
         stack<TreeNode*>st;
         st.push(root);
         while(!st.empty()){
-            root=st.top();
+            TreeNode* node=st.top();
             st.pop();
-            ans.push_back(root->val);
-            if(root->right){
-                st.push(root->right);
+            ans.push_back(node->val);
+            if(node->right){
+                st.push(node->right);
             }
-            if(root->left){
-                st.push(root->left);
+            if(node->left){
+                st.push(node->left);
             }
         }
         return ans;
