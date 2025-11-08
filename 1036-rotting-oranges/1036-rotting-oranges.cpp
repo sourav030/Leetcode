@@ -4,7 +4,7 @@ public:
         int n=grid.size();
         int m=grid[0].size();
 
-        // Queue
+        // Queu
         queue<pair<pair<int,int>,int>> q;
         int vis[n][m];
         for(int i=0; i<n; i++){
@@ -50,7 +50,6 @@ public:
                 }
             }
         }
-        
         return tm;
     }
 };
