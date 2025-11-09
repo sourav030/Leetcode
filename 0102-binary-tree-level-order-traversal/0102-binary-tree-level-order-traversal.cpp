@@ -19,8 +19,8 @@ public:
         queue<TreeNode*>q;
         q.push(root);
         while(!q.empty()){
-            vector<int>arr;
             int n=q.size();
+            vector<int>arr;
             for(int i=0; i<n; i++){
                 TreeNode* node=q.front();
                 q.pop();
