@@ -13,21 +13,20 @@ class Solution {
 public:
     unordered_map<int,int>mp;
     TreeNode* solve(vector<int>&preorder, int &idx, int start, int end){
-        if(start>end){
+        if(start>end or idx>=preorder.size()){
             return nullptr;
         }
+        int index=mp[preorder[idx]];
         TreeNode* root=new TreeNode(preorder[idx++]);
-        int mid=mp[root->val];
-        root->left=solve(preorder,idx,start,mid-1);
-        root->right=solve(preorder,idx,mid+1,end);
+        root->left=solve(preorder,idx,start,index-1);
+        root->right=solve(preorder,idx,index+1,end);
         return root;
     }
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-        int idx=0;
-        int n=inorder.size()-1;
         for(int i=0; i<inorder.size(); i++){
             mp[inorder[i]]=i;
         }
-        return solve(preorder,idx,0,n);
+        int idx=0;
+        return solve(preorder,idx,0,inorder.size()-1);
     }
 };
