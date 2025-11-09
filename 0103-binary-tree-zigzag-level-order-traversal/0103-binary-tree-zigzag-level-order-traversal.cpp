@@ -12,17 +12,16 @@
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        vector<vector<int>>ans;
         if(!root){
-            vector<vector<int>>ans;
             return ans;
         }
-        queue<TreeNode*>q; //  we need to performa level order travserl
-        bool track=0;
-        vector<vector<int>>ans;
+        bool left=1;
+        queue<TreeNode*>q;
         q.push(root);
         while(!q.empty()){
             vector<int>arr;
-            int n=q.size(); // each how many element are present
+            int n=q.size();
             for(int i=0; i<n; i++){
                 TreeNode* node=q.front();
                 q.pop();
@@ -34,14 +33,14 @@ public:
                     q.push(node->right);
                 }
             }
-            if(!track){
+            if(left){
                 ans.push_back(arr);
-                track=!track;
+                left=!left;
             }
             else{
                 reverse(arr.begin(),arr.end());
                 ans.push_back(arr);
-                track=!track;
+                left=!left;
             }
         }
         return ans;
