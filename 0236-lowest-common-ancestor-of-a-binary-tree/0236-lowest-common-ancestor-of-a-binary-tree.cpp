@@ -11,7 +11,7 @@ class Solution {
 public:
     TreeNode* solve(TreeNode* root, TreeNode* p, TreeNode* q){
         if(!root){
-            return nullptr;
+            return root;
         }
         if(root==p){
             return root;
@@ -24,13 +24,11 @@ public:
         if(left and right){
             return root;
         }
-        else if(left){
+        if(left){
             return left;
         }
-        else{
-            return right;
-        }
-
+        else
+           return right;
     }
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         return solve(root,p,q);
