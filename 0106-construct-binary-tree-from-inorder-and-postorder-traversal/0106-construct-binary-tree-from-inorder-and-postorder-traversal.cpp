@@ -12,23 +12,24 @@
 class Solution {
 public:
     unordered_map<int,int>mp;
-    TreeNode* solve(vector<int>& postorder, int &idx, int start, int end){
-        
-        if(start>end){
+    TreeNode* solve(vector<int>&postOrder, int &idx, int start,int end){
+        if(start>end or idx<0){
             return nullptr;
         }
-        TreeNode* root=new TreeNode(postorder[idx--]);
-        int mid=mp[root->val];
-        root->right=solve(postorder,idx,mid+1,end);
-        root->left=solve(postorder,idx,start,mid-1);
+        int val=postOrder[idx];
+        int index=mp[postOrder[idx--]];
+        TreeNode* root=new TreeNode(val);
+        root->right=solve(postOrder,idx,index+1,end);
+        root->left=solve(postOrder,idx,start,index-1);
         return root;
+
     }
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
-        int n=inorder.size()-1;
-        int idx=n;
         for(int i=0; i<inorder.size(); i++){
             mp[inorder[i]]=i;
         }
+        int n=inorder.size()-1;
+        int idx=n;
         return solve(postorder,idx,0,n);
     }
 };
