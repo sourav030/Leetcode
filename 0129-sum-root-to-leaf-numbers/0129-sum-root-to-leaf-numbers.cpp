@@ -11,17 +11,17 @@
  */
 class Solution {
 public:
-    long long ans=0;
+    int ans=0;
     void solve(TreeNode* root, long long sum){
         if(!root){
             return;
         }
         if(!root->left and !root->right){
             sum=sum*10+root->val;
-              ans+=sum;
-             
+            ans+=sum;
+            return;
         }
-        long long a=sum*10+root->val;
+        long long  a=sum*10+root->val;;
         solve(root->left,a);
         solve(root->right,a);
     }
