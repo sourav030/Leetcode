@@ -22,6 +22,8 @@ public:
         return root;
     }
     TreeNode* sortedArrayToBST(vector<int>& nums) {
-        return solve(nums,0,nums.size()-1);
+        int start=0;
+        int end=nums.size()-1;
+        return solve(nums,start,end);
     }
 };
