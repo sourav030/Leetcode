@@ -11,31 +11,29 @@
  */
 class Solution {
 public:
-    TreeNode* bst(vector<int>&ans, int start,int end){
-        if(end<start){
+    vector<int>ans;
+    void inorder(TreeNode* root, int key){
+        if(!root){
+            return ;
+        }
+        inorder(root->left,key);
+        if(root->val!=key){
+            ans.push_back(root->val);
+        }
+        inorder(root->right,key);
+    }
+    TreeNode* solve(vector<int>ans, int start, int end){
+        if(start>end){
             return nullptr;
         }
         int mid=start+(end-start)/2;
         TreeNode* root=new TreeNode(ans[mid]);
-        root->left=bst(ans, start,mid-1);
-        root->right=bst(ans,mid+1,end);
+        root->left=solve(ans,start,mid-1);
+        root->right=solve(ans,mid+1,end);
         return root;
     }
-    void inorder(TreeNode* root, vector<int>&arr, int key){
-        if(!root){
-            return;
-        }
-        inorder(root->left,arr,key);
-        if(root->val!=key){
-            arr.push_back(root->val);
-        }
-        inorder(root->right,arr,key);
-    }
     TreeNode* deleteNode(TreeNode* root, int key) {
-        vector<int>ans;
-        inorder(root,ans,key);
-        int n=ans.size()-1;
-        return bst(ans,0,n);
-
+        inorder(root,key);
+        return solve(ans,0,ans.size()-1);
     }
 };
