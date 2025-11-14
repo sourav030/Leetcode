@@ -1,33 +1,34 @@
 class Solution {
 public:
-    ListNode* reverse(ListNode* head, ListNode* prev){
-        if(!head) return prev;
-        ListNode* Next = head->next;
-        head->next = prev;
-        return reverse(Next, head);
+    ListNode* reverse(ListNode* node, ListNode* prev){
+        if (!node) return prev;
+        ListNode* Next = node->next;
+        node->next = prev;
+        return reverse(Next, node);
     }
 
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        head = reverse(head, nullptr);  // reverse the list
-        if(n == 1){
-            // Remove the first node of the reversed list
-            ListNode* temp = head;
-            head = head->next;
-            delete temp;
-            return reverse(head, nullptr);
+
+        // Reverse list
+        ListNode* rev = reverse(head, nullptr);
+
+    
+        if (n == 1) {
+            return reverse(rev->next, nullptr);
         }
 
-        ListNode* curr = head;
-        for(int i = 1; i < n-1 && curr; i++){
+      
+        ListNode* curr = rev;
+        for (int i = 1; i < n - 1; i++) {
             curr = curr->next;
         }
 
-        if(curr && curr->next){
-            ListNode* temp = curr->next;
+        
+        if (curr->next) {
             curr->next = curr->next->next;
-            delete temp;
         }
 
-        return reverse(head, nullptr); 
+       
+        return reverse(rev, nullptr);
     }
 };
