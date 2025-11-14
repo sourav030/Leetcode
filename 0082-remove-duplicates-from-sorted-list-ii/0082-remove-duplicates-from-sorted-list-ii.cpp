@@ -1,37 +1,30 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        ListNode* ans=new ListNode(-1);
-        ListNode* tail1=head;
-        ListNode* tail=ans;
-        unordered_map<int,int>mp;
+        if (!head) return nullptr;
 
-        while(tail1){
-            mp[tail1->val]++;
-            tail1=tail1->next;
+        unordered_map<int,int> mp;
+        ListNode* temp = head;
+        
+        // count frequencies
+        while (temp) {
+            mp[temp->val]++;
+            temp = temp->next;
         }
-
-        while(head){
-            if(mp[head->val]==1){
-                tail->next=head;
-                tail=tail->next;
-                head=head->next;
-                tail->next =nullptr;
+        
+        ListNode* ans = new ListNode(-1);
+        ListNode* tail = ans;
+        
+        while (head) {
+            if (mp[head->val] == 1) {
+                tail->next = head;   
+                tail = tail->next;   
             }
-            else{
-                head=head->next;
-            }
+            head = head->next;
         }
+        
+        tail->next = nullptr;  
+        
         return ans->next;
     }
 };
