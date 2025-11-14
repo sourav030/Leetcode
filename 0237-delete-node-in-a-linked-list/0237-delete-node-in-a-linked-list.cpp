@@ -12,7 +12,7 @@ public:
         node->val = node->next->val;
 
     // Update the pointer of the current node to skip the next node
-    ListNode* temp = node->next;
+   
     node->next = node->next->next;
     }
 };
