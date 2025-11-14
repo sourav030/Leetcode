@@ -18,10 +18,8 @@ public:
             int val1=l1?l1->val:0;
             int val2=l2?l2->val:0;
             int sum=val1+val2+carry;
-            int ans1=sum%10;
             carry=sum/10;
-            ListNode* newNode=new ListNode(ans1);
-            tail->next=newNode;
+            tail->next=new ListNode(sum%10);
             tail=tail->next;
             if(l1){
                 l1=l1->next;
