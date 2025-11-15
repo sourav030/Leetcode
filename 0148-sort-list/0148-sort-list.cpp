@@ -1,75 +1,46 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution {
 public:
-    ListNode* middle(ListNode* head){
-    ListNode* slow = head;
-    ListNode* fast = head;
-    ListNode* prev = nullptr;
+    ListNode* findMid(ListNode* head){
+        ListNode* slow = head;
+        ListNode* fast = head->next;
 
-    while(fast && fast->next){
-        prev = slow;
-        slow = slow->next;
-        fast = fast->next->next;
+        while (fast && fast->next) {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        return slow;
     }
 
-    return prev; 
-}
+    ListNode* merge(ListNode* a, ListNode* b){
+        ListNode* dummy = new ListNode(-1);
+        ListNode* tail = dummy;
 
-    ListNode* merge(ListNode* head1 , ListNode* head2){
-        if (!head1) return head2;
-        if (!head2) return head1;
-
-        ListNode* ans=new ListNode(-1);
-        ListNode* tail=ans;
-
-        while(head1 and head2){
-            if(head1->val<head2->val){
-                tail->next=head1;
-                head1=head1->next;
+        while (a && b){
+            if (a->val < b->val){
+                tail->next = a;
+                a = a->next;
+            } else {
+                tail->next = b;
+                b = b->next;
             }
-            else{
-                tail->next=head2;
-                head2=head2->next;
-            }
-            tail=tail->next;
+            tail = tail->next;
         }
 
-        while(head1){
-             tail->next=head1;
-             head1=head1->next;
-            tail=tail->next;
-        }
-
-        while(head2){
-            tail->next=head2;
-            head2=head2->next;
-            tail=tail->next;
-        }
-        return ans->next;
+        tail->next = (a ? a : b);
+        return dummy->next;
     }
+
     ListNode* sortList(ListNode* head) {
-        if(!head or !head->next){
+        if (!head || !head->next)
             return head;
-        }
-        ListNode* mid=middle(head);
-        ListNode* left=head;
-        ListNode* right=mid->next;
-        mid->next=nullptr;
 
-        left=sortList(left);
-        right=sortList(right);
-        
-        ListNode* result=merge(left,right);
-        return result;
-        
+        ListNode* mid = findMid(head);
+        ListNode* right = mid->next;
+        mid->next = NULL;
+
+        ListNode* leftSorted = sortList(head);
+        ListNode* rightSorted = sortList(right);
+
+        return merge(leftSorted, rightSorted);
     }
 };
