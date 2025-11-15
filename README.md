@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/sourav030/Leetcode/tree/master/0234-palindrome-linked-list) |
 | [0237-delete-node-in-a-linked-list](https://github.com/sourav030/Leetcode/tree/master/0237-delete-node-in-a-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/sourav030/Leetcode/tree/master/0328-odd-even-linked-list) |
+| [0445-add-two-numbers-ii](https://github.com/sourav030/Leetcode/tree/master/0445-add-two-numbers-ii) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/sourav030/Leetcode/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [0817-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0817-design-hashmap) |
 | [0860-design-circular-queue](https://github.com/sourav030/Leetcode/tree/master/0860-design-circular-queue) |
@@ -116,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0316-remove-duplicate-letters](https://github.com/sourav030/Leetcode/tree/master/0316-remove-duplicate-letters) |
 | [0394-decode-string](https://github.com/sourav030/Leetcode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/sourav030/Leetcode/tree/master/0402-remove-k-digits) |
+| [0445-add-two-numbers-ii](https://github.com/sourav030/Leetcode/tree/master/0445-add-two-numbers-ii) |
 | [0496-next-greater-element-i](https://github.com/sourav030/Leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/sourav030/Leetcode/tree/master/0503-next-greater-element-ii) |
 | [0678-valid-parenthesis-string](https://github.com/sourav030/Leetcode/tree/master/0678-valid-parenthesis-string) |
@@ -177,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0371-sum-of-two-integers](https://github.com/sourav030/Leetcode/tree/master/0371-sum-of-two-integers) |
 | [0380-insert-delete-getrandom-o1](https://github.com/sourav030/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0441-arranging-coins](https://github.com/sourav030/Leetcode/tree/master/0441-arranging-coins) |
+| [0445-add-two-numbers-ii](https://github.com/sourav030/Leetcode/tree/master/0445-add-two-numbers-ii) |
 | [0523-continuous-subarray-sum](https://github.com/sourav030/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0556-next-greater-element-iii](https://github.com/sourav030/Leetcode/tree/master/0556-next-greater-element-iii) |
 | [1013-fibonacci-number](https://github.com/sourav030/Leetcode/tree/master/1013-fibonacci-number) |
