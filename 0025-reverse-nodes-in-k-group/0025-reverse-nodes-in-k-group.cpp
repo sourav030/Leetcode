@@ -1,26 +1,34 @@
 class Solution {
 public:
-    ListNode* reverse(ListNode* curr,ListNode* end){
-        ListNode* prev=nullptr;
-        ListNode* start=curr;
-        while(start!=end){
-            ListNode* Next=start->next;
-            start->next=prev;
-            prev=start;
-            start=Next;
+    ListNode* reverse(ListNode* head, ListNode* prev){
+        if(!head){
+            return prev;
         }
-        return prev;
+        ListNode* Next = head->next;
+        head->next = prev;
+        return reverse(Next, head);
     }
+
     ListNode* reverseKGroup(ListNode* head, int k) {
-        int count=0;
-        ListNode* tem=head;
-        while(tem and count<k){
-            tem=tem->next;
-            count++;
+        if(!head) return head;
+
+        ListNode* tail = head;
+
+        // Find if we have k nodes
+        for(int i = 0; i < k - 1; i++){
+             if (!tail->next) return head;
+             tail=tail->next;   
         }
-        if(count<k) return head;
-        ListNode* new_head=reverse(head,tem);
-        head->next=reverseKGroup(tem,k);
-        return new_head;
+
+      
+        ListNode* Next = tail->next;
+        tail->next = nullptr;
+
+        ListNode* ans = reverse(head, nullptr);
+
+      
+        head->next = reverseKGroup(Next, k);
+
+        return ans;
     }
 };
