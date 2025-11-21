@@ -1,34 +1,37 @@
 class Solution {
 public:
     string decodeString(string s) {
-        stack<int> numStack;
+        stack<int> countStack;
         stack<string> stringStack;
-        int num = 0;
         string curr = "";
+        int num = 0;
 
-        for (auto c : s) {
+        for (char c : s) {
+
             if (isdigit(c)) {
                 num = num * 10 + (c - '0');
             }
+
             else if (c == '[') {
-                numStack.push(num);
+                countStack.push(num);
                 stringStack.push(curr);
                 num = 0;
                 curr = "";
             }
+
             else if (c == ']') {
-                int repeat = numStack.top(); numStack.pop();
-                string prev = stringStack.top(); stringStack.pop();
-                string temp = "";
-                while (repeat--) {
-                    temp += curr;
-                }
-                curr = prev + temp;
+                int repeat = countStack.top(); countStack.pop();
+                string temp = stringStack.top(); stringStack.pop();
+
+                while (repeat--) temp += curr;
+                curr = temp;
             }
+
             else {
                 curr += c;
             }
         }
+
         return curr;
     }
 };
