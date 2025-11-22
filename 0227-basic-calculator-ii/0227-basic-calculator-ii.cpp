@@ -1,40 +1,39 @@
 class Solution {
 public:
-  int calculate(string s) {
-    stack<int> st;
-    int number = 0;
-    char sign = '+';
-    int n = s.size();
-
-    for (int i = 0; i < n; i++) {
-        char c = s[i];
-        if (isdigit(c)) {
-            number = number * 10 + (c - '0');
-        }
-        if ((!isdigit(c) && c != ' ') || i == n - 1) {
-            if (sign == '+') {
-                st.push(number);
-            } else if (sign == '-') {
-                st.push(-number);
-            } else if (sign == '*') {
-                int prev = st.top(); st.pop();
-                st.push(prev * number);
-            } else if (sign == '/') {
-                int prev = st.top(); st.pop();
-                st.push(prev / number);  // truncates toward zero
+    int calculate(string s) {
+        stack<int>st;
+        int number=0;
+        char lastOp='+';
+        for(int i=0; i<s.length(); i++){
+            if(isdigit(s[i])){
+                number=number*10+(s[i]-'0');
             }
-
-            sign = c;
-            number = 0;
+            if(!isdigit(s[i]) and s[i]!=' ' || i==s.length()-1){
+                if(lastOp=='+'){
+                    st.push(number);
+                }
+                if(lastOp=='-'){
+                    st.push(-number);
+                }
+                if(lastOp=='*'){
+                    int prev=st.top();
+                    st.pop();
+                    st.push(prev*number);
+                }
+                if(lastOp=='/'){
+                    int prev=st.top();
+                    st.pop();
+                    st.push(prev/number);
+                }
+                number=0;
+                lastOp=s[i];
+            }
         }
+        int ans=0;
+        while(!st.empty()){
+            ans+=st.top();
+            st.pop();
+        }
+        return ans;
     }
-
-    int result = 0;
-    while (!st.empty()) {
-        result += st.top();
-        st.pop();
-    }
-    return result;
-}
-
 };
