@@ -125,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0678-valid-parenthesis-string](https://github.com/sourav030/Leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0735-asteroid-collision](https://github.com/sourav030/Leetcode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/sourav030/Leetcode/tree/master/0739-daily-temperatures) |
+| [0856-score-of-parentheses](https://github.com/sourav030/Leetcode/tree/master/0856-score-of-parentheses) |
 | [0874-backspace-string-compare](https://github.com/sourav030/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0937-online-stock-span](https://github.com/sourav030/Leetcode/tree/master/0937-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/sourav030/Leetcode/tree/master/0943-sum-of-subarray-minimums) |
@@ -273,6 +274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0808-number-of-matching-subsequences](https://github.com/sourav030/Leetcode/tree/master/0808-number-of-matching-subsequences) |
 | [0812-rotate-string](https://github.com/sourav030/Leetcode/tree/master/0812-rotate-string) |
 | [0841-shortest-distance-to-a-character](https://github.com/sourav030/Leetcode/tree/master/0841-shortest-distance-to-a-character) |
+| [0856-score-of-parentheses](https://github.com/sourav030/Leetcode/tree/master/0856-score-of-parentheses) |
 | [0874-backspace-string-compare](https://github.com/sourav030/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/sourav030/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/sourav030/Leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
