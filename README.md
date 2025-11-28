@@ -572,6 +572,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0853-car-fleet](https://github.com/sourav030/Leetcode/tree/master/0853-car-fleet) |
 | [0860-design-circular-queue](https://github.com/sourav030/Leetcode/tree/master/0860-design-circular-queue) |
 | [0890-lemonade-change](https://github.com/sourav030/Leetcode/tree/master/0890-lemonade-change) |
+| [0896-monotonic-array](https://github.com/sourav030/Leetcode/tree/master/0896-monotonic-array) |
 | [0898-transpose-matrix](https://github.com/sourav030/Leetcode/tree/master/0898-transpose-matrix) |
 | [0901-advantage-shuffle](https://github.com/sourav030/Leetcode/tree/master/0901-advantage-shuffle) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/sourav030/Leetcode/tree/master/0902-minimum-number-of-refueling-stops) |
