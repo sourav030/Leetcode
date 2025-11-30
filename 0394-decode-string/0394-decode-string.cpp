@@ -1,37 +1,49 @@
 class Solution {
 public:
     string decodeString(string s) {
-        stack<int> countStack;
-        stack<string> stringStack;
-        string curr = "";
-        int num = 0;
-
-        for (char c : s) {
-
-            if (isdigit(c)) {
-                num = num * 10 + (c - '0');
+        stack<string> st;
+        
+        for(char ele : s){
+            if(ele != ']'){
+               
+                string temp(1, ele); 
+                st.push(temp);
             }
+            else{
+                string curr_str = "";
+                
+              
+                while(!st.empty() && st.top() != "["){
+                    curr_str = st.top() + curr_str; 
+                    st.pop();
+                }
+                
+           
+                if(!st.empty() && st.top() == "[")
+                    st.pop();
 
-            else if (c == '[') {
-                countStack.push(num);
-                stringStack.push(curr);
-                num = 0;
-                curr = "";
-            }
-
-            else if (c == ']') {
-                int repeat = countStack.top(); countStack.pop();
-                string temp = stringStack.top(); stringStack.pop();
-
-                while (repeat--) temp += curr;
-                curr = temp;
-            }
-
-            else {
-                curr += c;
+                string num_str = "";
+                
+             
+                while(!st.empty() && isdigit(st.top()[0])){
+                    num_str = st.top() + num_str; 
+                    st.pop();
+                }
+                
+                int n = stoi(num_str);
+                string decoded = "";
+                while(n--){
+                    decoded += curr_str;
+                }
+                st.push(decoded);
             }
         }
-
-        return curr;
+        
+        string ans = "";
+        while(!st.empty()){
+            ans = st.top() + ans;
+            st.pop();
+        }
+        return ans;
     }
 };
