@@ -16,32 +16,24 @@ public:
         if(!root){
             return ans;
         }
-        bool left=1;
         queue<TreeNode*>q;
         q.push(root);
+        bool order=true;
         while(!q.empty()){
-            vector<int>arr;
             int n=q.size();
+            vector<int>arr;
             for(int i=0; i<n; i++){
                 TreeNode* node=q.front();
                 q.pop();
                 arr.push_back(node->val);
-                if(node->left){
-                    q.push(node->left);
-                }
-                if(node->right){
-                    q.push(node->right);
-                }
+                if(node->left) q.push(node->left);
+                if(node->right) q.push(node->right);
             }
-            if(left){
-                ans.push_back(arr);
-                left=!left;
-            }
-            else{
+            if(!order){
                 reverse(arr.begin(),arr.end());
-                ans.push_back(arr);
-                left=!left;
             }
+            ans.push_back(arr);
+            order=!order;
         }
         return ans;
     }
