@@ -12,18 +12,18 @@
 class Solution {
 public:
     int ans=0;
-    void solve(TreeNode* root, long long sum){
+    void solve(TreeNode* root, int sum){
         if(!root){
-            return;
+            return ;
         }
         if(!root->left and !root->right){
             sum=sum*10+root->val;
             ans+=sum;
             return;
         }
-        long long  a=sum*10+root->val;;
+        int a=sum*10+root->val;
         solve(root->left,a);
-        solve(root->right,a);
+        solve(root->right,a); 
     }
     int sumNumbers(TreeNode* root) {
         long long sum=0;
