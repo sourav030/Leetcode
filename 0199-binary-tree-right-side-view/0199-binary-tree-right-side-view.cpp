@@ -12,7 +12,7 @@
 class Solution {
 public:
     vector<int>ans;
-    void solve(TreeNode* root, int level){
+    void solve(TreeNode* root,int level){
         if(!root){
             return;
         }
