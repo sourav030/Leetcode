@@ -1,49 +1,48 @@
 class Solution {
 public:
     string decodeString(string s) {
-        stack<string> st;
-        
-        for(char ele : s){
-            if(ele != ']'){
-               
-                string temp(1, ele); 
-                st.push(temp);
-            }
-            else{
-                string curr_str = "";
-                
-              
-                while(!st.empty() && st.top() != "["){
-                    curr_str = st.top() + curr_str; 
-                    st.pop();
-                }
-                
-           
-                if(!st.empty() && st.top() == "[")
-                    st.pop();
+        stack<int> counts;
+        stack<string> resultStack;
+        string res = "";
+        int i = 0;
 
-                string num_str = "";
-                
+        while (i < s.length()) {
+            if (isdigit(s[i])) {
+                int count = 0;
+              
+                while (isdigit(s[i])) {
+                    count = 10 * count + (s[i] - '0');
+                    i++;
+                }
+                counts.push(count);
+            } 
+            else if (s[i] == '[') {
              
-                while(!st.empty() && isdigit(st.top()[0])){
-                    num_str = st.top() + num_str; 
-                    st.pop();
-                }
+                resultStack.push(res);
+                res = "";
+                i++;
+            } 
+            else if (s[i] == ']') {
+             
+                string temp = res;
+                res = resultStack.top();
+                resultStack.pop();
                 
-                int n = stoi(num_str);
-                string decoded = "";
-                while(n--){
-                    decoded += curr_str;
+                int repeatTimes = counts.top();
+                counts.pop();
+                
+            
+                while (repeatTimes--) {
+                    res += temp;
                 }
-                st.push(decoded);
+                i++;
+            } 
+            else {
+             
+                res += s[i];
+                i++;
             }
         }
-        
-        string ans = "";
-        while(!st.empty()){
-            ans = st.top() + ans;
-            st.pop();
-        }
-        return ans;
+        return res;
     }
 };
