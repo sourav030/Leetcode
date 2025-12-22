@@ -1,13 +1,15 @@
 class Solution {
 public:
-    void rowZero(vector<vector<int>>&matrix,int r){
-        for(int i=0; i<matrix[0].size(); i++){
-            matrix[r][i]=0;
+    void RowZero(vector<vector<int>>& matrix, int idx){
+        int n=matrix[0].size();
+        for(int i=0; i<n; i++){
+            matrix[idx][i]=0;
         }
     }
-    void colZero(vector<vector<int>>&matrix, int c){
-        for(int i=0; i<matrix.size(); i++){
-            matrix[i][c]=0;
+    void ColZero(vector<vector<int>>& matrix, int idx){
+        int n=matrix.size();
+        for(int i=0; i<n; i++){
+            matrix[i][idx]=0;
         }
     }
     void setZeroes(vector<vector<int>>& matrix) {
@@ -21,14 +23,11 @@ public:
                 }
             }
         }
-
         for(int i=0; i<row.size(); i++){
-            rowZero(matrix,row[i]);
+            RowZero(matrix,row[i]);
         }
-
         for(int i=0; i<col.size(); i++){
-            colZero(matrix,col[i]);
+            ColZero(matrix,col[i]);
         }
-
     }
 };
