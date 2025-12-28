@@ -1,33 +1,27 @@
 class Solution {
 public:
-    unordered_map<char, int>mp;
     string reverseVowels(string s) {
-
-    mp['a'] = 1;
-    mp['e'] = 2;
-    mp['i'] = 3;
-    mp['o'] = 4;
-    mp['u'] = 5;
-
-    // Uppercase vowels
-    mp['A'] = 6;
-    mp['E'] = 7;
-    mp['I'] = 8;
-    mp['O'] = 9;
-    mp['U'] = 10;
-
+        unordered_map<char,int>mp;
+        mp['A']=1;
+        mp['E']=1;
+        mp['I']=1;
+        mp['O']=1;
+        mp['U']=1;
+        mp['a']=1;
+        mp['e']=1;
+        mp['i']=1;
+        mp['o']=1;
+        mp['u']=1;
+        vector<char>arr;
+        for(int i=0; i<s.length(); i++){
+            if(mp.find(s[i])!=mp.end())
+            arr.push_back(s[i]);
+        }
+        reverse(arr.begin(),arr.end());
         int i=0;
-        int j=s.length()-1;
-        while(i<j){
-            if(mp.find(s[i])!=mp.end() and mp.find(s[j])!=mp.end()){
-                swap(s[i],s[j]);
-                i++;
-                j--;
-            }
-            else if(mp.find(s[i])!=mp.end()){
-                j--;
-            }
-            else{
+        for(int k=0; k<s.length(); k++){
+            if(mp.find(s[k])!=mp.end()){
+                s[k]=arr[i];
                 i++;
             }
         }
