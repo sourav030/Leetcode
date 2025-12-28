@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool solve(string s, string t){
+    bool isSubsequence(string s, string t) {
         int i=0;
         int j=0;
         while(j<t.length()){
@@ -10,8 +10,5 @@ public:
             j++;
         }
         return i==s.length();
-    }
-    bool isSubsequence(string s, string t) {
-        return solve(s,t);
     }
 };
