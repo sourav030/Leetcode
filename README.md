@@ -86,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0874-backspace-string-compare](https://github.com/sourav030/Leetcode/tree/master/0874-backspace-string-compare) |
 | [0901-advantage-shuffle](https://github.com/sourav030/Leetcode/tree/master/0901-advantage-shuffle) |
 | [0908-middle-of-the-linked-list](https://github.com/sourav030/Leetcode/tree/master/0908-middle-of-the-linked-list) |
+| [0977-squares-of-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [1019-squares-of-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 | [1880-largest-merge-of-two-strings](https://github.com/sourav030/Leetcode/tree/master/1880-largest-merge-of-two-strings) |
@@ -585,6 +586,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0943-sum-of-subarray-minimums](https://github.com/sourav030/Leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [0966-binary-subarrays-with-sum](https://github.com/sourav030/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/sourav030/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [0977-squares-of-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [0981-delete-columns-to-make-sorted](https://github.com/sourav030/Leetcode/tree/master/0981-delete-columns-to-make-sorted) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1019-squares-of-a-sorted-array) |
@@ -848,6 +850,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0808-number-of-matching-subsequences](https://github.com/sourav030/Leetcode/tree/master/0808-number-of-matching-subsequences) |
 | [0853-car-fleet](https://github.com/sourav030/Leetcode/tree/master/0853-car-fleet) |
 | [0901-advantage-shuffle](https://github.com/sourav030/Leetcode/tree/master/0901-advantage-shuffle) |
+| [0977-squares-of-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/sourav030/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
