@@ -9,13 +9,13 @@ public:
             return dp[idx];
         }
         int choriKiya=nums[idx]+solve(nums,idx+2);
-        int nhiChoriKiya=solve(nums,idx+1);
-        return dp[idx]=max(choriKiya,nhiChoriKiya);
+        int nhiKiya=solve(nums,idx+1);
+        dp[idx]=max(choriKiya,nhiKiya);
+        return max(choriKiya,nhiKiya);
     }
     int rob(vector<int>& nums) {
         int n=nums.size();
         dp.resize(n+1,-1);
         return solve(nums,0);
-
     }
 };
