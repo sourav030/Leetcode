@@ -380,6 +380,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/sourav030/Leetcode/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1451-minimum-number-of-taps-to-open-to-water-a-garden](https://github.com/sourav030/Leetcode/tree/master/1451-minimum-number-of-taps-to-open-to-water-a-garden) |
 | [1457-minimum-difficulty-of-a-job-schedule](https://github.com/sourav030/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
+| [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/sourav030/Leetcode/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/sourav030/Leetcode/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2504-find-all-good-indices](https://github.com/sourav030/Leetcode/tree/master/2504-find-all-good-indices) |
@@ -616,6 +617,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1464-reduce-array-size-to-the-half](https://github.com/sourav030/Leetcode/tree/master/1464-reduce-array-size-to-the-half) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/sourav030/Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
+| [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/sourav030/Leetcode/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/sourav030/Leetcode/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1582-design-browser-history](https://github.com/sourav030/Leetcode/tree/master/1582-design-browser-history) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/sourav030/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
@@ -721,6 +723,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1138-grumpy-bookstore-owner](https://github.com/sourav030/Leetcode/tree/master/1138-grumpy-bookstore-owner) |
 | [1423-maximum-number-of-occurrences-of-a-substring](https://github.com/sourav030/Leetcode/tree/master/1423-maximum-number-of-occurrences-of-a-substring) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/sourav030/Leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
+| [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/sourav030/Leetcode/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [2211-k-radius-subarray-averages](https://github.com/sourav030/Leetcode/tree/master/2211-k-radius-subarray-averages) |
 | [2751-sliding-subarray-beauty](https://github.com/sourav030/Leetcode/tree/master/2751-sliding-subarray-beauty) |
 ## Heap (Priority Queue)
