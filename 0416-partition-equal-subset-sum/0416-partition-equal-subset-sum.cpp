@@ -1,33 +1,35 @@
 class Solution {
 public:
-    bool solve(vector<int>&arr,int target,int n, vector<vector<int>>&dp){
+    vector<vector<int>>dp;
+    int solve(vector<int>&nums, int target, int n){
         if(target==0){
-            return true;
+            return 1;
         }
-        if(n<=0 or target<0){
-            return false;
+        
+        if(n<0 or target<0){
+            return 0;
         }
+
         if(dp[n][target]!=-1){
             return dp[n][target];
         }
-        if(arr[n-1]>target){
-            dp[n][target]=solve(arr,target,n-1,dp);
-        }
-        else{
-            dp[n][target]=solve(arr,target-arr[n-1],n-1,dp)||solve(arr,target,n-1,dp);
-        }
-        return dp[n][target];
+
+        return dp[n][target]=solve(nums,target-nums[n],n-1) || solve(nums,target,n-1);
+
+
     }
     bool canPartition(vector<int>& nums) {
         int sum=0;
-        for(int i=0; i<nums.size(); i++){
-            sum+=nums[i];
+        int n=nums.size();
+        for(auto ele:nums){
+            sum+=ele;
         }
+         dp.assign(n+1,vector<int>(sum+1,-1));
         if(sum%2!=0){
             return false;
         }
         int target=sum/2;
-        vector<vector<int>>dp(nums.size()+1,vector<int>(target+1,-1));
-        return solve(nums,sum/2,nums.size(),dp);
+        return solve(nums,target,nums.size()-1);
+
     }
 };
