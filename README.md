@@ -190,6 +190,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0445-add-two-numbers-ii](https://github.com/sourav030/Leetcode/tree/master/0445-add-two-numbers-ii) |
 | [0523-continuous-subarray-sum](https://github.com/sourav030/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0556-next-greater-element-iii](https://github.com/sourav030/Leetcode/tree/master/0556-next-greater-element-iii) |
+| [0973-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1013-fibonacci-number](https://github.com/sourav030/Leetcode/tree/master/1013-fibonacci-number) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/sourav030/Leetcode/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
@@ -590,6 +591,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0943-sum-of-subarray-minimums](https://github.com/sourav030/Leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [0966-binary-subarrays-with-sum](https://github.com/sourav030/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/sourav030/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [0973-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [0981-delete-columns-to-make-sorted](https://github.com/sourav030/Leetcode/tree/master/0981-delete-columns-to-make-sorted) |
 | [1004-max-consecutive-ones-iii](https://github.com/sourav030/Leetcode/tree/master/1004-max-consecutive-ones-iii) |
@@ -747,6 +749,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/sourav030/Leetcode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/sourav030/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0902-minimum-number-of-refueling-stops](https://github.com/sourav030/Leetcode/tree/master/0902-minimum-number-of-refueling-stops) |
+| [0973-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1127-last-stone-weight](https://github.com/sourav030/Leetcode/tree/master/1127-last-stone-weight) |
 | [1304-longest-happy-string](https://github.com/sourav030/Leetcode/tree/master/1304-longest-happy-string) |
@@ -859,6 +862,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0808-number-of-matching-subsequences](https://github.com/sourav030/Leetcode/tree/master/0808-number-of-matching-subsequences) |
 | [0853-car-fleet](https://github.com/sourav030/Leetcode/tree/master/0853-car-fleet) |
 | [0901-advantage-shuffle](https://github.com/sourav030/Leetcode/tree/master/0901-advantage-shuffle) |
+| [0973-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1019-squares-of-a-sorted-array) |
@@ -1131,12 +1135,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0240-search-a-2d-matrix-ii](https://github.com/sourav030/Leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0347-top-k-frequent-elements](https://github.com/sourav030/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0493-reverse-pairs](https://github.com/sourav030/Leetcode/tree/master/0493-reverse-pairs) |
+| [0973-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Quickselect
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/sourav030/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/sourav030/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0973-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Prefix Sum
 |  |
@@ -1416,6 +1422,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Geometry
 |  |
 | ------- |
+| [0973-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1014-k-closest-points-to-origin](https://github.com/sourav030/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Radix Sort
 |  |
