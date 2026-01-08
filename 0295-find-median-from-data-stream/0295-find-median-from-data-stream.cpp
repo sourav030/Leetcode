@@ -1,35 +1,34 @@
 class MedianFinder {
 public:
-    priority_queue<int>maxpq;
-    priority_queue<int,vector<int>, greater<int>>minpq;
+    priority_queue<int>mxpq;
+    priority_queue<int,vector<int>, greater<int> >mnpq;
     MedianFinder() {
         
     }
     
     void addNum(int num) {
-        if(maxpq.empty() || num<maxpq.top()){
-            maxpq.push(num);
+        if(mxpq.empty() || num<mxpq.top()){
+            mxpq.push(num);
         }
         else{
-            minpq.push(num);
+            mnpq.push(num);
         }
-
-        if(maxpq.size()>minpq.size()+1){
-            minpq.push(maxpq.top());
-            maxpq.pop();
+        if(mxpq.size()>mnpq.size()+1){
+            mnpq.push(mxpq.top());
+            mxpq.pop();
         }
-        if(minpq.size()>maxpq.size()){
-            maxpq.push(minpq.top());
-            minpq.pop();
+        if(mnpq.size()>mxpq.size()){
+            mxpq.push(mnpq.top());
+            mnpq.pop();
         }
     }
     
     double findMedian() {
-        if(maxpq.size()>minpq.size()){
-            return maxpq.top();
+        if(mxpq.size()>mnpq.size()){
+            return double (mxpq.top());
         }
         else{
-            return (maxpq.top()+minpq.top())/2.0;
+            return double ((mxpq.top()+mnpq.top())/2.0);
         }
     }
 };
