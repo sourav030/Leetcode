@@ -12,14 +12,13 @@ public:
             reverse(nums.begin(),nums.end());
             return;
         }
-        for(int i=nums.size()-1; i>=0; i--){
+        for(int i=nums.size()-1; i>=idx; i--){
             if(nums[i]>nums[idx]){
                 swap(nums[i],nums[idx]);
                 break;
             }
         }
-        sort(nums.begin()+idx+1, nums.end());
+        reverse(nums.begin()+idx+1, nums.end());
         return;
-
     }
 };
