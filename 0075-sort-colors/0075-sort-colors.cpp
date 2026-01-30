@@ -7,7 +7,7 @@ public:
 
         while (mid <= end) {
             if (nums[mid] == 0) {
-                swap(nums[mid], nums[start]);
+                swap(nums[start], nums[mid]);
                 start++;
                 mid++;
             }
