@@ -1,23 +1,41 @@
 class Solution {
 public:
     vector<int> majorityElement(vector<int>& nums) {
-        unordered_map<int,int>mp;
-        vector<int>ans;
-        int n=nums.size();
-        for(int i=0; i<nums.size(); i++){
-            if(mp.find(nums[i])!=mp.end()){
-                mp[nums[i]]++;
+        int cand1 = 0, cand2 = 1;
+        int count1 = 0, count2 = 0;
+
+        for (int num : nums) {
+            if (num == cand1) {
+                count1++;
             }
-            else{
-                mp[nums[i]]=1;
+            else if (num == cand2) {
+                count2++;
+            }
+            else if (count1 == 0) {
+                cand1 = num;
+                count1 = 1;
+            }
+            else if (count2 == 0) {
+                cand2 = num;
+                count2 = 1;
+            }
+            else {
+                count1--;
+                count2--;
             }
         }
 
-        for(auto it:mp){
-            if(it.second>n/3){
-                ans.push_back(it.first);
-            }
+        // verification
+        count1 = count2 = 0;
+        for (int num : nums) {
+            if (num == cand1) count1++;
+            else if (num == cand2) count2++;
         }
+
+        vector<int> ans;
+        if (count1 > nums.size() / 3) ans.push_back(cand1);
+        if (count2 > nums.size() / 3) ans.push_back(cand2);
+
         return ans;
     }
 };
