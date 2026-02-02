@@ -1,50 +1,49 @@
 class Solution {
 public:
-    int length(ListNode* head){
-        int len = 0;
-        while (head) {
-            len++;
+
+    int len(ListNode* head){
+        int l = 0;
+        while(head){
+            l++;
             head = head->next;
         }
-        return len;
+        return l;
     }
 
     ListNode* rotateRight(ListNode* head, int k) {
-        if (!head || !head->next || k == 0) return head;
 
-        // 1. find length
-        int len = length(head);
+      
+        if(!head || !head->next || k == 0)
+            return head;
 
-        // 2. effective rotation
-        k = k % len;
-        if (k == 0) return head;
+        int l = len(head);
 
-        // 3. find split point (len - k)
-        int n = len - k;
+        k = k % l;
+        if(k == 0)
+            return head;
 
-        ListNode* curr = head;
-        ListNode* prev = nullptr;
+      
+        int steps = l - k - 1;
 
-        // move n - 1 steps
-        for (int i = 0; i < n - 1; i++) {
-            curr = curr->next;
-        }
-
-        // 4. split
-        prev = curr;          // new tail
-        ListNode* newHead = curr->next;   // start of rotated part
-        prev->next = nullptr; // cut the list
-
-        // 5. find end of rotated part
-        ListNode* temp = newHead;
-        while (temp->next) {
+        ListNode* temp = head;
+        while(steps--){
             temp = temp->next;
         }
 
-        // 6. attach old head at end
-        temp->next = head;
+        ListNode* newHead = temp->next;
 
-        // 7. new head
+        
+        temp->next = NULL;
+
+      
+        ListNode* tail = newHead;
+        while(tail->next){
+            tail = tail->next;
+        }
+
+        
+        tail->next = head;
+
         return newHead;
     }
 };
