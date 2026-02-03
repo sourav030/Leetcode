@@ -2,26 +2,24 @@ class Solution {
   public:
     // Function to find the maximum number of meetings that can
     // be performed in a meeting room.
-    
     int maxMeetings(vector<int>& start, vector<int>& end) {
         // Your code here
-        vector<pair<int,int>>vec;
-        int n=start.size();
-        
-        for(int i=0; i<n; i++){
-            vec.push_back(make_pair(end[i],start[i]));
+        vector<pair<int,int>>arr;
+        for(int  i=0; i<start.size(); i++){
+            arr.push_back({start[i],end[i]});
         }
-       
-        int ans=1;
-        sort(vec.begin(),vec.end());
-        int freeTime=vec[0].first;
-        for(int i=1; i<n; i++){
-            if(freeTime<vec[i].second){
-                ans+=1;
-                freeTime=vec[i].first;
+        sort(arr.begin(),arr.end(),[](pair<int,int>&a, pair<int,int>&b){
+            return a.second<b.second;
+        });
+        
+        int endTime=arr[0].second;
+        int count=1;
+        for(int i=1; i<arr.size(); i++){
+            if(arr[i].first>endTime){
+                count++;
+                endTime=arr[i].second;
             }
         }
-        
-        return ans;
+        return count;
     }
 };
