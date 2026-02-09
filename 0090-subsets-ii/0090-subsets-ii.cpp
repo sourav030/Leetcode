@@ -1,27 +1,26 @@
 class Solution {
 public:
-    void solve(vector<int>& nums,vector<vector<int>> &ans,vector<int> &vec, int index){
-        if(index==nums.size()){
-            ans.push_back(vec);
+    vector<vector<int>>ans;
+    void solve(vector<int>&nums, int idx, vector<int>&arr){
+        if(idx>=nums.size()){
+            ans.push_back(arr);
             return;
         }
-        // include operation
-        vec.push_back(nums[index]);
-        solve(nums,ans,vec, index+1);
-        // perform exclude operation after skip the duplicate element
-        vec.pop_back();
-        int idx=index+1;
-        while(idx<nums.size() and nums[idx]==nums[idx-1]){
+        // take
+        arr.push_back(nums[idx]);
+        solve(nums, idx+1, arr);
+        // not take 
+        arr.pop_back();
+        while(idx+1<nums.size() and nums[idx]==nums[idx+1]){
             idx++;
         }
-        solve(nums,ans,vec, idx);
-
+        solve(nums, idx+1,arr);
     }
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+        vector<int>arr;
         sort(nums.begin(), nums.end());
-        vector<vector<int>>ans;
-        vector<int>vec;
-        solve(nums,ans,vec,0);
+        int idx=0;
+        solve(nums, idx, arr);
         return ans;
     }
 };
