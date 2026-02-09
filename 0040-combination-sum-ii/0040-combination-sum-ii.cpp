@@ -1,35 +1,28 @@
 class Solution {
 public:
-    vector<vector<int>> result;
-
-    void solve(int index, vector<int>& combination, int target, vector<int>& arr) {
-        if (target == 0) {
-            result.push_back(combination);
+    vector<vector<int>>ans;
+    void solve(vector<int>&nums, int idx, int target, vector<int>arr){
+        if(target==0){
+            ans.push_back(arr);
+            return ;
+        }
+        if(target<0 or idx>=nums.size()){
             return;
         }
-        if (index >= arr.size() || target < 0) return;
-
-        // Pick the element
-        if (arr[index] <= target) {
-            combination.push_back(arr[index]);
-            solve(index + 1, combination, target - arr[index], arr);
-            combination.pop_back(); // Backtrack
+        arr.push_back(nums[idx]);
+        solve(nums,idx+1,target-nums[idx], arr);
+        arr.pop_back();
+        while(idx+1<nums.size() and nums[idx]==nums[idx+1]){
+            idx++;
         }
-
-        // Skip duplicate elements
-        while (index + 1 < arr.size() && arr[index] == arr[index + 1]) {
-            index++;
-        }
-
-        // Not pick the element
-        solve(index + 1, combination, target, arr);
+        solve(nums,idx+1,target,arr);
     }
+    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+        sort(candidates.begin(), candidates.end());
+        int idx=0;
+        vector<int>ar;
+        solve(candidates, idx,target,ar);
+        return ans;
 
-    vector<vector<int>> combinationSum2(vector<int>& arr, int target) {
-        sort(arr.begin(), arr.end()); // Sorting to handle duplicates
-        vector<int> combination;
-        result.clear();
-        solve(0, combination, target, arr);
-        return result;
     }
 };
