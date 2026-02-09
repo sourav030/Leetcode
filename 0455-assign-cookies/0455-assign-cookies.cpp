@@ -3,14 +3,14 @@ public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
         sort(g.begin(),g.end());
         sort(s.begin(),s.end());
-        int child=0;
-        int cookie=0;
-        while(child<g.size() and cookie<s.size()){
-            if(g[child]<=s[cookie]){
-                child++;
+        int idx1=0;
+        int idx2=0;
+        while(idx2<s.size() and idx1<g.size()){
+            if(s[idx2]>=g[idx1]){
+                idx1++;
             }
-            cookie++;
+            idx2++;
         }
-        return child;
+        return idx1;
     }
 };
