@@ -1,42 +1,69 @@
+class Node {
+public:
+    int key, value;
+    Node* prev;
+    Node* next;
+
+    Node(int k, int v) {
+        key = k;
+        value = v;
+        prev = next = nullptr;
+    }
+};
+
 class LRUCache {
 public:
     int capacity;
-    list<pair<int,int>> cache; // {key, value}
-    unordered_map<int, list<pair<int,int>>::iterator> mp;
+    unordered_map<int, Node*> mp;
+    Node* head;
+    Node* tail;
 
-    LRUCache(int capacity) {
-        this->capacity = capacity;
+    LRUCache(int cap) {
+        capacity = cap;
+        head = new Node(-1, -1);
+        tail = new Node(-1, -1);
+        head->next = tail;
+        tail->prev = head;
     }
-    
+
+    void remove(Node* node) {
+        node->prev->next = node->next;
+        node->next->prev = node->prev;
+    }
+
+    void insertAtHead(Node* node) {
+        node->next = head->next;
+        head->next->prev = node;
+        head->next = node;
+        node->prev = head;
+    }
+
     int get(int key) {
-        if(mp.find(key) == mp.end())
+        if (mp.find(key) == mp.end())
             return -1;
-        
-        auto it = mp[key];
-        int value = it->second;
 
-        // Move this node to the front (most recently used)
-        cache.erase(it);
-        cache.push_front({key, value});
-        mp[key] = cache.begin();
-
-        return value;
+        Node* node = mp[key];
+        remove(node);
+        insertAtHead(node);
+        return node->value;
     }
-    
-    void put(int key, int value) {
-        // If key already exists → remove old entry
-        if(mp.find(key) != mp.end()) {
-            cache.erase(mp[key]);
-        }
-        // If at capacity → remove least recently used
-        else if(cache.size() == capacity) {
-            auto last = cache.back();
-            mp.erase(last.first);
-            cache.pop_back();
-        }
 
-        // Insert new key-value pair at front
-        cache.push_front({key, value});
-        mp[key] = cache.begin();
+    void put(int key, int value) {
+        if (mp.find(key) != mp.end()) {
+            Node* node = mp[key];
+            node->value = value;
+            remove(node);
+            insertAtHead(node);
+        } else {
+            if (mp.size() == capacity) {
+                Node* lru = tail->prev;
+                mp.erase(lru->key);
+                remove(lru);
+                delete lru;
+            }
+            Node* node = new Node(key, value);
+            mp[key] = node;
+            insertAtHead(node);
+        }
     }
 };
