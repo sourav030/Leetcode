@@ -1,43 +1,47 @@
-
 /*
-struct Node
-{
+class Node {
+  public:
     int data;
     Node* left;
     Node* right;
+
+    Node(int val) {
+        data = val;
+        left = nullptr;
+        right = nullptr;
+    }
 };
 */
+
 class Solution {
   public:
-    // Function to return a list of nodes visible from the top view
-    // from left to right in Binary Tree.
+    vector<int>ans;
+    map<int,int>mp;
+    
     vector<int> topView(Node *root) {
         // code here
-        unordered_map<int,int>mp;
         queue<pair<Node*,int>>q;
         q.push({root,0});
-        vector<int>ans;
-        int mini=INT_MAX;
-        int maxi=INT_MIN;
         
         while(!q.empty()){
             Node* node=q.front().first;
-            int index=q.front().second;
+            int idx=q.front().second;
             q.pop();
-            mini=min(index,mini);
-            maxi=max(index,maxi);
-            if(mp.find(index)==mp.end()){
-                mp[index]=node->data;
+            if(mp.find(idx)==mp.end())
+            mp[idx]=node->data;
+            
+            if(node->left){
+                q.push({node->left,idx-1});
             }
-            if(node->left) q.push({node->left,index-1});
-            if(node->right) q.push({node->right,index+1});
+            if(node->right){
+                q.push({node->right,idx+1});
+            }
+            
         }
-        
-        for(int i=mini; i<=maxi ; i++){
-            ans.push_back(mp[i]);
+        for(auto ele:mp){
+            ans.push_back(ele.second);
         }
         return ans;
+        
     }
 };
-
-
