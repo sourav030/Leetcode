@@ -10,35 +10,28 @@
  */
 class Solution {
 public:
-    struct comp {
-    bool operator()(ListNode* a, ListNode* b) {
+    struct Compare {
+    bool operator()(ListNode* a, ListNode* b) const {
         return a->val > b->val; // min-heap
     }
 };
+
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        if(lists.size()==0){
-            return nullptr;
-        }
-       priority_queue<ListNode*, vector<ListNode*>, comp> pq;
-
-        for(int i=0; i<lists.size(); i++){
-            if(lists[i])
-            pq.push(lists[i]);
-        }
-
+       priority_queue<ListNode*, vector<ListNode*>, Compare> pq;
         ListNode* head=new ListNode(-1);
         ListNode* tail=head;
-
-        while(!pq.empty()){
-            ListNode* temp=pq.top();
-            pq.pop();
-            tail->next=temp;
-            tail=tail->next;
-            if(temp->next){
-                pq.push(temp->next);
-            }
+        for(auto ele:lists){
+            if(ele)
+            pq.push(ele);
         }
-
+        while(!pq.empty()){
+            ListNode* a=pq.top();
+            pq.pop();
+            tail->next=a;
+            tail=a;
+            
+            if(a->next) pq.push(a->next);
+        }
         return head->next;
     }
 };
