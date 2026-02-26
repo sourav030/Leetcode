@@ -1,50 +1,51 @@
 class Solution {
 public:
+    vector<int>dx={1,-1,0,0};
+    vector<int>dy={0,0,1,-1};
     int orangesRotting(vector<vector<int>>& grid) {
-        int row = grid.size();
-        int col = grid[0].size();
-        
-        queue<pair<int,int>> q;
-        int fresh = 0;
-        
-        int dx[4] = {-1, 1, 0, 0};
-        int dy[4] = {0, 0, 1, -1};
-        
-       
-        for(int i = 0; i < row; i++) {
-            for(int j = 0; j < col; j++) {
-                if(grid[i][j] == 2) q.push({i, j});
-                if(grid[i][j] == 1) fresh++;
+         int n=grid.size();
+         int m=grid[0].size();
+         int freshOrange=0;
+         queue<pair<int,int>>q;
+         for(int i=0; i<grid.size(); i++){
+            for(int j=0; j<grid[0].size(); j++){
+                if(grid[i][j]==2){
+                    q.push({i,j});
+                }
+                else if(grid[i][j]==1){
+                    freshOrange++;
+                }
             }
-        }
-        
-        int time = 0;
-        
+         }
+
+         int time=0;
       
-        while(!q.empty() && fresh > 0) {
-            int n = q.size();
-            while(n--) {
-                auto [r, c] = q.front();
+         while(!q.empty()){
+            int n1=q.size();
+            bool infected=0;
+            for(int i=1; i<=n1; i++){
+                int r=q.front().first;
+                int c=q.front().second;
                 q.pop();
-                
-                for(int i = 0; i < 4; i++) {
-                    int nr = r + dx[i];
-                    int nc = c + dy[i];
-                    
-                    if(nr >= 0 && nr < row && nc >= 0 && nc < col 
-                       && grid[nr][nc] == 1) {
-                        
-                        grid[nr][nc] = 2; 
-                        fresh--;
-                        q.push({nr, nc});
+                for(int i=0; i<4; i++){
+                    int n_r=r+dx[i];
+                    int n_c=c+dy[i];
+                    if(n_r>=0 and n_r<n and n_c>=0 and n_c<m){
+                        if(grid[n_r][n_c]==1){
+                            freshOrange--;
+                            infected=1;
+                            grid[n_r][n_c]=2;
+                            q.push({n_r,n_c});
+                        }
                     }
                 }
             }
+            if(infected)
             time++;
-        }
-        
-       
-        if(fresh > 0) return -1;
-        return time;
+         }
+
+         return freshOrange==0?time:-1;
+
+
     }
 };
