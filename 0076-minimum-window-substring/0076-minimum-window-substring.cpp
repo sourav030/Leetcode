@@ -37,6 +37,6 @@ public:
         }
 
         if (st == -1) return "";
-        return s.substr(st, ans);  // ✅ fixed here
+        return s.substr(st, ans);  
     }
 };
