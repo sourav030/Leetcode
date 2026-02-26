@@ -1,36 +1,34 @@
 class Solution {
 public:
-    void solve(vector<vector<int>>& adj, vector<bool>& visited, int node) {
-        visited[node] = true;
-        for (int neighbor : adj[node]) {
-            if (!visited[neighbor]) {
-                solve(adj, visited, neighbor);
+
+    unordered_map<int,vector<int>>mp;
+    void dfs(vector<int>&visited, int idx){
+        visited[idx]=1;
+        for(auto ele:mp[idx]){
+            if(!visited[ele]){
+                dfs(visited,ele);
             }
         }
     }
-
     int findCircleNum(vector<vector<int>>& isConnected) {
-        int n = isConnected.size();
-        vector<vector<int>> adj(n);
-        
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (isConnected[i][j] == 1 && i != j) {
-                    adj[i].push_back(j);
+        int n=isConnected.size();
+        // This is our graph
+        for(int i=0; i<isConnected.size(); i++){
+            for(int j=0; j<isConnected[0].size(); j++){
+                if(i!=j and isConnected[i][j]==1){
+                    mp[i+1].push_back(j+1);
                 }
             }
         }
-
-        vector<bool> visited(n, false);
-        int count = 0;
-
-        for (int i = 0; i < n; i++) {
-            if (!visited[i]) {
-                solve(adj, visited, i);
+        vector<int>visited(n+1,0);
+        int count=0;
+        for(int i=1; i<=n; i++){
+            if(!visited[i]){
                 count++;
+                dfs(visited,i);
             }
         }
-
         return count;
+
     }
 };
