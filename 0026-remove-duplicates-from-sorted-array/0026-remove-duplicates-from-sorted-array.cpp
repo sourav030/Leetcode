@@ -2,10 +2,9 @@ class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         int idx=0;
-        sort(nums.begin(),nums.end());
-        for(int i=0; i<nums.size(); i++){
+        for(int i=1; i<nums.size(); i++){
             if(nums[i]!=nums[idx]){
-                idx=idx+1;
+                idx++;
                 nums[idx]=nums[i];
             }
         }
