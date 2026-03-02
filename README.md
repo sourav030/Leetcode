@@ -564,6 +564,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0454-4sum-ii](https://github.com/sourav030/Leetcode/tree/master/0454-4sum-ii) |
 | [0455-assign-cookies](https://github.com/sourav030/Leetcode/tree/master/0455-assign-cookies) |
 | [0472-concatenated-words](https://github.com/sourav030/Leetcode/tree/master/0472-concatenated-words) |
+| [0485-max-consecutive-ones](https://github.com/sourav030/Leetcode/tree/master/0485-max-consecutive-ones) |
 | [0493-reverse-pairs](https://github.com/sourav030/Leetcode/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/sourav030/Leetcode/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/sourav030/Leetcode/tree/master/0496-next-greater-element-i) |
