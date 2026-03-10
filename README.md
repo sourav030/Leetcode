@@ -324,6 +324,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2345-minimum-number-of-operations-to-convert-time](https://github.com/sourav030/Leetcode/tree/master/2345-minimum-number-of-operations-to-convert-time) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/sourav030/Leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/sourav030/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
+| [2483-minimum-penalty-for-a-shop](https://github.com/sourav030/Leetcode/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/sourav030/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sourav030/Leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2816-lexicographically-smallest-palindrome](https://github.com/sourav030/Leetcode/tree/master/2816-lexicographically-smallest-palindrome) |
@@ -1214,6 +1215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2249-count-the-hidden-sequences](https://github.com/sourav030/Leetcode/tree/master/2249-count-the-hidden-sequences) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/sourav030/Leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
+| [2483-minimum-penalty-for-a-shop](https://github.com/sourav030/Leetcode/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2504-find-all-good-indices](https://github.com/sourav030/Leetcode/tree/master/2504-find-all-good-indices) |
 | [2576-minimum-penalty-for-a-shop](https://github.com/sourav030/Leetcode/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sourav030/Leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
