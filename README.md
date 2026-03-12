@@ -396,6 +396,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1451-minimum-number-of-taps-to-open-to-water-a-garden](https://github.com/sourav030/Leetcode/tree/master/1451-minimum-number-of-taps-to-open-to-water-a-garden) |
 | [1457-minimum-difficulty-of-a-job-schedule](https://github.com/sourav030/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/sourav030/Leetcode/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
+| [2100-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/sourav030/Leetcode/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2504-find-all-good-indices](https://github.com/sourav030/Leetcode/tree/master/2504-find-all-good-indices) |
@@ -658,6 +659,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/sourav030/Leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1923-sentence-similarity-iii](https://github.com/sourav030/Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/sourav030/Leetcode/tree/master/1927-maximum-ascending-subarray-sum) |
+| [2100-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2107-find-unique-binary-string](https://github.com/sourav030/Leetcode/tree/master/2107-find-unique-binary-string) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/sourav030/Leetcode/tree/master/2149-rearrange-array-elements-by-sign) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/sourav030/Leetcode/tree/master/2161-partition-array-according-to-given-pivot) |
@@ -1214,6 +1216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1477-product-of-the-last-k-numbers](https://github.com/sourav030/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1694-make-sum-divisible-by-p](https://github.com/sourav030/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1787-sum-of-absolute-differences-in-a-sorted-array](https://github.com/sourav030/Leetcode/tree/master/1787-sum-of-absolute-differences-in-a-sorted-array) |
+| [2100-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2205-find-good-days-to-rob-the-bank](https://github.com/sourav030/Leetcode/tree/master/2205-find-good-days-to-rob-the-bank) |
 | [2249-count-the-hidden-sequences](https://github.com/sourav030/Leetcode/tree/master/2249-count-the-hidden-sequences) |
 | [2469-longest-subsequence-with-limited-sum](https://github.com/sourav030/Leetcode/tree/master/2469-longest-subsequence-with-limited-sum) |
