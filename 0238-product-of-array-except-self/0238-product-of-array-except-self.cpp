@@ -4,12 +4,13 @@ public:
         int n=nums.size();
         vector<int>ans(n,1);
         int prefix=nums[0];
-        for(int i=1; i<n; i++){
-            ans[i]=prefix;
+        int suffix=nums[n-1];
+        for(int i=1; i<nums.size(); i++){
+            ans[i]=ans[i]*prefix;
             prefix=prefix*nums[i];
+            cout<<ans[i]<<" ";
         }
-        int suffix=1;
-        for(int i=n-1; i>=0; i--){
+        for(int i=nums.size()-2; i>=0; i--){
             ans[i]=ans[i]*suffix;
             suffix=suffix*nums[i];
         }
