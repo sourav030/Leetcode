@@ -10,8 +10,9 @@ public:
             else{
                 count=0;
             }
-            ans=max(ans,count);
+            ans=max(count,ans);
+
         }
-        return ans;
+        return ans==INT_MIN? 0:ans;
     }
 };
