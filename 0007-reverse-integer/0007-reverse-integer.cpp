@@ -1,13 +1,12 @@
 class Solution {
 public:
     int reverse(int x) {
-        long ans = 0;
+        long long sum=0;
         while(x){
-            int digit = x%10;
-            ans = ans*10 + digit;
-            x = x/10;
+            sum=sum*10+x%10;
+            x=x/10;
         }
-        if(ans < INT_MIN || ans > INT_MAX) return 0;
-        return (int)ans;
+         if(sum < INT_MIN || sum > INT_MAX) return 0;
+        return sum;
     }
 };
