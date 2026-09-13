@@ -1,25 +1,29 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-        int start=0;
-        int end=s.length()-1;
-        while(start<end){
-            while (start < end && !isalnum(s[start])) {
-                start++;
+        int i = 0;
+        int j = s.length() - 1;
+
+        while (i < j) {
+
+            // Skip non-alphanumeric characters
+            while (i < j && !isalnum(s[i])) {
+                i++;
             }
 
-            while (start < end && !isalnum(s[end])) {
-                end--;
+            while (i < j && !isalnum(s[j])) {
+                j--;
             }
 
-            char ch1= tolower(s[start]);
-            char ch2=tolower(s[end]);
-            if(ch1!=ch2){
+          
+            if (tolower(s[i]) != tolower(s[j])) {
                 return false;
             }
-            start++;
-            end--;
+
+            i++;
+            j--;
         }
+
         return true;
     }
 };
