@@ -11,30 +11,27 @@
 class Solution {
 public:
     int size(ListNode* head){
-        int count =0;
+        int count=0;
         while(head){
             head=head->next;
             count++;
         }
         return count;
     }
-    ListNode* removeNthFromEnd(ListNode* head, int k) {
-      
-        int n=size(head);
-        int deleteNode=n-k+1;
-     
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        int len=size(head);
+        int k=len-n+1;
+        if(k==1) return head->next;
+        ListNode* start=head;
         ListNode* prev=nullptr;
-        ListNode* ans=head;
-        if(deleteNode==1) return head->next;
-        while(deleteNode>1){
-            prev=head;
-            head=head->next;
-            deleteNode--;
+        for(int i=0; i<k-1; i++){
+            prev=start;
+            start=start->next;
         }
-     
-        if(prev and head){
-            prev->next=head->next;
+        if(prev and start){
+            prev->next=start->next;
+            cout<<start->val;
         }
-        return ans;
+        return head;
     }
 };
