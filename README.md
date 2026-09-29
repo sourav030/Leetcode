@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0328-odd-even-linked-list](https://github.com/sourav030/Leetcode/tree/master/0328-odd-even-linked-list) |
 | [0355-design-twitter](https://github.com/sourav030/Leetcode/tree/master/0355-design-twitter) |
 | [0445-add-two-numbers-ii](https://github.com/sourav030/Leetcode/tree/master/0445-add-two-numbers-ii) |
+| [0706-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0706-design-hashmap) |
 | [0707-design-linked-list](https://github.com/sourav030/Leetcode/tree/master/0707-design-linked-list) |
 | [0725-split-linked-list-in-parts](https://github.com/sourav030/Leetcode/tree/master/0725-split-linked-list-in-parts) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/sourav030/Leetcode/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
@@ -619,6 +620,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0659-split-array-into-consecutive-subsequences](https://github.com/sourav030/Leetcode/tree/master/0659-split-array-into-consecutive-subsequences) |
 | [0692-top-k-frequent-words](https://github.com/sourav030/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [0704-binary-search](https://github.com/sourav030/Leetcode/tree/master/0704-binary-search) |
+| [0706-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0706-design-hashmap) |
 | [0713-subarray-product-less-than-k](https://github.com/sourav030/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0724-find-pivot-index](https://github.com/sourav030/Leetcode/tree/master/0724-find-pivot-index) |
 | [0733-flood-fill](https://github.com/sourav030/Leetcode/tree/master/0733-flood-fill) |
@@ -1352,6 +1354,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/sourav030/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0659-split-array-into-consecutive-subsequences](https://github.com/sourav030/Leetcode/tree/master/0659-split-array-into-consecutive-subsequences) |
 | [0692-top-k-frequent-words](https://github.com/sourav030/Leetcode/tree/master/0692-top-k-frequent-words) |
+| [0706-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0706-design-hashmap) |
 | [0753-open-the-lock](https://github.com/sourav030/Leetcode/tree/master/0753-open-the-lock) |
 | [0767-reorganize-string](https://github.com/sourav030/Leetcode/tree/master/0767-reorganize-string) |
 | [0778-reorganize-string](https://github.com/sourav030/Leetcode/tree/master/0778-reorganize-string) |
@@ -1454,6 +1457,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/sourav030/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0449-serialize-and-deserialize-bst](https://github.com/sourav030/Leetcode/tree/master/0449-serialize-and-deserialize-bst) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/sourav030/Leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0706-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0706-design-hashmap) |
 | [0707-design-linked-list](https://github.com/sourav030/Leetcode/tree/master/0707-design-linked-list) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/sourav030/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0817-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0817-design-hashmap) |
@@ -1556,6 +1560,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/sourav030/Leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0706-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0706-design-hashmap) |
 | [0817-design-hashmap](https://github.com/sourav030/Leetcode/tree/master/0817-design-hashmap) |
 ## Doubly-Linked List
 |  |
