@@ -14,18 +14,19 @@ public:
         while(fast and fast->next){
             slow=slow->next;
             fast=fast->next->next;
-            if(fast==slow){
+            if(slow==fast){
                 break;
             }
         }
         if(!fast or !fast->next){
             return nullptr;
         }
-        fast=head;
-        while(fast!=slow){
-            fast=fast->next;
+        ListNode* start=head;
+        while(start!=slow){
+            start=start->next;
             slow=slow->next;
         }
         return slow;
+
     }
 };
