@@ -10,32 +10,33 @@
  */
 class Solution {
 public:
+    void solve(ListNode* l1, ListNode* l2, ListNode* ans){
+        if(!l1 and !l2){
+            return;
+        }
+        if(!l1){
+            ans->next=l2;
+            return;
+        }
+        if(!l2){
+            ans->next=l1;
+            return;
+        }
+        if(l1->val<l2->val){
+            ans->next=l1;
+            ans=ans->next;
+            solve(l1->next,l2, ans);
+        }
+        else{
+            ans->next=l2;
+            ans=ans->next;
+            solve(l1,l2->next, ans);
+        }
+    }
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         ListNode* ans=new ListNode(-1);
-        ListNode* realAns=ans;
-        while(list1 and list2){
-            if(list1->val<list2->val){
-                ans->next=list1;
-                ans=ans->next;
-                list1=list1->next;
-            }
-            else{
-                ans->next=list2;
-                ans=ans->next;
-                list2=list2->next;
-            }
-            
-        }
-        while(list1){
-            ans->next=list1;
-            list1=list1->next;
-            ans=ans->next;
-        }
-        while(list2){
-            ans->next=list2;
-            list2=list2->next;
-            ans=ans->next;
-        }
-        return realAns->next;
+        ListNode* tail= ans;
+        solve(list1, list2, tail);
+        return ans->next;
     }
 };
