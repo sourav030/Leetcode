@@ -18,6 +18,11 @@ public:
         head->next=prev;
         return reverse(next, head);
     }
+    bool solve(ListNode* head, ListNode* mid){
+        if(!head or !mid) return true;
+        if(head->val!=mid->val) return false;
+        return solve(head->next, mid->next);
+    }
     bool isPalindrome(ListNode* head) {
         ListNode* slow=head;
         ListNode* fast=head;
@@ -26,11 +31,6 @@ public:
             fast=fast->next->next;
         }
         ListNode* mid=reverse(slow, nullptr);
-        while(head and mid){
-            if(head->val!=mid->val) return false;
-            head=head->next;
-            mid=mid->next;
-        }
-        return true;
+        return solve(head, mid);
     }
 };
