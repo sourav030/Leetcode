@@ -1,9 +1,9 @@
 class Solution {
 public:
-    vector<vector<int>>ans;
+    vector<vector<int>>arr;
     void solve(vector<int>&nums, int idx){
         if(idx>=nums.size()){
-            ans.push_back(nums);
+            arr.push_back(nums);
             return;
         }
         for(int i=idx; i<nums.size(); i++){
@@ -13,7 +13,8 @@ public:
         }
     }
     vector<vector<int>> permute(vector<int>& nums) {
-        solve(nums, 0);
-        return ans;
+        int idx=0;
+        solve(nums,idx);
+        return arr;
     }
 };
