@@ -1,42 +1,59 @@
+
 class Solution {
 public:
-    vector<int>row={0,0,-1,1};
-    vector<int>col={1,-1,0,0};
-    int n,m;
-    bool solve(vector<vector<char>>&board, int idx, string &word, int r, int c){
-        if(idx>=word.length()){
+    vector<vector<int>> arr;
+    vector<int> dx = {1, -1, 0, 0};
+    vector<int> dy = {0, 0, 1, -1};
+
+    bool check(vector<vector<char>>& board, int idx, int idy,
+               string &word, int i) {
+
+        if (i == word.length()) {
             return true;
         }
-        char ch=board[r][c];
-        board[r][c]='#';
-        for(int i=0; i<4; i++){
-            int nr=r+row[i];
-            int nc=c+col[i];
-            if(nr>=0 and nr<n and nc>=0 and nc<m){
-                if(board[nr][nc]==word[idx]){
-                    if(solve(board,idx+1,word,nr,nc)){
-                        return true;
-                    }
-                }
+
+        if (idx < 0 || idx >= board.size() ||
+            idy < 0 || idy >= board[0].size()) {
+            return false;
+        }
+
+        if (board[idx][idy] != word[i] || arr[idx][idy]) {
+            return false;
+        }
+
+        arr[idx][idy] = 1;
+
+        for (int d = 0; d < 4; d++) {
+            int new_r = idx + dx[d];
+            int new_c = idy + dy[d];
+
+            if (check(board, new_r, new_c, word, i + 1)) {
+                return true;
             }
         }
-        board[r][c]=ch;
+
+        arr[idx][idy] = 0; 
         return false;
     }
-    bool exist(vector<vector<char>>& board, string word) {
-        n=board.size();
-        m=board[0].size();
 
-        for(int i=0; i<n; i++){
-            for(int j=0; j<m; j++){
-                if(board[i][j]==word[0]){
-                    if(solve(board,1,word,i,j)){
-                        return true;
-                    }
+    bool exist(vector<vector<char>>& board, string word) {
+        if (board.empty() || board[0].empty()) {
+            return false;
+        }
+
+        int n = board.size();
+        int m = board[0].size();
+
+        arr.assign(n, vector<int>(m, 0));
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (check(board, i, j, word, 0)) {
+                    return true;
                 }
             }
         }
-        return false;
 
+        return false;
     }
 };
