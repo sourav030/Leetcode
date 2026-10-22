@@ -1,30 +1,31 @@
 class Solution {
 public:
-   unordered_map<char, string> mp {
-    {'2', "abc"},
-    {'3', "def"},
-    {'4', "ghi"},
-    {'5', "jkl"},
-    {'6', "mno"},
-    {'7', "pqrs"},
-    {'8', "tuv"},
-    {'9', "wxyz"}
-};
-    vector<string>ans;
-    void solve(int index,string digits,string result){
-        if(index==digits.size()){
-            ans.push_back(result);
+    map<int,string>mp;
+    vector<string>arr;
+    void solve(string digits, int idx, string &str){
+        if(idx>=digits.length()){
+            if(str.length()==digits.length())
+            arr.push_back(str);
+            return;
         }
-        for(auto i:mp[digits[index]]){
-            result.push_back(i);
-            solve(index+1,digits,result);
-            result.pop_back();
+        for(auto ele:mp[digits[idx]-'0']){
+            str.push_back(ele);
+            solve(digits,idx+1,str);
+            str.pop_back();
+            solve(digits,idx+1,str);
         }
     }
     vector<string> letterCombinations(string digits) {
-        if(digits.length()==0) return {};
-        string result;
-        solve(0,digits,result);
-        return ans;
+        mp[2]="abc";
+        mp[3]="def";
+        mp[4]="ghi";
+        mp[5]="jkl";
+        mp[6]="mno";
+        mp[7]="pqrs";
+        mp[8]="tuv";
+        mp[9]="wxyz";
+        string str;
+        solve(digits,0,str);
+        return arr;
     }
 };
