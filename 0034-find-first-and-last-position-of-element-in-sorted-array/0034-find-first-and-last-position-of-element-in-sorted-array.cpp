@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int LowerBound(vector<int>nums, int target){
+    int solvefirst(vector<int>&nums, int target){
         int start=0;
         int end=nums.size()-1;
         int ans=-1;
@@ -10,36 +10,37 @@ public:
                 ans=mid;
                 end=mid-1;
             }
-            else if(nums[mid]<target){
-                start=mid+1;
+            else if(nums[mid]>target){
+                end=mid-1;
             }
             else{
-                end=mid-1;
+                start=mid+1;
             }
         }
         return ans;
     }
-     int UpperBound(vector<int>nums, int target){
+    int solveSecond(vector<int>&nums, int target){
         int start=0;
         int end=nums.size()-1;
         int ans=-1;
         while(start<=end){
             int mid=start+(end-start)/2;
-            cout<<mid<<" ";
             if(nums[mid]==target){
                 ans=mid;
                 start=mid+1;
             }
-            else if(nums[mid]<target){
-                start=mid+1;
+            else if(nums[mid]>target){
+                end=mid-1;
             }
             else{
-                end=mid-1;
+                start=mid+1;
             }
         }
         return ans;
     }
     vector<int> searchRange(vector<int>& nums, int target) {
-        return {LowerBound(nums,target),UpperBound(nums,target) };
+        int a1=solvefirst(nums,target);
+        int a2=solveSecond(nums, target);
+        return {a1,a2};
     }
 };
